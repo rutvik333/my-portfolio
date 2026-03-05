@@ -120,32 +120,35 @@
             <a href="#" class="font-display text-xl font-bold text-foreground">
                 <span class="text-gradient">R</span>utvik
             </a>
-            <div class="hidden md:flex items-center gap-8">
-                <a href="#about" class="text-muted-foreground hover:text-foreground transition-colors relative group">
-                    About
-                    <span
-                        class="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full"></span>
-                </a>
-                <a href="#experience"
-                    class="text-muted-foreground hover:text-foreground transition-colors relative group">
-                    Experience
-                    <span
-                        class="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full"></span>
-                </a>
-                <a href="#tech-stack"
-                    class="text-muted-foreground hover:text-foreground transition-colors relative group">
-                    Tech Stack
-                    <span
-                        class="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full"></span>
-                </a>
-                <a href="#projects"
-                    class="text-muted-foreground hover:text-foreground transition-colors relative group">
-                    Projects
-                    <span
-                        class="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full"></span>
-                </a>
+            <div class="flex items-center gap-6">
+                <div class="hidden md:flex items-center gap-8">
+                    <a href="#about"
+                        class="text-muted-foreground hover:text-foreground transition-colors relative group">
+                        About
+                        <span
+                            class="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full"></span>
+                    </a>
+                    <a href="#experience"
+                        class="text-muted-foreground hover:text-foreground transition-colors relative group">
+                        Experience
+                        <span
+                            class="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full"></span>
+                    </a>
+                    <a href="#tech-stack"
+                        class="text-muted-foreground hover:text-foreground transition-colors relative group">
+                        Tech Stack
+                        <span
+                            class="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full"></span>
+                    </a>
+                    <a href="#projects"
+                        class="text-muted-foreground hover:text-foreground transition-colors relative group">
+                        Projects
+                        <span
+                            class="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full"></span>
+                    </a>
+                </div>
                 <button onclick="openModal()"
-                    class="px-5 py-2 bg-primary text-primary-foreground font-medium rounded-lg hover:glow-primary transition-all duration-300 text-sm cursor-pointer">
+                    class="px-5 py-2 bg-primary text-primary-foreground font-medium rounded-lg hover:glow-primary transition-all duration-300 text-sm cursor-pointer whitespace-nowrap">
                     Hire Me
                 </button>
             </div>
@@ -231,7 +234,7 @@
                             </a>
                         </div>
                     </div>
-                    <div class="grid grid-cols-2 gap-4">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
                         <div class="glass-card p-6 rounded-xl hover-lift">
                             <h3 class="font-display font-semibold text-foreground mb-1 text-lg">Education</h3>
                             <p class="text-primary font-medium mt-2">Bachelor of Engineering</p>
@@ -241,8 +244,8 @@
                             <p class="text-primary font-medium">12th Pass</p>
                             <p class="text-muted-foreground text-sm">JNV - CBSE BOARD<br>(2019 - 2020)</p>
                         </div>
-                        <div class="glass-card p-6 rounded-xl hover-lift flex flex-col justify-center">
-                            <h3 class="font-display font-semibold text-foreground mb-4 text-center">Core Disciplines
+                        <div class="glass-card p-6 rounded-xl hover-lift">
+                            <h3 class="font-display font-semibold text-foreground mb-4">Core Disciplines
                             </h3>
                             <ul class="text-sm text-muted-foreground space-y-2">
                                 <li class="flex items-center gap-2">
@@ -510,8 +513,17 @@
                                     </svg></span>
                             </div>
                         </div>
-                        <div class="p-6">
+                        <div class="p-6 flex items-center justify-between">
                             <h3 class="font-display text-2xl font-bold text-foreground">Eagle Distro</h3>
+                            <span class="md:hidden bg-primary/10 text-primary p-2.5 rounded-full">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                    <polyline points="15 3 21 3 21 9"></polyline>
+                                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                                </svg>
+                            </span>
                         </div>
                     </a>
 
@@ -535,8 +547,17 @@
                                     </svg></span>
                             </div>
                         </div>
-                        <div class="p-6">
+                        <div class="p-6 flex items-center justify-between">
                             <h3 class="font-display text-2xl font-bold text-foreground">Empire Smoke</h3>
+                            <span class="md:hidden bg-primary/10 text-primary p-2.5 rounded-full">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                    <polyline points="15 3 21 3 21 9"></polyline>
+                                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                                </svg>
+                            </span>
                         </div>
                     </a>
 
@@ -560,8 +581,17 @@
                                     </svg></span>
                             </div>
                         </div>
-                        <div class="p-6">
+                        <div class="p-6 flex items-center justify-between">
                             <h3 class="font-display text-2xl font-bold text-foreground">Smoxy Girl</h3>
+                            <span class="md:hidden bg-primary/10 text-primary p-2.5 rounded-full">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                    <polyline points="15 3 21 3 21 9"></polyline>
+                                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                                </svg>
+                            </span>
                         </div>
                     </a>
 
@@ -601,8 +631,17 @@
                                     </svg></span>
                             </div>
                         </div>
-                        <div class="p-6">
+                        <div class="p-6 flex items-center justify-between">
                             <h3 class="font-display text-2xl font-bold text-foreground">Get Simple Mortgage</h3>
+                            <span class="md:hidden bg-primary/10 text-primary p-2.5 rounded-full">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                    <polyline points="15 3 21 3 21 9"></polyline>
+                                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                                </svg>
+                            </span>
                         </div>
                     </a>
 
@@ -626,8 +665,17 @@
                                     </svg></span>
                             </div>
                         </div>
-                        <div class="p-6">
+                        <div class="p-6 flex items-center justify-between">
                             <h3 class="font-display text-2xl font-bold text-foreground">Chekit</h3>
+                            <span class="md:hidden bg-primary/10 text-primary p-2.5 rounded-full">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                    <polyline points="15 3 21 3 21 9"></polyline>
+                                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                                </svg>
+                            </span>
                         </div>
                     </a>
 

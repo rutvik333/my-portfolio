@@ -1,0 +1,826 @@
+[
+  {
+    "slug": "smokedistribution",
+    "name": "Smoke Distribution",
+    "url": "https://smokedistribution.brainbeandev.com/",
+    "category": "E-Commerce & Wholesale",
+    "tech": [
+      "WordPress",
+      "WooCommerce",
+      "Elementor",
+      "PHP",
+      "Responsive Design"
+    ],
+    "description": "Modern, high-converting digital platform developed for Smoke Distribution.",
+    "pages": [
+      {
+        "id": 1,
+        "title": "Homepage",
+        "page_name": "Smoke Distribution",
+        "url": "https://smokedistribution.brainbeandev.com/",
+        "image": "assets/projects/smokedistribution/page_1.png",
+        "description": "Main landing presentation and brand overview for Smoke Distribution."
+      },
+      {
+        "id": 2,
+        "title": "Freebase",
+        "page_name": "Freebase Archives",
+        "url": "https://smokedistribution.brainbeandev.com/product-category/vape-juice/freebase",
+        "image": "assets/projects/smokedistribution/page_2.png",
+        "description": "Detailed view of the Freebase section and user experience."
+      },
+      {
+        "id": 3,
+        "title": "Synthetic & Tfn Nicotine",
+        "page_name": "Synthetic & TFN Nicotine Archives",
+        "url": "https://smokedistribution.brainbeandev.com/product-category/vape-juice/synthetic-tfn-nicotine",
+        "image": "assets/projects/smokedistribution/page_3.png",
+        "description": "Detailed view of the Synthetic & TFN Nicotine section and user experience."
+      },
+      {
+        "id": 4,
+        "title": "Vape Juice",
+        "page_name": "Vape Juice Archives",
+        "url": "https://smokedistribution.brainbeandev.com/product-category/vape-juice",
+        "image": "assets/projects/smokedistribution/page_4.png",
+        "description": "Detailed view of the Vape Juice section and user experience."
+      },
+      {
+        "id": 5,
+        "title": "Shop",
+        "page_name": "Shop",
+        "url": "https://smokedistribution.brainbeandev.com/shop",
+        "image": "assets/projects/smokedistribution/page_5.png",
+        "description": "Detailed view of the Shop section and user experience."
+      }
+    ]
+  },
+  {
+    "slug": "pipe420b2c",
+    "name": "Pipe420 B2C Store",
+    "url": "https://pipe420b2c.brainbeandev.com/",
+    "category": "E-Commerce",
+    "tech": [
+      "WooCommerce",
+      "WordPress",
+      "Custom CSS",
+      "Payment Gateway",
+      "Product Catalog"
+    ],
+    "description": "Modern, high-converting digital platform developed for Pipe420 B2C Store.",
+    "pages": [
+      {
+        "id": 1,
+        "title": "Homepage",
+        "page_name": "My Shop",
+        "url": "https://pipe420b2c.brainbeandev.com/",
+        "image": "assets/projects/pipe420b2c/page_1.png",
+        "description": "Main landing presentation and brand overview for Pipe420 B2C Store."
+      },
+      {
+        "id": 2,
+        "title": "Bongs & Water Pipes",
+        "page_name": "Bongs & Water Pipes \u2013 My Shop",
+        "url": "https://pipe420b2c.brainbeandev.com/product-category/glass-pipes/bongs-water-pipes",
+        "image": "assets/projects/pipe420b2c/page_2.png",
+        "description": "Detailed view of the Bongs & Water Pipes section and user experience."
+      },
+      {
+        "id": 3,
+        "title": "Shop All",
+        "page_name": "Shop \u2013 My Shop",
+        "url": "https://pipe420b2c.brainbeandev.com/shop",
+        "image": "assets/projects/pipe420b2c/page_3.png",
+        "description": "Detailed view of the Shop All section and user experience."
+      },
+      {
+        "id": 4,
+        "title": "Dab Rigs",
+        "page_name": "Dab Rigs \u2013 My Shop",
+        "url": "https://pipe420b2c.brainbeandev.com/product-category/dab/dab-rigs",
+        "image": "assets/projects/pipe420b2c/page_4.png",
+        "description": "Detailed view of the Dab Rigs section and user experience."
+      },
+      {
+        "id": 5,
+        "title": "Hand Pipes",
+        "page_name": "Hand Pipes \u2013 My Shop",
+        "url": "https://pipe420b2c.brainbeandev.com/product-category/glass-pipes/hand-pipes",
+        "image": "assets/projects/pipe420b2c/page_5.png",
+        "description": "Detailed view of the Hand Pipes section and user experience."
+      }
+    ]
+  },
+  {
+    "slug": "ecommerce-ops",
+    "name": "E-Commerce Ops",
+    "url": "https://ecommerce-ops.com/",
+    "category": "Agency & Operations",
+    "tech": [
+      "Webflow / WordPress",
+      "Modern UI",
+      "Interactive Elements",
+      "Lead Generation"
+    ],
+    "description": "Modern, high-converting digital platform developed for E-Commerce Ops.",
+    "pages": [
+      {
+        "id": 1,
+        "title": "Homepage",
+        "page_name": "Your Ecommerce Operations Managed Well",
+        "url": "https://ecommerce-ops.com/",
+        "image": "assets/projects/ecommerce-ops/page_1.png",
+        "description": "Your Online Store, Our Responsibility to Manage. End-to-end store management, so you never worry about operations."
+      },
+      {
+        "id": 2,
+        "title": "Page",
+        "page_name": "Store operation - ecommerce-ops.com",
+        "url": "https://ecommerce-ops.com/store-operation",
+        "image": "assets/projects/ecommerce-ops/page_2.png",
+        "description": "Store Operations Store Operations Streamlining store processes to improve efficiency, reduce costs, and enhance overall performance. Store & Catalog Management Manage products, categories, and store content efficiently. Inventory & Order Synchronization Real-time tracking and smart stock management. Website Performance Maintenance Faster order processing and accurate fulfillment. Payment & Checkout Optimization Empower teams with better visibility"
+      },
+      {
+        "id": 3,
+        "title": "Page",
+        "page_name": "Store Experience & Conversion - ecommerce-ops.com",
+        "url": "https://ecommerce-ops.com/store-experience",
+        "image": "assets/projects/ecommerce-ops/page_3.png",
+        "description": "Store Experience & Conversion Store Experience& Conversion Streamlining store processes to improve efficiency, reduce costs, and enhance overall performance. Storefront & CRO Optimization Enhance store design, navigation, and user experience to increase engagement and conversions. Sales & Promotion Management Plan, execute, and optimize promotions, discounts, and campaigns to drive more sales. Customer Experience Management Monitor"
+      },
+      {
+        "id": 4,
+        "title": "Contact Us - ecommerce-ops.com",
+        "page_name": "Contact Us - ecommerce-ops.com",
+        "url": "https://ecommerce-ops.com/contact-us",
+        "image": "assets/projects/ecommerce-ops/page_4.png",
+        "description": "Contact Us - Ecom Ops Your next Big Project Starts HERE!!! Have a question or need help with your store? Our team is here to help you grow your business. Email Us info@ecommerce-ops.com We usually reply within 24 hours Call Us +1 (917) 302-2646 Mon-Fri 9:00 AM - 6:00 PM (EST) Send us a Message"
+      },
+      {
+        "id": 5,
+        "title": "Marketing & Growth",
+        "page_name": "Marketing & Growth - ecommerce-ops.com",
+        "url": "https://ecommerce-ops.com/marketing-growth",
+        "image": "assets/projects/ecommerce-ops/page_5.png",
+        "description": "Marketing & Growth Marketing &Growth Driving targeted traffic and building strong connections to grow your store and brand. Marketing & Traffic Growth Implement data-driven strategies to increase website traffic, improve visibility, and attract high-quality customers. Email Automation & Lifecycle Marketing Automate email campaigns and nurture customer relationships at every stage to boost engagement and retention."
+      }
+    ]
+  },
+  {
+    "slug": "esmokeandvape",
+    "name": "E-Smoke & Vape",
+    "url": "https://esmokeandvape.brainbeandev.com/",
+    "category": "E-Commerce & Retail",
+    "tech": [
+      "WooCommerce",
+      "WordPress",
+      "Age Verification",
+      "Custom Theme"
+    ],
+    "description": "Modern, high-converting digital platform developed for E-Smoke & Vape.",
+    "pages": [
+      {
+        "id": 1,
+        "title": "Homepage",
+        "page_name": "esmokeandvape.brainbeandev.com",
+        "url": "https://esmokeandvape.brainbeandev.com/",
+        "image": "assets/projects/esmokeandvape/page_1.png",
+        "description": "Main landing presentation and brand overview for E-Smoke & Vape."
+      },
+      {
+        "id": 2,
+        "title": "Shop",
+        "page_name": "Shop \u2013 esmokeandvape.brainbeandev.com",
+        "url": "https://esmokeandvape.brainbeandev.com/shop",
+        "image": "assets/projects/esmokeandvape/page_2.png",
+        "description": "Detailed view of the Shop section and user experience."
+      },
+      {
+        "id": 3,
+        "title": "Shop By Brands",
+        "page_name": "Shop By Brands \u2013 esmokeandvape.brainbeandev.com",
+        "url": "https://esmokeandvape.brainbeandev.com/shop-by-brands",
+        "image": "assets/projects/esmokeandvape/page_3.png",
+        "description": "Detailed view of the Shop By Brands section and user experience."
+      },
+      {
+        "id": 4,
+        "title": "CRAVE ADJUSTABLE VOLTAGE 510 BATTERIES BLUE \u2013 PACK OF 5 \u2013 esmokeandvape.brainbeandev.com",
+        "page_name": "CRAVE ADJUSTABLE VOLTAGE 510 BATTERIES BLUE \u2013 PACK OF 5 \u2013 esmokeandvape.brainbeandev.com",
+        "url": "https://esmokeandvape.brainbeandev.com/product/crave-adjustable-voltage-510-batteries-blue-pack-of-5",
+        "image": "assets/projects/esmokeandvape/page_4.png",
+        "description": "Detailed view of the Crave Adjustable Voltage 510 Batteries\nSleek blue design, reliable performance, and perfect control\u2014ideal for everyday use in a pack of 5.\nBuy Now section and user experience."
+      },
+      {
+        "id": 5,
+        "title": "Disposable E-Cigarettes",
+        "page_name": "DISPOSABLE E-CIGARETTES \u2013 esmokeandvape.brainbeandev.com",
+        "url": "https://esmokeandvape.brainbeandev.com/product-category/disposable-e-cigarettes",
+        "image": "assets/projects/esmokeandvape/page_5.png",
+        "description": "Detailed view of the DISPOSABLE E-CIGARETTES section and user experience."
+      }
+    ]
+  },
+  {
+    "slug": "pickpackify",
+    "name": "Pickpackify",
+    "url": "https://pickpackify.com/",
+    "category": "Logistics & Supply Chain",
+    "tech": [
+      "Modern Web Design",
+      "Tailwind CSS",
+      "Interactive UI",
+      "Lead Capture"
+    ],
+    "description": "Modern, high-converting digital platform developed for Pickpackify.",
+    "pages": [
+      {
+        "id": 1,
+        "title": "Homepage",
+        "page_name": "Home",
+        "url": "https://pickpackify.com/",
+        "image": "assets/projects/pickpackify/page_1.png",
+        "description": "Introducing PickPackify"
+      },
+      {
+        "id": 2,
+        "title": "Features",
+        "page_name": "Pickpackify Woocommerce Plugin",
+        "url": "https://pickpackify.com/pickpackify-woocommerce-plugin",
+        "image": "assets/projects/pickpackify/page_2.png",
+        "description": "3 items \u2022 Warehouse Lane B"
+      },
+      {
+        "id": 3,
+        "title": "Terms Of Service",
+        "page_name": "Terms of Service",
+        "url": "https://pickpackify.com/terms-of-service",
+        "image": "assets/projects/pickpackify/page_3.png",
+        "description": "Last Updated: June 16, 2026"
+      },
+      {
+        "id": 4,
+        "title": "Contact Support",
+        "page_name": "Support",
+        "url": "https://pickpackify.com/support",
+        "image": "assets/projects/pickpackify/page_4.png",
+        "description": "Get the help you need, check active documentation guides, or submit priority license support requests."
+      },
+      {
+        "id": 5,
+        "title": "Updates",
+        "page_name": "Changelog",
+        "url": "https://pickpackify.com/changelog",
+        "image": "assets/projects/pickpackify/page_5.png",
+        "description": "Stay up to date with new feature releases, dashboard enhancements, performance patches, and bug fixes for PickPackify."
+      }
+    ]
+  },
+  {
+    "slug": "vaporsoul",
+    "name": "Vapor Soul",
+    "url": "https://vaporsoul.brainbeandev.com/",
+    "category": "E-Commerce & Lifestyle",
+    "tech": [
+      "WordPress",
+      "WooCommerce",
+      "Mobile Optimized",
+      "Brand Identity"
+    ],
+    "description": "Modern, high-converting digital platform developed for Vapor Soul.",
+    "pages": [
+      {
+        "id": 1,
+        "title": "Homepage",
+        "page_name": "Vapor Soul",
+        "url": "https://vaporsoul.brainbeandev.com/",
+        "image": "assets/projects/vaporsoul/page_1.png",
+        "description": "Main landing presentation and brand overview for Vapor Soul."
+      },
+      {
+        "id": 3,
+        "title": "Page",
+        "page_name": "Coils / Accessories \u2013 Vapor Soul",
+        "url": "https://vaporsoul.brainbeandev.com/product-category/coils-accessories",
+        "image": "assets/projects/vaporsoul/page_3.png",
+        "description": "Detailed view of the Page section and user experience."
+      },
+      {
+        "id": 4,
+        "title": "Page",
+        "page_name": "Disposable Vapes \u2013 Vapor Soul",
+        "url": "https://vaporsoul.brainbeandev.com/product-category/disposable-vapes",
+        "image": "assets/projects/vaporsoul/page_4.png",
+        "description": "Detailed view of the Page section and user experience."
+      },
+      {
+        "id": 5,
+        "title": "Page",
+        "page_name": "Drinks \u2013 Vapor Soul",
+        "url": "https://vaporsoul.brainbeandev.com/product-category/drinks",
+        "image": "assets/projects/vaporsoul/page_5.png",
+        "description": "Detailed view of the Page section and user experience."
+      },
+      {
+        "id": 6,
+        "title": "Page",
+        "page_name": "E-Liquid \u2013 Vapor Soul",
+        "url": "https://vaporsoul.brainbeandev.com/product-category/e-liquid",
+        "image": "assets/projects/vaporsoul/page_6.png",
+        "description": "Detailed view of the Page section and user experience."
+      }
+    ]
+  },
+  {
+    "slug": "releafmedcard",
+    "name": "Releaf Med Card",
+    "url": "https://releafmedcard.com/",
+    "category": "Healthcare & Telehealth",
+    "tech": [
+      "Telehealth Portal",
+      "WordPress",
+      "HIPAA-Compliant UI",
+      "Booking Flow"
+    ],
+    "description": "Modern, high-converting digital platform developed for Releaf Med Card.",
+    "pages": [
+      {
+        "id": 1,
+        "title": "Homepage",
+        "page_name": "Medical Card Evaluations Online | Licensed Telehealth Physicians \u2013 Releaf Card",
+        "url": "https://releafmedcard.com/",
+        "image": "assets/projects/releafmedcard/page_1.png",
+        "description": "Connect with licensed physicians for a medical card evaluation, entirely online. Secure, HIPAA-compliant telehealth appointments with fast scheduling."
+      },
+      {
+        "id": 2,
+        "title": "Features & Highlights",
+        "page_name": "Releaf Med Card - Features & Highlights",
+        "url": "https://releafmedcard.com/",
+        "image": "assets/projects/releafmedcard/page_2.png",
+        "description": "Featured section highlighting features & highlights of Releaf Med Card."
+      },
+      {
+        "id": 3,
+        "title": "Product / Service Showcase",
+        "page_name": "Releaf Med Card - Product / Service Showcase",
+        "url": "https://releafmedcard.com/",
+        "image": "assets/projects/releafmedcard/page_3.png",
+        "description": "Featured section highlighting product / service showcase of Releaf Med Card."
+      },
+      {
+        "id": 4,
+        "title": "Detail & Value Proposition",
+        "page_name": "Releaf Med Card - Detail & Value Proposition",
+        "url": "https://releafmedcard.com/",
+        "image": "assets/projects/releafmedcard/page_4.png",
+        "description": "Featured section highlighting detail & value proposition of Releaf Med Card."
+      },
+      {
+        "id": 5,
+        "title": "Contact & Footer Section",
+        "page_name": "Releaf Med Card - Contact & Footer Section",
+        "url": "https://releafmedcard.com/",
+        "image": "assets/projects/releafmedcard/page_5.png",
+        "description": "Featured section highlighting contact & footer section of Releaf Med Card."
+      }
+    ]
+  },
+  {
+    "slug": "thepizzamaker",
+    "name": "The Pizza Maker",
+    "url": "https://thepizzamaker.brainbeandev.com/",
+    "category": "Food & Restaurant",
+    "tech": [
+      "Online Ordering",
+      "Menu Architecture",
+      "Interactive UI",
+      "Mobile Friendly"
+    ],
+    "description": "Modern, high-converting digital platform developed for The Pizza Maker.",
+    "pages": [
+      {
+        "id": 1,
+        "title": "Homepage",
+        "page_name": "The Pizza Maker \u2013 Made Fresh. Made for You.",
+        "url": "https://thepizzamaker.brainbeandev.com/",
+        "image": "assets/projects/thepizzamaker/page_1.png",
+        "description": "Main landing presentation and brand overview for The Pizza Maker."
+      },
+      {
+        "id": 2,
+        "title": "Menu & Deals",
+        "page_name": "TPM FEAST DEALS \u2013 The Pizza Maker",
+        "url": "https://thepizzamaker.brainbeandev.com/tpm-feast-deals",
+        "image": "assets/projects/thepizzamaker/page_2.png",
+        "description": "Detailed view of the Menu & Deals section and user experience."
+      },
+      {
+        "id": 3,
+        "title": "About Us",
+        "page_name": "Our Story \u2013 The Pizza Maker",
+        "url": "https://thepizzamaker.brainbeandev.com/our-story",
+        "image": "assets/projects/thepizzamaker/page_3.png",
+        "description": "Detailed view of the About Us section and user experience."
+      },
+      {
+        "id": 4,
+        "title": "Contact",
+        "page_name": "Contact \u2013 The Pizza Maker",
+        "url": "https://thepizzamaker.brainbeandev.com/contact",
+        "image": "assets/projects/thepizzamaker/page_4.png",
+        "description": "Detailed view of the Contact section and user experience."
+      },
+      {
+        "id": 5,
+        "title": "Catering",
+        "page_name": "Catering \u2013 The Pizza Maker",
+        "url": "https://thepizzamaker.brainbeandev.com/catering",
+        "image": "assets/projects/thepizzamaker/page_5.png",
+        "description": "Detailed view of the Catering section and user experience."
+      }
+    ]
+  },
+  {
+    "slug": "finifacts",
+    "name": "FiniFacts",
+    "url": "https://finifacts.brainbeandev.com/",
+    "category": "Finance & Consulting",
+    "tech": [
+      "Corporate Website",
+      "Lead Funnel",
+      "Financial Portal",
+      "Modern Typography"
+    ],
+    "description": "Modern, high-converting digital platform developed for FiniFacts.",
+    "pages": [
+      {
+        "id": 1,
+        "title": "Homepage",
+        "page_name": "FiniFacts",
+        "url": "https://finifacts.brainbeandev.com/",
+        "image": "assets/projects/finifacts/page_1.png",
+        "description": "We empower startups, growing enterprises, and established institutions with institutional-grade CPA expertise, proactive tax planning, and audit-ready financial governance."
+      },
+      {
+        "id": 2,
+        "title": "About",
+        "page_name": "About \u2013 FiniFacts",
+        "url": "https://finifacts.brainbeandev.com/about",
+        "image": "assets/projects/finifacts/page_2.png",
+        "description": "Institutional-grade CPA expertise, audit-ready compliance, and fiduciary steering for high-growth enterprises."
+      },
+      {
+        "id": 3,
+        "title": "Read Full Story",
+        "page_name": "Tips on spreading risk and maximizing returns with multiple asset classes \u2013 FiniFacts",
+        "url": "https://finifacts.brainbeandev.com/tips-on-spreading-risk-and-maximizing-returns-with-multiple-asset-classes",
+        "image": "assets/projects/finifacts/page_3.png",
+        "description": "Explore essential portfolio diversification techniques, tax-loss harvesting methods, and how modern CPA firms shield wealth from volatile market shifts."
+      },
+      {
+        "id": 4,
+        "title": "Services",
+        "page_name": "Services \u2013 FiniFacts",
+        "url": "https://finifacts.brainbeandev.com/services",
+        "image": "assets/projects/finifacts/page_4.png",
+        "description": "Institutional-grade CPA expertise, audit-ready compliance, and fiduciary steering for high-growth enterprises."
+      },
+      {
+        "id": 5,
+        "title": "Page",
+        "page_name": "International Accounting \u2013 FiniFacts",
+        "url": "https://finifacts.brainbeandev.com/services/international-accounting",
+        "image": "assets/projects/finifacts/page_5.png",
+        "description": "Institutional-grade CPA expertise, audit-ready compliance, and fiduciary steering for high-growth enterprises."
+      }
+    ]
+  },
+  {
+    "slug": "buenavida-restaurant",
+    "name": "Buena Vida - Hydration",
+    "url": "https://buenavida.brainbeandev.com/buena-vida/",
+    "category": "Beverage & Lifestyle",
+    "tech": [
+      "Brand Experience",
+      "Smooth Scrolling",
+      "Product Showcase",
+      "Visual Storytelling"
+    ],
+    "description": "Modern, high-converting digital platform developed for Buena Vida - Hydration.",
+    "pages": [
+      {
+        "id": 1,
+        "title": "Homepage",
+        "page_name": "Buena Vida \u2014 Hydration, Anytime, Anywhere",
+        "url": "https://buenavida.brainbeandev.com/buena-vida/",
+        "image": "assets/projects/buenavida-restaurant/page_1.png",
+        "description": "Meet the Buena Vida Pure Spring Bottle. Crafted for style, durability, and sustainability amidst pristine nature."
+      },
+      {
+        "id": 2,
+        "title": "Features & Highlights",
+        "page_name": "Buena Vida - Hydration - Features & Highlights",
+        "url": "https://buenavida.brainbeandev.com/buena-vida/",
+        "image": "assets/projects/buenavida-restaurant/page_2.png",
+        "description": "Featured section highlighting features & highlights of Buena Vida - Hydration."
+      },
+      {
+        "id": 3,
+        "title": "Product / Service Showcase",
+        "page_name": "Buena Vida - Hydration - Product / Service Showcase",
+        "url": "https://buenavida.brainbeandev.com/buena-vida/",
+        "image": "assets/projects/buenavida-restaurant/page_3.png",
+        "description": "Featured section highlighting product / service showcase of Buena Vida - Hydration."
+      },
+      {
+        "id": 4,
+        "title": "Detail & Value Proposition",
+        "page_name": "Buena Vida - Hydration - Detail & Value Proposition",
+        "url": "https://buenavida.brainbeandev.com/buena-vida/",
+        "image": "assets/projects/buenavida-restaurant/page_4.png",
+        "description": "Featured section highlighting detail & value proposition of Buena Vida - Hydration."
+      },
+      {
+        "id": 5,
+        "title": "Contact & Footer Section",
+        "page_name": "Buena Vida - Hydration - Contact & Footer Section",
+        "url": "https://buenavida.brainbeandev.com/buena-vida/",
+        "image": "assets/projects/buenavida-restaurant/page_5.png",
+        "description": "Featured section highlighting contact & footer section of Buena Vida - Hydration."
+      }
+    ]
+  },
+  {
+    "slug": "buenavida-lifestyle",
+    "name": "Buena Vida - Spring Water",
+    "url": "https://buenavida.brainbeandev.com/buena/",
+    "category": "E-Commerce & Beverage",
+    "tech": [
+      "Luxury Product Presentation",
+      "Responsive Design",
+      "Custom Animations"
+    ],
+    "description": "Modern, high-converting digital platform developed for Buena Vida - Spring Water.",
+    "pages": [
+      {
+        "id": 1,
+        "title": "Homepage",
+        "page_name": "Buena Vida \u2014 Premium Spring Water",
+        "url": "https://buenavida.brainbeandev.com/buena/",
+        "image": "assets/projects/buenavida-lifestyle/page_1.png",
+        "description": "Buena Vida Spring Water \u2014 The Good Life in Every Drop. Experience crisp, refreshing spring water packaged in sustainable 500 mL and 1 L aluminum bottles."
+      },
+      {
+        "id": 2,
+        "title": "Features & Highlights",
+        "page_name": "Buena Vida - Spring Water - Features & Highlights",
+        "url": "https://buenavida.brainbeandev.com/buena/",
+        "image": "assets/projects/buenavida-lifestyle/page_2.png",
+        "description": "Featured section highlighting features & highlights of Buena Vida - Spring Water."
+      },
+      {
+        "id": 3,
+        "title": "Product / Service Showcase",
+        "page_name": "Buena Vida - Spring Water - Product / Service Showcase",
+        "url": "https://buenavida.brainbeandev.com/buena/",
+        "image": "assets/projects/buenavida-lifestyle/page_3.png",
+        "description": "Featured section highlighting product / service showcase of Buena Vida - Spring Water."
+      },
+      {
+        "id": 4,
+        "title": "Detail & Value Proposition",
+        "page_name": "Buena Vida - Spring Water - Detail & Value Proposition",
+        "url": "https://buenavida.brainbeandev.com/buena/",
+        "image": "assets/projects/buenavida-lifestyle/page_4.png",
+        "description": "Featured section highlighting detail & value proposition of Buena Vida - Spring Water."
+      },
+      {
+        "id": 5,
+        "title": "Contact & Footer Section",
+        "page_name": "Buena Vida - Spring Water - Contact & Footer Section",
+        "url": "https://buenavida.brainbeandev.com/buena/",
+        "image": "assets/projects/buenavida-lifestyle/page_5.png",
+        "description": "Featured section highlighting contact & footer section of Buena Vida - Spring Water."
+      }
+    ]
+  },
+  {
+    "slug": "releafspecialists",
+    "name": "Releaf Specialists",
+    "url": "https://staging.brainbeandev.com/releafspecialists/",
+    "category": "Healthcare & Telemedicine",
+    "tech": [
+      "GreenHash Theme",
+      "Patient Consultation Flow",
+      "State Certification Portal"
+    ],
+    "description": "Modern, high-converting digital platform developed for Releaf Specialists.",
+    "pages": [
+      {
+        "id": 1,
+        "title": "Homepage",
+        "page_name": "Medical Marijuana Card Online | Releaf Specialists (GreenHash Theme)",
+        "url": "https://staging.brainbeandev.com/releafspecialists/",
+        "image": "assets/projects/releafspecialists/page_1.png",
+        "description": "Get your medical marijuana card online in under 10 minutes. Phone-only visits in 12 states. $150 to start, and you only pay if approved."
+      },
+      {
+        "id": 2,
+        "title": "Features & Highlights",
+        "page_name": "Releaf Specialists - Features & Highlights",
+        "url": "https://staging.brainbeandev.com/releafspecialists/",
+        "image": "assets/projects/releafspecialists/page_2.png",
+        "description": "Featured section highlighting features & highlights of Releaf Specialists."
+      },
+      {
+        "id": 3,
+        "title": "Product / Service Showcase",
+        "page_name": "Releaf Specialists - Product / Service Showcase",
+        "url": "https://staging.brainbeandev.com/releafspecialists/",
+        "image": "assets/projects/releafspecialists/page_3.png",
+        "description": "Featured section highlighting product / service showcase of Releaf Specialists."
+      },
+      {
+        "id": 4,
+        "title": "Detail & Value Proposition",
+        "page_name": "Releaf Specialists - Detail & Value Proposition",
+        "url": "https://staging.brainbeandev.com/releafspecialists/",
+        "image": "assets/projects/releafspecialists/page_4.png",
+        "description": "Featured section highlighting detail & value proposition of Releaf Specialists."
+      },
+      {
+        "id": 5,
+        "title": "Contact & Footer Section",
+        "page_name": "Releaf Specialists - Contact & Footer Section",
+        "url": "https://staging.brainbeandev.com/releafspecialists/",
+        "image": "assets/projects/releafspecialists/page_5.png",
+        "description": "Featured section highlighting contact & footer section of Releaf Specialists."
+      }
+    ]
+  },
+  {
+    "slug": "bardboysdemo1",
+    "name": "Bard Boys Oxnard - Concept 1",
+    "url": "https://staging.brainbeandev.com/bardboysdemo1/",
+    "category": "Dispensary & Retail",
+    "tech": [
+      "Interactive Menu",
+      "Dispensary UX",
+      "Age Verification",
+      "Local SEO"
+    ],
+    "description": "Modern, high-converting digital platform developed for Bard Boys Oxnard - Concept 1.",
+    "pages": [
+      {
+        "id": 1,
+        "title": "Homepage",
+        "page_name": "Bard Boys Oxnard | Smoke Better. Pay Less. Oxnard's Premier Dispensary",
+        "url": "https://staging.brainbeandev.com/bardboysdemo1/",
+        "image": "assets/projects/bardboysdemo1/page_1.png",
+        "description": "Oxnard's top-shelf licensed cannabis dispensary. Fresh California indoor flower, fire vapes, solventless rosin, and artisan edibles at neighborhood prices. Delivery, curbside & in-store."
+      },
+      {
+        "id": 2,
+        "title": "Features & Highlights",
+        "page_name": "Bard Boys Oxnard - Concept 1 - Features & Highlights",
+        "url": "https://staging.brainbeandev.com/bardboysdemo1/",
+        "image": "assets/projects/bardboysdemo1/page_2.png",
+        "description": "Featured section highlighting features & highlights of Bard Boys Oxnard - Concept 1."
+      },
+      {
+        "id": 3,
+        "title": "Product / Service Showcase",
+        "page_name": "Bard Boys Oxnard - Concept 1 - Product / Service Showcase",
+        "url": "https://staging.brainbeandev.com/bardboysdemo1/",
+        "image": "assets/projects/bardboysdemo1/page_3.png",
+        "description": "Featured section highlighting product / service showcase of Bard Boys Oxnard - Concept 1."
+      },
+      {
+        "id": 4,
+        "title": "Detail & Value Proposition",
+        "page_name": "Bard Boys Oxnard - Concept 1 - Detail & Value Proposition",
+        "url": "https://staging.brainbeandev.com/bardboysdemo1/",
+        "image": "assets/projects/bardboysdemo1/page_4.png",
+        "description": "Featured section highlighting detail & value proposition of Bard Boys Oxnard - Concept 1."
+      },
+      {
+        "id": 5,
+        "title": "Contact & Footer Section",
+        "page_name": "Bard Boys Oxnard - Concept 1 - Contact & Footer Section",
+        "url": "https://staging.brainbeandev.com/bardboysdemo1/",
+        "image": "assets/projects/bardboysdemo1/page_5.png",
+        "description": "Featured section highlighting contact & footer section of Bard Boys Oxnard - Concept 1."
+      }
+    ]
+  },
+  {
+    "slug": "bardboysdemo2",
+    "name": "Bard Boys Oxnard - Concept 2",
+    "url": "https://staging.brainbeandev.com/bardboysdemo2/",
+    "category": "Dispensary & Retail",
+    "tech": [
+      "Dark Mode Aesthetics",
+      "Live Inventory UI",
+      "Mobile-First Design"
+    ],
+    "description": "Modern, high-converting digital platform developed for Bard Boys Oxnard - Concept 2.",
+    "pages": [
+      {
+        "id": 1,
+        "title": "Homepage",
+        "page_name": "BARD BOYS OXNARD | California's Premier Licensed Cannabis Dispensary",
+        "url": "https://staging.brainbeandev.com/bardboysdemo2/",
+        "image": "assets/projects/bardboysdemo2/page_1.png",
+        "description": "Shop premium California cannabis at Bard Boys Oxnard. Browse craft flower, live resin vapes, artisan edibles, and solventless concentrates. Fast, discreet same-day delivery across Oxnard & Ventura County."
+      },
+      {
+        "id": 2,
+        "title": "Features & Highlights",
+        "page_name": "Bard Boys Oxnard - Concept 2 - Features & Highlights",
+        "url": "https://staging.brainbeandev.com/bardboysdemo2/",
+        "image": "assets/projects/bardboysdemo2/page_2.png",
+        "description": "Featured section highlighting features & highlights of Bard Boys Oxnard - Concept 2."
+      },
+      {
+        "id": 3,
+        "title": "Product / Service Showcase",
+        "page_name": "Bard Boys Oxnard - Concept 2 - Product / Service Showcase",
+        "url": "https://staging.brainbeandev.com/bardboysdemo2/",
+        "image": "assets/projects/bardboysdemo2/page_3.png",
+        "description": "Featured section highlighting product / service showcase of Bard Boys Oxnard - Concept 2."
+      },
+      {
+        "id": 4,
+        "title": "Detail & Value Proposition",
+        "page_name": "Bard Boys Oxnard - Concept 2 - Detail & Value Proposition",
+        "url": "https://staging.brainbeandev.com/bardboysdemo2/",
+        "image": "assets/projects/bardboysdemo2/page_4.png",
+        "description": "Featured section highlighting detail & value proposition of Bard Boys Oxnard - Concept 2."
+      },
+      {
+        "id": 5,
+        "title": "Contact & Footer Section",
+        "page_name": "Bard Boys Oxnard - Concept 2 - Contact & Footer Section",
+        "url": "https://staging.brainbeandev.com/bardboysdemo2/",
+        "image": "assets/projects/bardboysdemo2/page_5.png",
+        "description": "Featured section highlighting contact & footer section of Bard Boys Oxnard - Concept 2."
+      }
+    ]
+  },
+  {
+    "slug": "bardboysox",
+    "name": "Bard Boys OX",
+    "url": "https://bardboysox.brainbeandev.com/",
+    "category": "Brand Showcase",
+    "tech": [
+      "Dynamic Layout",
+      "WordPress",
+      "Custom Product Grid",
+      "High Performance"
+    ],
+    "description": "Modern, high-converting digital platform developed for Bard Boys OX.",
+    "pages": [
+      {
+        "id": 1,
+        "title": "Homepage",
+        "page_name": "bardboysox",
+        "url": "https://bardboysox.brainbeandev.com/",
+        "image": "assets/projects/bardboysox/page_1.png",
+        "description": "Main landing presentation and brand overview for Bard Boys OX."
+      },
+      {
+        "id": 2,
+        "title": "Shop",
+        "page_name": "Order Online \u2013 bardboysox",
+        "url": "https://bardboysox.brainbeandev.com/order-online",
+        "image": "assets/projects/bardboysox/page_2.png",
+        "description": "Detailed view of the SHOP section and user experience."
+      },
+      {
+        "id": 3,
+        "title": "Return To Shop",
+        "page_name": "Shop \u2013 bardboysox",
+        "url": "https://bardboysox.brainbeandev.com/shop",
+        "image": "assets/projects/bardboysox/page_3.png",
+        "description": "Detailed view of the RETURN TO SHOP section and user experience."
+      },
+      {
+        "id": 4,
+        "title": "About",
+        "page_name": "About \u2013 bardboysox",
+        "url": "https://bardboysox.brainbeandev.com/about",
+        "image": "assets/projects/bardboysox/page_4.png",
+        "description": "Detailed view of the ABOUT section and user experience."
+      },
+      {
+        "id": 5,
+        "title": "Terms Of Service",
+        "page_name": "Terms \u2013 bardboysox",
+        "url": "https://bardboysox.brainbeandev.com/terms",
+        "image": "assets/projects/bardboysox/page_5.png",
+        "description": "Detailed view of the Terms of Service section and user experience."
+      }
+    ]
+  }
+]

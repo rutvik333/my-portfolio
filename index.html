@@ -200,337 +200,1547 @@
             </div>
         </section>
 
-        <!-- Projects -->
+                <!-- Projects Section -->
         <section id="projects" class="section-padding relative">
-            <div class="container mx-auto max-w-6xl px-6 relative z-10">
-                <div class="text-center mb-16">
-                    <p class="text-primary font-medium tracking-widest uppercase text-sm mb-4">My Work</p>
-                    <h2 class="font-display text-4xl md:text-5xl font-bold mb-6">Featured <span
-                            class="text-gradient">Projects</span></h2>
+            <div class="container mx-auto max-w-7xl px-4 sm:px-6 relative z-10">
+                <div class="text-center max-w-3xl mx-auto mb-12">
+                    <p class="text-primary font-medium tracking-widest uppercase text-xs mb-3">Portfolio & Client Work</p>
+                    <h2 class="font-display text-4xl md:text-5xl font-bold mb-4">
+                        Featured <span class="text-gradient">Projects</span>
+                    </h2>
+                    <p class="text-muted-foreground text-base">
+                        Showcasing 15 comprehensive client case studies with 5-page interactive screen galleries, alongside live production e-commerce & web management platforms.
+                    </p>
                 </div>
 
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                    <!-- Project 1 -->
-                    <a href="https://www.eagledistro.com/" target="_blank"
-                        class="group glass-card rounded-2xl overflow-hidden hover-lift block">
-                        <div class="relative h-64 md:h-80 overflow-hidden">
-                            <img src="https://raw.githubusercontent.com/rutvik333/my-portfolio/refs/heads/main/EagleDistro.png"
-                                alt="Eagle Distro"
-                                class="object-fill w-full h-full transition-transform duration-500 group-hover:scale-110">
-                            <div
-                                class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                                <span
-                                    class="bg-primary text-white px-6 py-2 rounded-full font-medium flex items-center gap-2">Visit
-                                    Site <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                        stroke-linecap="round" stroke-linejoin="round">
-                                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-                                        <polyline points="15 3 21 3 21 9"></polyline>
-                                        <line x1="10" y1="14" x2="21" y2="3"></line>
-                                    </svg></span>
+                <!-- Category Filter Buttons -->
+                <div class="flex flex-wrap items-center justify-center gap-2 mb-12" id="portfolioFilter">
+                    <button class="filter-btn active px-4 py-2 rounded-xl text-xs sm:text-sm font-medium border border-transparent bg-primary text-white shadow-lg shadow-primary/25 cursor-pointer transition-all" data-filter="all">
+                        All Projects (25)
+                    </button>
+                    <button class="filter-btn px-4 py-2 rounded-xl text-xs sm:text-sm font-medium border border-white/10 bg-white/5 text-muted-foreground hover:text-foreground hover:bg-white/10 cursor-pointer transition-all" data-filter="case-study">
+                        ✨ 5-Page Case Studies (15)
+                    </button>
+                    <button class="filter-btn px-4 py-2 rounded-xl text-xs sm:text-sm font-medium border border-white/10 bg-white/5 text-muted-foreground hover:text-foreground hover:bg-white/10 cursor-pointer transition-all" data-filter="ecommerce">
+                        E-Commerce & Wholesale
+                    </button>
+                    <button class="filter-btn px-4 py-2 rounded-xl text-xs sm:text-sm font-medium border border-white/10 bg-white/5 text-muted-foreground hover:text-foreground hover:bg-white/10 cursor-pointer transition-all" data-filter="dispensary">
+                        Dispensary & Smoke
+                    </button>
+                    <button class="filter-btn px-4 py-2 rounded-xl text-xs sm:text-sm font-medium border border-white/10 bg-white/5 text-muted-foreground hover:text-foreground hover:bg-white/10 cursor-pointer transition-all" data-filter="healthcare">
+                        Healthcare & Telehealth
+                    </button>
+                    <button class="filter-btn px-4 py-2 rounded-xl text-xs sm:text-sm font-medium border border-white/10 bg-white/5 text-muted-foreground hover:text-foreground hover:bg-white/10 cursor-pointer transition-all" data-filter="operations">
+                        Operations & Corporate
+                    </button>
+                    <button class="filter-btn px-4 py-2 rounded-xl text-xs sm:text-sm font-medium border border-white/10 bg-white/5 text-muted-foreground hover:text-foreground hover:bg-white/10 cursor-pointer transition-all" data-filter="food-lifestyle">
+                        Food & Lifestyle
+                    </button>
+                </div>
+
+                <!-- Projects Grid -->
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8" id="projectsGrid">
+
+                    <!-- Project: Smoke Distribution -->
+                    <div class="project-card group glass-card rounded-2xl overflow-hidden hover-lift flex flex-col justify-between border border-white/10 transition-all duration-300" data-category="case-study ecommerce dispensary">
+                        <div>
+                            <!-- Card Image Banner -->
+                            <div class="relative h-60 overflow-hidden bg-black/40">
+                                <img src="assets/projects/smokedistribution/page_1.png" alt="Smoke Distribution" class="w-full h-full object-cover object-top transition-transform duration-500 group-hover:scale-105">
+                                
+                                <!-- Top Badges -->
+                                <div class="absolute top-3 left-3 flex items-center gap-2">
+                                    <span class="bg-background/80 backdrop-blur-md border border-white/10 text-foreground text-[11px] font-medium px-2.5 py-1 rounded-full">
+                                        E-Commerce & Wholesale
+                                    </span>
+                                </div>
+                                <div class="absolute top-3 right-3">
+                                    <span class="bg-primary/90 text-white text-[11px] font-semibold px-2.5 py-1 rounded-full shadow-lg shadow-primary/30 flex items-center gap-1.5 backdrop-blur-sm">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                            <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                                            <circle cx="8.5" cy="8.5" r="1.5"></circle>
+                                            <polyline points="21 15 16 10 5 21"></polyline>
+                                        </svg>
+                                        5 Pages View
+                                    </span>
+                                </div>
+
+                                <!-- Overlay Hover Buttons -->
+                                <div class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center gap-3 p-4">
+                                    <a href="projects/smokedistribution.html" class="px-4 py-2 rounded-xl text-xs font-semibold text-white bg-primary hover:bg-primary/90 transition-all shadow-lg shadow-primary/30 flex items-center gap-1.5">
+                                        <span>Case Study</span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                            <polyline points="9 18 15 12 9 6"></polyline>
+                                        </svg>
+                                    </a>
+                                    <a href="https://smokedistribution.brainbeandev.com/" target="_blank" rel="noopener noreferrer" class="px-4 py-2 rounded-xl text-xs font-semibold text-foreground bg-white/10 hover:bg-white/20 border border-white/15 transition-all flex items-center gap-1.5">
+                                        <span>Live Site</span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                            <polyline points="15 3 21 3 21 9"></polyline>
+                                            <line x1="10" y1="14" x2="21" y2="3"></line>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <!-- Card Body -->
+                            <div class="p-6">
+                                <div class="flex items-center justify-between gap-2 mb-2">
+                                    <h3 class="font-display text-xl font-bold text-foreground group-hover:text-primary transition-colors truncate">
+                                        Smoke Distribution
+                                    </h3>
+                                </div>
+                                <p class="text-xs text-muted-foreground line-clamp-2 mb-4 leading-relaxed">
+                                    Modern, high-converting digital platform developed for Smoke Distribution.
+                                </p>
+                                <div class="flex flex-wrap gap-1.5 mb-2">
+                                    <span class="px-2 py-0.5 rounded text-[11px] bg-white/5 border border-white/10 text-muted-foreground">WordPress</span><span class="px-2 py-0.5 rounded text-[11px] bg-white/5 border border-white/10 text-muted-foreground">WooCommerce</span><span class="px-2 py-0.5 rounded text-[11px] bg-white/5 border border-white/10 text-muted-foreground">Elementor</span>
+                                </div>
                             </div>
                         </div>
-                        <div class="p-6 flex items-center justify-between">
-                            <h3 class="font-display text-2xl font-bold text-foreground">Eagle Distro</h3>
-                            <span class="md:hidden bg-primary/10 text-primary p-2.5 rounded-full">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
-                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                    stroke-linejoin="round">
+
+                        <!-- Card Footer Link -->
+                        <div class="px-6 pb-6 pt-2 border-t border-white/5 flex items-center justify-between text-xs">
+                            <a href="projects/smokedistribution.html" class="font-semibold text-primary hover:text-primary/80 flex items-center gap-1 transition-colors">
+                                <span>Explore 5 Screen Views</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                                    <polyline points="12 5 19 12 12 19"></polyline>
+                                </svg>
+                            </a>
+                            <a href="https://smokedistribution.brainbeandev.com/" target="_blank" rel="noopener noreferrer" class="text-muted-foreground hover:text-foreground transition-colors" title="Visit live site">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                     <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
                                     <polyline points="15 3 21 3 21 9"></polyline>
                                     <line x1="10" y1="14" x2="21" y2="3"></line>
                                 </svg>
-                            </span>
-                        </div>
-                    </a>
-
-                    <!-- Project 2 -->
-                    <a href="https://empiresmokedist.com/" target="_blank"
-                        class="group glass-card rounded-2xl overflow-hidden hover-lift block">
-                        <div class="relative h-64 md:h-80 overflow-hidden">
-                            <img src="https://raw.githubusercontent.com/rutvik333/my-portfolio/refs/heads/main/Empire%20Smoke.png"
-                                alt="Empire Smoke"
-                                class="object-fill w-full h-full transition-transform duration-500 group-hover:scale-110">
-                            <div
-                                class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                                <span
-                                    class="bg-primary text-white px-6 py-2 rounded-full font-medium flex items-center gap-2">Visit
-                                    Site <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                        stroke-linecap="round" stroke-linejoin="round">
-                                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-                                        <polyline points="15 3 21 3 21 9"></polyline>
-                                        <line x1="10" y1="14" x2="21" y2="3"></line>
-                                    </svg></span>
-                            </div>
-                        </div>
-                        <div class="p-6 flex items-center justify-between">
-                            <h3 class="font-display text-2xl font-bold text-foreground">Empire Smoke</h3>
-                            <span class="md:hidden bg-primary/10 text-primary p-2.5 rounded-full">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
-                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                    stroke-linejoin="round">
-                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-                                    <polyline points="15 3 21 3 21 9"></polyline>
-                                    <line x1="10" y1="14" x2="21" y2="3"></line>
-                                </svg>
-                            </span>
-                        </div>
-                    </a>
-
-                    <!-- Project 3 -->
-                    <a href="https://smoxygirl.com/" target="_blank"
-                        class="group glass-card rounded-2xl overflow-hidden hover-lift block">
-                        <div class="relative h-64 md:h-80 overflow-hidden">
-                            <img src="https://raw.githubusercontent.com/rutvik333/my-portfolio/refs/heads/main/Smoxygirl.png"
-                                alt="Smoxy Girl"
-                                class="object-fill w-full h-full transition-transform duration-500 group-hover:scale-110">
-                            <div
-                                class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                                <span
-                                    class="bg-primary text-white px-6 py-2 rounded-full font-medium flex items-center gap-2">Visit
-                                    Site <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                        stroke-linecap="round" stroke-linejoin="round">
-                                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-                                        <polyline points="15 3 21 3 21 9"></polyline>
-                                        <line x1="10" y1="14" x2="21" y2="3"></line>
-                                    </svg></span>
-                            </div>
-                        </div>
-                        <div class="p-6 flex items-center justify-between">
-                            <h3 class="font-display text-2xl font-bold text-foreground">Smoxy Girl</h3>
-                            <span class="md:hidden bg-primary/10 text-primary p-2.5 rounded-full">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
-                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                    stroke-linejoin="round">
-                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-                                    <polyline points="15 3 21 3 21 9"></polyline>
-                                    <line x1="10" y1="14" x2="21" y2="3"></line>
-                                </svg>
-                            </span>
-                        </div>
-                    </a>
-
-                    <!-- Project 4 -->
-                    <div class="group glass-card rounded-2xl overflow-hidden hover-lift block cursor-default">
-                        <div class="relative h-64 md:h-80 overflow-hidden">
-                            <img src="https://raw.githubusercontent.com/rutvik333/my-portfolio/refs/heads/main/empirecigar.png"
-                                alt="Empire Cigar"
-                                class="object-fill w-full h-full transition-transform duration-500 group-hover:scale-110 grayscale opacity-80">
-                            <div
-                                class="absolute top-4 right-4 bg-background/80 backdrop-blur-sm border border-white/10 px-3 py-1 rounded-full text-xs font-semibold text-primary">
-                                Under Development
-                            </div>
-                        </div>
-                        <div class="p-6">
-                            <h3 class="font-display text-2xl font-bold text-foreground">Empire Cigar</h3>
+                            </a>
                         </div>
                     </div>
 
-                    <!-- Project 5 -->
-                    <a href="https://getsimplemortgage.com/" target="_blank"
-                        class="group glass-card rounded-2xl overflow-hidden hover-lift block">
-                        <div class="relative h-64 md:h-80 overflow-hidden">
-                            <img src="https://raw.githubusercontent.com/rutvik333/my-portfolio/main/getsimplemortgage.png"
-                                alt="Get Simple Mortgage"
-                                class="object-fill w-full h-full transition-transform duration-500 group-hover:scale-110">
-                            <div
-                                class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                                <span
-                                    class="bg-primary text-white px-6 py-2 rounded-full font-medium flex items-center gap-2">Visit
-                                    Site <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                        stroke-linecap="round" stroke-linejoin="round">
-                                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-                                        <polyline points="15 3 21 3 21 9"></polyline>
-                                        <line x1="10" y1="14" x2="21" y2="3"></line>
-                                    </svg></span>
-                            </div>
-                        </div>
-                        <div class="p-6 flex items-center justify-between">
-                            <h3 class="font-display text-2xl font-bold text-foreground">Get Simple Mortgage</h3>
-                            <span class="md:hidden bg-primary/10 text-primary p-2.5 rounded-full">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
-                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                    stroke-linejoin="round">
-                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-                                    <polyline points="15 3 21 3 21 9"></polyline>
-                                    <line x1="10" y1="14" x2="21" y2="3"></line>
-                                </svg>
-                            </span>
-                        </div>
-                    </a>
+                    <!-- Project: Pipe420 B2C Store -->
+                    <div class="project-card group glass-card rounded-2xl overflow-hidden hover-lift flex flex-col justify-between border border-white/10 transition-all duration-300" data-category="case-study ecommerce dispensary">
+                        <div>
+                            <!-- Card Image Banner -->
+                            <div class="relative h-60 overflow-hidden bg-black/40">
+                                <img src="assets/projects/pipe420b2c/page_1.png" alt="Pipe420 B2C Store" class="w-full h-full object-cover object-top transition-transform duration-500 group-hover:scale-105">
+                                
+                                <!-- Top Badges -->
+                                <div class="absolute top-3 left-3 flex items-center gap-2">
+                                    <span class="bg-background/80 backdrop-blur-md border border-white/10 text-foreground text-[11px] font-medium px-2.5 py-1 rounded-full">
+                                        E-Commerce
+                                    </span>
+                                </div>
+                                <div class="absolute top-3 right-3">
+                                    <span class="bg-primary/90 text-white text-[11px] font-semibold px-2.5 py-1 rounded-full shadow-lg shadow-primary/30 flex items-center gap-1.5 backdrop-blur-sm">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                            <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                                            <circle cx="8.5" cy="8.5" r="1.5"></circle>
+                                            <polyline points="21 15 16 10 5 21"></polyline>
+                                        </svg>
+                                        5 Pages View
+                                    </span>
+                                </div>
 
-                    <!-- Project 6 -->
-                    <a href="https://www.chekit.com/" target="_blank"
-                        class="group glass-card rounded-2xl overflow-hidden hover-lift block">
-                        <div class="relative h-64 md:h-80 overflow-hidden">
-                            <img src="https://raw.githubusercontent.com/rutvik333/my-portfolio/main/chekit.png"
-                                alt="Chekit"
-                                class="object-fill w-full h-full transition-transform duration-500 group-hover:scale-110">
-                            <div
-                                class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                                <span
-                                    class="bg-primary text-white px-6 py-2 rounded-full font-medium flex items-center gap-2">Visit
-                                    Site <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                        stroke-linecap="round" stroke-linejoin="round">
-                                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-                                        <polyline points="15 3 21 3 21 9"></polyline>
-                                        <line x1="10" y1="14" x2="21" y2="3"></line>
-                                    </svg></span>
+                                <!-- Overlay Hover Buttons -->
+                                <div class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center gap-3 p-4">
+                                    <a href="projects/pipe420b2c.html" class="px-4 py-2 rounded-xl text-xs font-semibold text-white bg-primary hover:bg-primary/90 transition-all shadow-lg shadow-primary/30 flex items-center gap-1.5">
+                                        <span>Case Study</span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                            <polyline points="9 18 15 12 9 6"></polyline>
+                                        </svg>
+                                    </a>
+                                    <a href="https://pipe420b2c.brainbeandev.com/" target="_blank" rel="noopener noreferrer" class="px-4 py-2 rounded-xl text-xs font-semibold text-foreground bg-white/10 hover:bg-white/20 border border-white/15 transition-all flex items-center gap-1.5">
+                                        <span>Live Site</span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                            <polyline points="15 3 21 3 21 9"></polyline>
+                                            <line x1="10" y1="14" x2="21" y2="3"></line>
+                                        </svg>
+                                    </a>
+                                </div>
                             </div>
-                        </div>
-                        <div class="p-6 flex items-center justify-between">
-                            <h3 class="font-display text-2xl font-bold text-foreground">Chekit</h3>
-                            <span class="md:hidden bg-primary/10 text-primary p-2.5 rounded-full">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
-                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                    stroke-linejoin="round">
-                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-                                    <polyline points="15 3 21 3 21 9"></polyline>
-                                    <line x1="10" y1="14" x2="21" y2="3"></line>
-                                </svg>
-                            </span>
-                        </div>
-                    </a>
 
-                    <!-- Project 7 -->
-                    <a href="https://pipe420.com" target="_blank"
-                        class="group glass-card rounded-2xl overflow-hidden hover-lift block">
-                        <div class="relative h-64 md:h-80 overflow-hidden">
-                            <img src="pipe420b2c.png"
-                                alt="Pipe420 B2C"
-                                class="object-fill w-full h-full transition-transform duration-500 group-hover:scale-110">
-                            <div
-                                class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                                <span
-                                    class="bg-primary text-white px-6 py-2 rounded-full font-medium flex items-center gap-2">Visit
-                                    Site <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                        stroke-linecap="round" stroke-linejoin="round">
-                                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-                                        <polyline points="15 3 21 3 21 9"></polyline>
-                                        <line x1="10" y1="14" x2="21" y2="3"></line>
-                                    </svg></span>
+                            <!-- Card Body -->
+                            <div class="p-6">
+                                <div class="flex items-center justify-between gap-2 mb-2">
+                                    <h3 class="font-display text-xl font-bold text-foreground group-hover:text-primary transition-colors truncate">
+                                        Pipe420 B2C Store
+                                    </h3>
+                                </div>
+                                <p class="text-xs text-muted-foreground line-clamp-2 mb-4 leading-relaxed">
+                                    Modern, high-converting digital platform developed for Pipe420 B2C Store.
+                                </p>
+                                <div class="flex flex-wrap gap-1.5 mb-2">
+                                    <span class="px-2 py-0.5 rounded text-[11px] bg-white/5 border border-white/10 text-muted-foreground">WooCommerce</span><span class="px-2 py-0.5 rounded text-[11px] bg-white/5 border border-white/10 text-muted-foreground">WordPress</span><span class="px-2 py-0.5 rounded text-[11px] bg-white/5 border border-white/10 text-muted-foreground">Custom CSS</span>
+                                </div>
                             </div>
                         </div>
-                        <div class="p-6 flex items-center justify-between">
-                            <h3 class="font-display text-2xl font-bold text-foreground">Pipe420 B2C</h3>
-                            <span class="md:hidden bg-primary/10 text-primary p-2.5 rounded-full">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
-                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                    stroke-linejoin="round">
-                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-                                    <polyline points="15 3 21 3 21 9"></polyline>
-                                    <line x1="10" y1="14" x2="21" y2="3"></line>
-                                </svg>
-                            </span>
-                        </div>
-                    </a>
 
-                    <!-- Project 8 -->
-                    <a href="https://citysmokeshop.com/" target="_blank"
-                        class="group glass-card rounded-2xl overflow-hidden hover-lift block">
-                        <div class="relative h-64 md:h-80 overflow-hidden">
-                            <img src="citysmokeshop.png"
-                                alt="City Smoke Shop"
-                                class="object-fill w-full h-full transition-transform duration-500 group-hover:scale-110">
-                            <div
-                                class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                                <span
-                                    class="bg-primary text-white px-6 py-2 rounded-full font-medium flex items-center gap-2">Visit
-                                    Site <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                        stroke-linecap="round" stroke-linejoin="round">
-                                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-                                        <polyline points="15 3 21 3 21 9"></polyline>
-                                        <line x1="10" y1="14" x2="21" y2="3"></line>
-                                    </svg></span>
-                            </div>
-                        </div>
-                        <div class="p-6 flex items-center justify-between">
-                            <h3 class="font-display text-2xl font-bold text-foreground">City Smoke Shop</h3>
-                            <span class="md:hidden bg-primary/10 text-primary p-2.5 rounded-full">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
-                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                    stroke-linejoin="round">
+                        <!-- Card Footer Link -->
+                        <div class="px-6 pb-6 pt-2 border-t border-white/5 flex items-center justify-between text-xs">
+                            <a href="projects/pipe420b2c.html" class="font-semibold text-primary hover:text-primary/80 flex items-center gap-1 transition-colors">
+                                <span>Explore 5 Screen Views</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                                    <polyline points="12 5 19 12 12 19"></polyline>
+                                </svg>
+                            </a>
+                            <a href="https://pipe420b2c.brainbeandev.com/" target="_blank" rel="noopener noreferrer" class="text-muted-foreground hover:text-foreground transition-colors" title="Visit live site">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                     <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
                                     <polyline points="15 3 21 3 21 9"></polyline>
                                     <line x1="10" y1="14" x2="21" y2="3"></line>
                                 </svg>
-                            </span>
+                            </a>
                         </div>
-                    </a>
+                    </div>
 
-                    <!-- Project 9 -->
-                    <a href="https://coachingundcorrections.de/" target="_blank"
-                        class="group glass-card rounded-2xl overflow-hidden hover-lift block">
-                        <div class="relative h-64 md:h-80 overflow-hidden">
-                            <img src="coachingundcorrections.png"
-                                alt="Coaching und Corrections"
-                                class="object-fill w-full h-full transition-transform duration-500 group-hover:scale-110">
-                            <div
-                                class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                                <span
-                                    class="bg-primary text-white px-6 py-2 rounded-full font-medium flex items-center gap-2">Visit
-                                    Site <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                        stroke-linecap="round" stroke-linejoin="round">
-                                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-                                        <polyline points="15 3 21 3 21 9"></polyline>
-                                        <line x1="10" y1="14" x2="21" y2="3"></line>
-                                    </svg></span>
-                            </div>
-                        </div>
-                        <div class="p-6 flex items-center justify-between">
-                            <h3 class="font-display text-2xl font-bold text-foreground">Coaching und Corrections</h3>
-                            <span class="md:hidden bg-primary/10 text-primary p-2.5 rounded-full">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
-                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                    stroke-linejoin="round">
-                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-                                    <polyline points="15 3 21 3 21 9"></polyline>
-                                    <line x1="10" y1="14" x2="21" y2="3"></line>
-                                </svg>
-                            </span>
-                        </div>
-                    </a>
+                    <!-- Project: E-Commerce Ops -->
+                    <div class="project-card group glass-card rounded-2xl overflow-hidden hover-lift flex flex-col justify-between border border-white/10 transition-all duration-300" data-category="case-study operations">
+                        <div>
+                            <!-- Card Image Banner -->
+                            <div class="relative h-60 overflow-hidden bg-black/40">
+                                <img src="assets/projects/ecommerce-ops/page_1.png" alt="E-Commerce Ops" class="w-full h-full object-cover object-top transition-transform duration-500 group-hover:scale-105">
+                                
+                                <!-- Top Badges -->
+                                <div class="absolute top-3 left-3 flex items-center gap-2">
+                                    <span class="bg-background/80 backdrop-blur-md border border-white/10 text-foreground text-[11px] font-medium px-2.5 py-1 rounded-full">
+                                        Agency & Operations
+                                    </span>
+                                </div>
+                                <div class="absolute top-3 right-3">
+                                    <span class="bg-primary/90 text-white text-[11px] font-semibold px-2.5 py-1 rounded-full shadow-lg shadow-primary/30 flex items-center gap-1.5 backdrop-blur-sm">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                            <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                                            <circle cx="8.5" cy="8.5" r="1.5"></circle>
+                                            <polyline points="21 15 16 10 5 21"></polyline>
+                                        </svg>
+                                        5 Pages View
+                                    </span>
+                                </div>
 
-                    <!-- Project 10 -->
-                    <a href="https://astrobooks.in/" target="_blank"
-                        class="group glass-card rounded-2xl overflow-hidden hover-lift block">
-                        <div class="relative h-64 md:h-80 overflow-hidden">
-                            <img src="astrobooks.png"
-                                alt="Astrobooks"
-                                class="object-fill w-full h-full transition-transform duration-500 group-hover:scale-110">
-                            <div
-                                class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                                <span
-                                    class="bg-primary text-white px-6 py-2 rounded-full font-medium flex items-center gap-2">Visit
-                                    Site <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                        stroke-linecap="round" stroke-linejoin="round">
-                                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-                                        <polyline points="15 3 21 3 21 9"></polyline>
-                                        <line x1="10" y1="14" x2="21" y2="3"></line>
-                                    </svg></span>
+                                <!-- Overlay Hover Buttons -->
+                                <div class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center gap-3 p-4">
+                                    <a href="projects/ecommerce-ops.html" class="px-4 py-2 rounded-xl text-xs font-semibold text-white bg-primary hover:bg-primary/90 transition-all shadow-lg shadow-primary/30 flex items-center gap-1.5">
+                                        <span>Case Study</span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                            <polyline points="9 18 15 12 9 6"></polyline>
+                                        </svg>
+                                    </a>
+                                    <a href="https://ecommerce-ops.com/" target="_blank" rel="noopener noreferrer" class="px-4 py-2 rounded-xl text-xs font-semibold text-foreground bg-white/10 hover:bg-white/20 border border-white/15 transition-all flex items-center gap-1.5">
+                                        <span>Live Site</span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                            <polyline points="15 3 21 3 21 9"></polyline>
+                                            <line x1="10" y1="14" x2="21" y2="3"></line>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <!-- Card Body -->
+                            <div class="p-6">
+                                <div class="flex items-center justify-between gap-2 mb-2">
+                                    <h3 class="font-display text-xl font-bold text-foreground group-hover:text-primary transition-colors truncate">
+                                        E-Commerce Ops
+                                    </h3>
+                                </div>
+                                <p class="text-xs text-muted-foreground line-clamp-2 mb-4 leading-relaxed">
+                                    Modern, high-converting digital platform developed for E-Commerce Ops.
+                                </p>
+                                <div class="flex flex-wrap gap-1.5 mb-2">
+                                    <span class="px-2 py-0.5 rounded text-[11px] bg-white/5 border border-white/10 text-muted-foreground">Webflow / WordPress</span><span class="px-2 py-0.5 rounded text-[11px] bg-white/5 border border-white/10 text-muted-foreground">Modern UI</span><span class="px-2 py-0.5 rounded text-[11px] bg-white/5 border border-white/10 text-muted-foreground">Interactive Elements</span>
+                                </div>
                             </div>
                         </div>
-                        <div class="p-6 flex items-center justify-between">
-                            <h3 class="font-display text-2xl font-bold text-foreground">Astrobooks</h3>
-                            <span class="md:hidden bg-primary/10 text-primary p-2.5 rounded-full">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
-                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                    stroke-linejoin="round">
+
+                        <!-- Card Footer Link -->
+                        <div class="px-6 pb-6 pt-2 border-t border-white/5 flex items-center justify-between text-xs">
+                            <a href="projects/ecommerce-ops.html" class="font-semibold text-primary hover:text-primary/80 flex items-center gap-1 transition-colors">
+                                <span>Explore 5 Screen Views</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                                    <polyline points="12 5 19 12 12 19"></polyline>
+                                </svg>
+                            </a>
+                            <a href="https://ecommerce-ops.com/" target="_blank" rel="noopener noreferrer" class="text-muted-foreground hover:text-foreground transition-colors" title="Visit live site">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                     <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
                                     <polyline points="15 3 21 3 21 9"></polyline>
                                     <line x1="10" y1="14" x2="21" y2="3"></line>
                                 </svg>
-                            </span>
+                            </a>
                         </div>
-                    </a>
+                    </div>
+
+                    <!-- Project: E-Smoke & Vape -->
+                    <div class="project-card group glass-card rounded-2xl overflow-hidden hover-lift flex flex-col justify-between border border-white/10 transition-all duration-300" data-category="case-study ecommerce dispensary">
+                        <div>
+                            <!-- Card Image Banner -->
+                            <div class="relative h-60 overflow-hidden bg-black/40">
+                                <img src="assets/projects/esmokeandvape/page_1.png" alt="E-Smoke & Vape" class="w-full h-full object-cover object-top transition-transform duration-500 group-hover:scale-105">
+                                
+                                <!-- Top Badges -->
+                                <div class="absolute top-3 left-3 flex items-center gap-2">
+                                    <span class="bg-background/80 backdrop-blur-md border border-white/10 text-foreground text-[11px] font-medium px-2.5 py-1 rounded-full">
+                                        E-Commerce & Retail
+                                    </span>
+                                </div>
+                                <div class="absolute top-3 right-3">
+                                    <span class="bg-primary/90 text-white text-[11px] font-semibold px-2.5 py-1 rounded-full shadow-lg shadow-primary/30 flex items-center gap-1.5 backdrop-blur-sm">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                            <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                                            <circle cx="8.5" cy="8.5" r="1.5"></circle>
+                                            <polyline points="21 15 16 10 5 21"></polyline>
+                                        </svg>
+                                        5 Pages View
+                                    </span>
+                                </div>
+
+                                <!-- Overlay Hover Buttons -->
+                                <div class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center gap-3 p-4">
+                                    <a href="projects/esmokeandvape.html" class="px-4 py-2 rounded-xl text-xs font-semibold text-white bg-primary hover:bg-primary/90 transition-all shadow-lg shadow-primary/30 flex items-center gap-1.5">
+                                        <span>Case Study</span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                            <polyline points="9 18 15 12 9 6"></polyline>
+                                        </svg>
+                                    </a>
+                                    <a href="https://esmokeandvape.brainbeandev.com/" target="_blank" rel="noopener noreferrer" class="px-4 py-2 rounded-xl text-xs font-semibold text-foreground bg-white/10 hover:bg-white/20 border border-white/15 transition-all flex items-center gap-1.5">
+                                        <span>Live Site</span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                            <polyline points="15 3 21 3 21 9"></polyline>
+                                            <line x1="10" y1="14" x2="21" y2="3"></line>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <!-- Card Body -->
+                            <div class="p-6">
+                                <div class="flex items-center justify-between gap-2 mb-2">
+                                    <h3 class="font-display text-xl font-bold text-foreground group-hover:text-primary transition-colors truncate">
+                                        E-Smoke & Vape
+                                    </h3>
+                                </div>
+                                <p class="text-xs text-muted-foreground line-clamp-2 mb-4 leading-relaxed">
+                                    Modern, high-converting digital platform developed for E-Smoke & Vape.
+                                </p>
+                                <div class="flex flex-wrap gap-1.5 mb-2">
+                                    <span class="px-2 py-0.5 rounded text-[11px] bg-white/5 border border-white/10 text-muted-foreground">WooCommerce</span><span class="px-2 py-0.5 rounded text-[11px] bg-white/5 border border-white/10 text-muted-foreground">WordPress</span><span class="px-2 py-0.5 rounded text-[11px] bg-white/5 border border-white/10 text-muted-foreground">Age Verification</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Card Footer Link -->
+                        <div class="px-6 pb-6 pt-2 border-t border-white/5 flex items-center justify-between text-xs">
+                            <a href="projects/esmokeandvape.html" class="font-semibold text-primary hover:text-primary/80 flex items-center gap-1 transition-colors">
+                                <span>Explore 5 Screen Views</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                                    <polyline points="12 5 19 12 12 19"></polyline>
+                                </svg>
+                            </a>
+                            <a href="https://esmokeandvape.brainbeandev.com/" target="_blank" rel="noopener noreferrer" class="text-muted-foreground hover:text-foreground transition-colors" title="Visit live site">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                    <polyline points="15 3 21 3 21 9"></polyline>
+                                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Project: Pickpackify -->
+                    <div class="project-card group glass-card rounded-2xl overflow-hidden hover-lift flex flex-col justify-between border border-white/10 transition-all duration-300" data-category="case-study operations ecommerce">
+                        <div>
+                            <!-- Card Image Banner -->
+                            <div class="relative h-60 overflow-hidden bg-black/40">
+                                <img src="assets/projects/pickpackify/page_1.png" alt="Pickpackify" class="w-full h-full object-cover object-top transition-transform duration-500 group-hover:scale-105">
+                                
+                                <!-- Top Badges -->
+                                <div class="absolute top-3 left-3 flex items-center gap-2">
+                                    <span class="bg-background/80 backdrop-blur-md border border-white/10 text-foreground text-[11px] font-medium px-2.5 py-1 rounded-full">
+                                        Logistics & Supply Chain
+                                    </span>
+                                </div>
+                                <div class="absolute top-3 right-3">
+                                    <span class="bg-primary/90 text-white text-[11px] font-semibold px-2.5 py-1 rounded-full shadow-lg shadow-primary/30 flex items-center gap-1.5 backdrop-blur-sm">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                            <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                                            <circle cx="8.5" cy="8.5" r="1.5"></circle>
+                                            <polyline points="21 15 16 10 5 21"></polyline>
+                                        </svg>
+                                        5 Pages View
+                                    </span>
+                                </div>
+
+                                <!-- Overlay Hover Buttons -->
+                                <div class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center gap-3 p-4">
+                                    <a href="projects/pickpackify.html" class="px-4 py-2 rounded-xl text-xs font-semibold text-white bg-primary hover:bg-primary/90 transition-all shadow-lg shadow-primary/30 flex items-center gap-1.5">
+                                        <span>Case Study</span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                            <polyline points="9 18 15 12 9 6"></polyline>
+                                        </svg>
+                                    </a>
+                                    <a href="https://pickpackify.com/" target="_blank" rel="noopener noreferrer" class="px-4 py-2 rounded-xl text-xs font-semibold text-foreground bg-white/10 hover:bg-white/20 border border-white/15 transition-all flex items-center gap-1.5">
+                                        <span>Live Site</span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                            <polyline points="15 3 21 3 21 9"></polyline>
+                                            <line x1="10" y1="14" x2="21" y2="3"></line>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <!-- Card Body -->
+                            <div class="p-6">
+                                <div class="flex items-center justify-between gap-2 mb-2">
+                                    <h3 class="font-display text-xl font-bold text-foreground group-hover:text-primary transition-colors truncate">
+                                        Pickpackify
+                                    </h3>
+                                </div>
+                                <p class="text-xs text-muted-foreground line-clamp-2 mb-4 leading-relaxed">
+                                    Modern, high-converting digital platform developed for Pickpackify.
+                                </p>
+                                <div class="flex flex-wrap gap-1.5 mb-2">
+                                    <span class="px-2 py-0.5 rounded text-[11px] bg-white/5 border border-white/10 text-muted-foreground">Modern Web Design</span><span class="px-2 py-0.5 rounded text-[11px] bg-white/5 border border-white/10 text-muted-foreground">Tailwind CSS</span><span class="px-2 py-0.5 rounded text-[11px] bg-white/5 border border-white/10 text-muted-foreground">Interactive UI</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Card Footer Link -->
+                        <div class="px-6 pb-6 pt-2 border-t border-white/5 flex items-center justify-between text-xs">
+                            <a href="projects/pickpackify.html" class="font-semibold text-primary hover:text-primary/80 flex items-center gap-1 transition-colors">
+                                <span>Explore 5 Screen Views</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                                    <polyline points="12 5 19 12 12 19"></polyline>
+                                </svg>
+                            </a>
+                            <a href="https://pickpackify.com/" target="_blank" rel="noopener noreferrer" class="text-muted-foreground hover:text-foreground transition-colors" title="Visit live site">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                    <polyline points="15 3 21 3 21 9"></polyline>
+                                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Project: Vapor Soul -->
+                    <div class="project-card group glass-card rounded-2xl overflow-hidden hover-lift flex flex-col justify-between border border-white/10 transition-all duration-300" data-category="case-study ecommerce dispensary">
+                        <div>
+                            <!-- Card Image Banner -->
+                            <div class="relative h-60 overflow-hidden bg-black/40">
+                                <img src="assets/projects/vaporsoul/page_1.png" alt="Vapor Soul" class="w-full h-full object-cover object-top transition-transform duration-500 group-hover:scale-105">
+                                
+                                <!-- Top Badges -->
+                                <div class="absolute top-3 left-3 flex items-center gap-2">
+                                    <span class="bg-background/80 backdrop-blur-md border border-white/10 text-foreground text-[11px] font-medium px-2.5 py-1 rounded-full">
+                                        E-Commerce & Lifestyle
+                                    </span>
+                                </div>
+                                <div class="absolute top-3 right-3">
+                                    <span class="bg-primary/90 text-white text-[11px] font-semibold px-2.5 py-1 rounded-full shadow-lg shadow-primary/30 flex items-center gap-1.5 backdrop-blur-sm">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                            <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                                            <circle cx="8.5" cy="8.5" r="1.5"></circle>
+                                            <polyline points="21 15 16 10 5 21"></polyline>
+                                        </svg>
+                                        5 Pages View
+                                    </span>
+                                </div>
+
+                                <!-- Overlay Hover Buttons -->
+                                <div class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center gap-3 p-4">
+                                    <a href="projects/vaporsoul.html" class="px-4 py-2 rounded-xl text-xs font-semibold text-white bg-primary hover:bg-primary/90 transition-all shadow-lg shadow-primary/30 flex items-center gap-1.5">
+                                        <span>Case Study</span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                            <polyline points="9 18 15 12 9 6"></polyline>
+                                        </svg>
+                                    </a>
+                                    <a href="https://vaporsoul.brainbeandev.com/" target="_blank" rel="noopener noreferrer" class="px-4 py-2 rounded-xl text-xs font-semibold text-foreground bg-white/10 hover:bg-white/20 border border-white/15 transition-all flex items-center gap-1.5">
+                                        <span>Live Site</span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                            <polyline points="15 3 21 3 21 9"></polyline>
+                                            <line x1="10" y1="14" x2="21" y2="3"></line>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <!-- Card Body -->
+                            <div class="p-6">
+                                <div class="flex items-center justify-between gap-2 mb-2">
+                                    <h3 class="font-display text-xl font-bold text-foreground group-hover:text-primary transition-colors truncate">
+                                        Vapor Soul
+                                    </h3>
+                                </div>
+                                <p class="text-xs text-muted-foreground line-clamp-2 mb-4 leading-relaxed">
+                                    Modern, high-converting digital platform developed for Vapor Soul.
+                                </p>
+                                <div class="flex flex-wrap gap-1.5 mb-2">
+                                    <span class="px-2 py-0.5 rounded text-[11px] bg-white/5 border border-white/10 text-muted-foreground">WordPress</span><span class="px-2 py-0.5 rounded text-[11px] bg-white/5 border border-white/10 text-muted-foreground">WooCommerce</span><span class="px-2 py-0.5 rounded text-[11px] bg-white/5 border border-white/10 text-muted-foreground">Mobile Optimized</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Card Footer Link -->
+                        <div class="px-6 pb-6 pt-2 border-t border-white/5 flex items-center justify-between text-xs">
+                            <a href="projects/vaporsoul.html" class="font-semibold text-primary hover:text-primary/80 flex items-center gap-1 transition-colors">
+                                <span>Explore 5 Screen Views</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                                    <polyline points="12 5 19 12 12 19"></polyline>
+                                </svg>
+                            </a>
+                            <a href="https://vaporsoul.brainbeandev.com/" target="_blank" rel="noopener noreferrer" class="text-muted-foreground hover:text-foreground transition-colors" title="Visit live site">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                    <polyline points="15 3 21 3 21 9"></polyline>
+                                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Project: Releaf Med Card -->
+                    <div class="project-card group glass-card rounded-2xl overflow-hidden hover-lift flex flex-col justify-between border border-white/10 transition-all duration-300" data-category="case-study healthcare">
+                        <div>
+                            <!-- Card Image Banner -->
+                            <div class="relative h-60 overflow-hidden bg-black/40">
+                                <img src="assets/projects/releafmedcard/page_1.png" alt="Releaf Med Card" class="w-full h-full object-cover object-top transition-transform duration-500 group-hover:scale-105">
+                                
+                                <!-- Top Badges -->
+                                <div class="absolute top-3 left-3 flex items-center gap-2">
+                                    <span class="bg-background/80 backdrop-blur-md border border-white/10 text-foreground text-[11px] font-medium px-2.5 py-1 rounded-full">
+                                        Healthcare & Telehealth
+                                    </span>
+                                </div>
+                                <div class="absolute top-3 right-3">
+                                    <span class="bg-primary/90 text-white text-[11px] font-semibold px-2.5 py-1 rounded-full shadow-lg shadow-primary/30 flex items-center gap-1.5 backdrop-blur-sm">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                            <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                                            <circle cx="8.5" cy="8.5" r="1.5"></circle>
+                                            <polyline points="21 15 16 10 5 21"></polyline>
+                                        </svg>
+                                        5 Pages View
+                                    </span>
+                                </div>
+
+                                <!-- Overlay Hover Buttons -->
+                                <div class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center gap-3 p-4">
+                                    <a href="projects/releafmedcard.html" class="px-4 py-2 rounded-xl text-xs font-semibold text-white bg-primary hover:bg-primary/90 transition-all shadow-lg shadow-primary/30 flex items-center gap-1.5">
+                                        <span>Case Study</span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                            <polyline points="9 18 15 12 9 6"></polyline>
+                                        </svg>
+                                    </a>
+                                    <a href="https://releafmedcard.com/" target="_blank" rel="noopener noreferrer" class="px-4 py-2 rounded-xl text-xs font-semibold text-foreground bg-white/10 hover:bg-white/20 border border-white/15 transition-all flex items-center gap-1.5">
+                                        <span>Live Site</span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                            <polyline points="15 3 21 3 21 9"></polyline>
+                                            <line x1="10" y1="14" x2="21" y2="3"></line>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <!-- Card Body -->
+                            <div class="p-6">
+                                <div class="flex items-center justify-between gap-2 mb-2">
+                                    <h3 class="font-display text-xl font-bold text-foreground group-hover:text-primary transition-colors truncate">
+                                        Releaf Med Card
+                                    </h3>
+                                </div>
+                                <p class="text-xs text-muted-foreground line-clamp-2 mb-4 leading-relaxed">
+                                    Modern, high-converting digital platform developed for Releaf Med Card.
+                                </p>
+                                <div class="flex flex-wrap gap-1.5 mb-2">
+                                    <span class="px-2 py-0.5 rounded text-[11px] bg-white/5 border border-white/10 text-muted-foreground">Telehealth Portal</span><span class="px-2 py-0.5 rounded text-[11px] bg-white/5 border border-white/10 text-muted-foreground">WordPress</span><span class="px-2 py-0.5 rounded text-[11px] bg-white/5 border border-white/10 text-muted-foreground">HIPAA-Compliant UI</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Card Footer Link -->
+                        <div class="px-6 pb-6 pt-2 border-t border-white/5 flex items-center justify-between text-xs">
+                            <a href="projects/releafmedcard.html" class="font-semibold text-primary hover:text-primary/80 flex items-center gap-1 transition-colors">
+                                <span>Explore 5 Screen Views</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                                    <polyline points="12 5 19 12 12 19"></polyline>
+                                </svg>
+                            </a>
+                            <a href="https://releafmedcard.com/" target="_blank" rel="noopener noreferrer" class="text-muted-foreground hover:text-foreground transition-colors" title="Visit live site">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                    <polyline points="15 3 21 3 21 9"></polyline>
+                                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Project: The Pizza Maker -->
+                    <div class="project-card group glass-card rounded-2xl overflow-hidden hover-lift flex flex-col justify-between border border-white/10 transition-all duration-300" data-category="case-study food-lifestyle">
+                        <div>
+                            <!-- Card Image Banner -->
+                            <div class="relative h-60 overflow-hidden bg-black/40">
+                                <img src="assets/projects/thepizzamaker/page_1.png" alt="The Pizza Maker" class="w-full h-full object-cover object-top transition-transform duration-500 group-hover:scale-105">
+                                
+                                <!-- Top Badges -->
+                                <div class="absolute top-3 left-3 flex items-center gap-2">
+                                    <span class="bg-background/80 backdrop-blur-md border border-white/10 text-foreground text-[11px] font-medium px-2.5 py-1 rounded-full">
+                                        Food & Restaurant
+                                    </span>
+                                </div>
+                                <div class="absolute top-3 right-3">
+                                    <span class="bg-primary/90 text-white text-[11px] font-semibold px-2.5 py-1 rounded-full shadow-lg shadow-primary/30 flex items-center gap-1.5 backdrop-blur-sm">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                            <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                                            <circle cx="8.5" cy="8.5" r="1.5"></circle>
+                                            <polyline points="21 15 16 10 5 21"></polyline>
+                                        </svg>
+                                        5 Pages View
+                                    </span>
+                                </div>
+
+                                <!-- Overlay Hover Buttons -->
+                                <div class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center gap-3 p-4">
+                                    <a href="projects/thepizzamaker.html" class="px-4 py-2 rounded-xl text-xs font-semibold text-white bg-primary hover:bg-primary/90 transition-all shadow-lg shadow-primary/30 flex items-center gap-1.5">
+                                        <span>Case Study</span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                            <polyline points="9 18 15 12 9 6"></polyline>
+                                        </svg>
+                                    </a>
+                                    <a href="https://thepizzamaker.brainbeandev.com/" target="_blank" rel="noopener noreferrer" class="px-4 py-2 rounded-xl text-xs font-semibold text-foreground bg-white/10 hover:bg-white/20 border border-white/15 transition-all flex items-center gap-1.5">
+                                        <span>Live Site</span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                            <polyline points="15 3 21 3 21 9"></polyline>
+                                            <line x1="10" y1="14" x2="21" y2="3"></line>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <!-- Card Body -->
+                            <div class="p-6">
+                                <div class="flex items-center justify-between gap-2 mb-2">
+                                    <h3 class="font-display text-xl font-bold text-foreground group-hover:text-primary transition-colors truncate">
+                                        The Pizza Maker
+                                    </h3>
+                                </div>
+                                <p class="text-xs text-muted-foreground line-clamp-2 mb-4 leading-relaxed">
+                                    Modern, high-converting digital platform developed for The Pizza Maker.
+                                </p>
+                                <div class="flex flex-wrap gap-1.5 mb-2">
+                                    <span class="px-2 py-0.5 rounded text-[11px] bg-white/5 border border-white/10 text-muted-foreground">Online Ordering</span><span class="px-2 py-0.5 rounded text-[11px] bg-white/5 border border-white/10 text-muted-foreground">Menu Architecture</span><span class="px-2 py-0.5 rounded text-[11px] bg-white/5 border border-white/10 text-muted-foreground">Interactive UI</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Card Footer Link -->
+                        <div class="px-6 pb-6 pt-2 border-t border-white/5 flex items-center justify-between text-xs">
+                            <a href="projects/thepizzamaker.html" class="font-semibold text-primary hover:text-primary/80 flex items-center gap-1 transition-colors">
+                                <span>Explore 5 Screen Views</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                                    <polyline points="12 5 19 12 12 19"></polyline>
+                                </svg>
+                            </a>
+                            <a href="https://thepizzamaker.brainbeandev.com/" target="_blank" rel="noopener noreferrer" class="text-muted-foreground hover:text-foreground transition-colors" title="Visit live site">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                    <polyline points="15 3 21 3 21 9"></polyline>
+                                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Project: FiniFacts -->
+                    <div class="project-card group glass-card rounded-2xl overflow-hidden hover-lift flex flex-col justify-between border border-white/10 transition-all duration-300" data-category="case-study operations">
+                        <div>
+                            <!-- Card Image Banner -->
+                            <div class="relative h-60 overflow-hidden bg-black/40">
+                                <img src="assets/projects/finifacts/page_1.png" alt="FiniFacts" class="w-full h-full object-cover object-top transition-transform duration-500 group-hover:scale-105">
+                                
+                                <!-- Top Badges -->
+                                <div class="absolute top-3 left-3 flex items-center gap-2">
+                                    <span class="bg-background/80 backdrop-blur-md border border-white/10 text-foreground text-[11px] font-medium px-2.5 py-1 rounded-full">
+                                        Finance & Consulting
+                                    </span>
+                                </div>
+                                <div class="absolute top-3 right-3">
+                                    <span class="bg-primary/90 text-white text-[11px] font-semibold px-2.5 py-1 rounded-full shadow-lg shadow-primary/30 flex items-center gap-1.5 backdrop-blur-sm">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                            <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                                            <circle cx="8.5" cy="8.5" r="1.5"></circle>
+                                            <polyline points="21 15 16 10 5 21"></polyline>
+                                        </svg>
+                                        5 Pages View
+                                    </span>
+                                </div>
+
+                                <!-- Overlay Hover Buttons -->
+                                <div class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center gap-3 p-4">
+                                    <a href="projects/finifacts.html" class="px-4 py-2 rounded-xl text-xs font-semibold text-white bg-primary hover:bg-primary/90 transition-all shadow-lg shadow-primary/30 flex items-center gap-1.5">
+                                        <span>Case Study</span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                            <polyline points="9 18 15 12 9 6"></polyline>
+                                        </svg>
+                                    </a>
+                                    <a href="https://finifacts.brainbeandev.com/" target="_blank" rel="noopener noreferrer" class="px-4 py-2 rounded-xl text-xs font-semibold text-foreground bg-white/10 hover:bg-white/20 border border-white/15 transition-all flex items-center gap-1.5">
+                                        <span>Live Site</span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                            <polyline points="15 3 21 3 21 9"></polyline>
+                                            <line x1="10" y1="14" x2="21" y2="3"></line>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <!-- Card Body -->
+                            <div class="p-6">
+                                <div class="flex items-center justify-between gap-2 mb-2">
+                                    <h3 class="font-display text-xl font-bold text-foreground group-hover:text-primary transition-colors truncate">
+                                        FiniFacts
+                                    </h3>
+                                </div>
+                                <p class="text-xs text-muted-foreground line-clamp-2 mb-4 leading-relaxed">
+                                    Modern, high-converting digital platform developed for FiniFacts.
+                                </p>
+                                <div class="flex flex-wrap gap-1.5 mb-2">
+                                    <span class="px-2 py-0.5 rounded text-[11px] bg-white/5 border border-white/10 text-muted-foreground">Corporate Website</span><span class="px-2 py-0.5 rounded text-[11px] bg-white/5 border border-white/10 text-muted-foreground">Lead Funnel</span><span class="px-2 py-0.5 rounded text-[11px] bg-white/5 border border-white/10 text-muted-foreground">Financial Portal</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Card Footer Link -->
+                        <div class="px-6 pb-6 pt-2 border-t border-white/5 flex items-center justify-between text-xs">
+                            <a href="projects/finifacts.html" class="font-semibold text-primary hover:text-primary/80 flex items-center gap-1 transition-colors">
+                                <span>Explore 5 Screen Views</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                                    <polyline points="12 5 19 12 12 19"></polyline>
+                                </svg>
+                            </a>
+                            <a href="https://finifacts.brainbeandev.com/" target="_blank" rel="noopener noreferrer" class="text-muted-foreground hover:text-foreground transition-colors" title="Visit live site">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                    <polyline points="15 3 21 3 21 9"></polyline>
+                                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Project: Buena Vida - Hydration -->
+                    <div class="project-card group glass-card rounded-2xl overflow-hidden hover-lift flex flex-col justify-between border border-white/10 transition-all duration-300" data-category="case-study food-lifestyle">
+                        <div>
+                            <!-- Card Image Banner -->
+                            <div class="relative h-60 overflow-hidden bg-black/40">
+                                <img src="assets/projects/buenavida-restaurant/page_1.png" alt="Buena Vida - Hydration" class="w-full h-full object-cover object-top transition-transform duration-500 group-hover:scale-105">
+                                
+                                <!-- Top Badges -->
+                                <div class="absolute top-3 left-3 flex items-center gap-2">
+                                    <span class="bg-background/80 backdrop-blur-md border border-white/10 text-foreground text-[11px] font-medium px-2.5 py-1 rounded-full">
+                                        Beverage & Lifestyle
+                                    </span>
+                                </div>
+                                <div class="absolute top-3 right-3">
+                                    <span class="bg-primary/90 text-white text-[11px] font-semibold px-2.5 py-1 rounded-full shadow-lg shadow-primary/30 flex items-center gap-1.5 backdrop-blur-sm">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                            <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                                            <circle cx="8.5" cy="8.5" r="1.5"></circle>
+                                            <polyline points="21 15 16 10 5 21"></polyline>
+                                        </svg>
+                                        5 Pages View
+                                    </span>
+                                </div>
+
+                                <!-- Overlay Hover Buttons -->
+                                <div class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center gap-3 p-4">
+                                    <a href="projects/buenavida-restaurant.html" class="px-4 py-2 rounded-xl text-xs font-semibold text-white bg-primary hover:bg-primary/90 transition-all shadow-lg shadow-primary/30 flex items-center gap-1.5">
+                                        <span>Case Study</span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                            <polyline points="9 18 15 12 9 6"></polyline>
+                                        </svg>
+                                    </a>
+                                    <a href="https://buenavida.brainbeandev.com/buena-vida/" target="_blank" rel="noopener noreferrer" class="px-4 py-2 rounded-xl text-xs font-semibold text-foreground bg-white/10 hover:bg-white/20 border border-white/15 transition-all flex items-center gap-1.5">
+                                        <span>Live Site</span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                            <polyline points="15 3 21 3 21 9"></polyline>
+                                            <line x1="10" y1="14" x2="21" y2="3"></line>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <!-- Card Body -->
+                            <div class="p-6">
+                                <div class="flex items-center justify-between gap-2 mb-2">
+                                    <h3 class="font-display text-xl font-bold text-foreground group-hover:text-primary transition-colors truncate">
+                                        Buena Vida - Hydration
+                                    </h3>
+                                </div>
+                                <p class="text-xs text-muted-foreground line-clamp-2 mb-4 leading-relaxed">
+                                    Modern, high-converting digital platform developed for Buena Vida - Hydration.
+                                </p>
+                                <div class="flex flex-wrap gap-1.5 mb-2">
+                                    <span class="px-2 py-0.5 rounded text-[11px] bg-white/5 border border-white/10 text-muted-foreground">Brand Experience</span><span class="px-2 py-0.5 rounded text-[11px] bg-white/5 border border-white/10 text-muted-foreground">Smooth Scrolling</span><span class="px-2 py-0.5 rounded text-[11px] bg-white/5 border border-white/10 text-muted-foreground">Product Showcase</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Card Footer Link -->
+                        <div class="px-6 pb-6 pt-2 border-t border-white/5 flex items-center justify-between text-xs">
+                            <a href="projects/buenavida-restaurant.html" class="font-semibold text-primary hover:text-primary/80 flex items-center gap-1 transition-colors">
+                                <span>Explore 5 Screen Views</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                                    <polyline points="12 5 19 12 12 19"></polyline>
+                                </svg>
+                            </a>
+                            <a href="https://buenavida.brainbeandev.com/buena-vida/" target="_blank" rel="noopener noreferrer" class="text-muted-foreground hover:text-foreground transition-colors" title="Visit live site">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                    <polyline points="15 3 21 3 21 9"></polyline>
+                                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Project: Buena Vida - Spring Water -->
+                    <div class="project-card group glass-card rounded-2xl overflow-hidden hover-lift flex flex-col justify-between border border-white/10 transition-all duration-300" data-category="case-study food-lifestyle ecommerce">
+                        <div>
+                            <!-- Card Image Banner -->
+                            <div class="relative h-60 overflow-hidden bg-black/40">
+                                <img src="assets/projects/buenavida-lifestyle/page_1.png" alt="Buena Vida - Spring Water" class="w-full h-full object-cover object-top transition-transform duration-500 group-hover:scale-105">
+                                
+                                <!-- Top Badges -->
+                                <div class="absolute top-3 left-3 flex items-center gap-2">
+                                    <span class="bg-background/80 backdrop-blur-md border border-white/10 text-foreground text-[11px] font-medium px-2.5 py-1 rounded-full">
+                                        E-Commerce & Beverage
+                                    </span>
+                                </div>
+                                <div class="absolute top-3 right-3">
+                                    <span class="bg-primary/90 text-white text-[11px] font-semibold px-2.5 py-1 rounded-full shadow-lg shadow-primary/30 flex items-center gap-1.5 backdrop-blur-sm">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                            <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                                            <circle cx="8.5" cy="8.5" r="1.5"></circle>
+                                            <polyline points="21 15 16 10 5 21"></polyline>
+                                        </svg>
+                                        5 Pages View
+                                    </span>
+                                </div>
+
+                                <!-- Overlay Hover Buttons -->
+                                <div class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center gap-3 p-4">
+                                    <a href="projects/buenavida-lifestyle.html" class="px-4 py-2 rounded-xl text-xs font-semibold text-white bg-primary hover:bg-primary/90 transition-all shadow-lg shadow-primary/30 flex items-center gap-1.5">
+                                        <span>Case Study</span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                            <polyline points="9 18 15 12 9 6"></polyline>
+                                        </svg>
+                                    </a>
+                                    <a href="https://buenavida.brainbeandev.com/buena/" target="_blank" rel="noopener noreferrer" class="px-4 py-2 rounded-xl text-xs font-semibold text-foreground bg-white/10 hover:bg-white/20 border border-white/15 transition-all flex items-center gap-1.5">
+                                        <span>Live Site</span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                            <polyline points="15 3 21 3 21 9"></polyline>
+                                            <line x1="10" y1="14" x2="21" y2="3"></line>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <!-- Card Body -->
+                            <div class="p-6">
+                                <div class="flex items-center justify-between gap-2 mb-2">
+                                    <h3 class="font-display text-xl font-bold text-foreground group-hover:text-primary transition-colors truncate">
+                                        Buena Vida - Spring Water
+                                    </h3>
+                                </div>
+                                <p class="text-xs text-muted-foreground line-clamp-2 mb-4 leading-relaxed">
+                                    Modern, high-converting digital platform developed for Buena Vida - Spring Water.
+                                </p>
+                                <div class="flex flex-wrap gap-1.5 mb-2">
+                                    <span class="px-2 py-0.5 rounded text-[11px] bg-white/5 border border-white/10 text-muted-foreground">Luxury Product Presentation</span><span class="px-2 py-0.5 rounded text-[11px] bg-white/5 border border-white/10 text-muted-foreground">Responsive Design</span><span class="px-2 py-0.5 rounded text-[11px] bg-white/5 border border-white/10 text-muted-foreground">Custom Animations</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Card Footer Link -->
+                        <div class="px-6 pb-6 pt-2 border-t border-white/5 flex items-center justify-between text-xs">
+                            <a href="projects/buenavida-lifestyle.html" class="font-semibold text-primary hover:text-primary/80 flex items-center gap-1 transition-colors">
+                                <span>Explore 5 Screen Views</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                                    <polyline points="12 5 19 12 12 19"></polyline>
+                                </svg>
+                            </a>
+                            <a href="https://buenavida.brainbeandev.com/buena/" target="_blank" rel="noopener noreferrer" class="text-muted-foreground hover:text-foreground transition-colors" title="Visit live site">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                    <polyline points="15 3 21 3 21 9"></polyline>
+                                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Project: Releaf Specialists -->
+                    <div class="project-card group glass-card rounded-2xl overflow-hidden hover-lift flex flex-col justify-between border border-white/10 transition-all duration-300" data-category="case-study healthcare">
+                        <div>
+                            <!-- Card Image Banner -->
+                            <div class="relative h-60 overflow-hidden bg-black/40">
+                                <img src="assets/projects/releafspecialists/page_1.png" alt="Releaf Specialists" class="w-full h-full object-cover object-top transition-transform duration-500 group-hover:scale-105">
+                                
+                                <!-- Top Badges -->
+                                <div class="absolute top-3 left-3 flex items-center gap-2">
+                                    <span class="bg-background/80 backdrop-blur-md border border-white/10 text-foreground text-[11px] font-medium px-2.5 py-1 rounded-full">
+                                        Healthcare & Telemedicine
+                                    </span>
+                                </div>
+                                <div class="absolute top-3 right-3">
+                                    <span class="bg-primary/90 text-white text-[11px] font-semibold px-2.5 py-1 rounded-full shadow-lg shadow-primary/30 flex items-center gap-1.5 backdrop-blur-sm">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                            <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                                            <circle cx="8.5" cy="8.5" r="1.5"></circle>
+                                            <polyline points="21 15 16 10 5 21"></polyline>
+                                        </svg>
+                                        5 Pages View
+                                    </span>
+                                </div>
+
+                                <!-- Overlay Hover Buttons -->
+                                <div class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center gap-3 p-4">
+                                    <a href="projects/releafspecialists.html" class="px-4 py-2 rounded-xl text-xs font-semibold text-white bg-primary hover:bg-primary/90 transition-all shadow-lg shadow-primary/30 flex items-center gap-1.5">
+                                        <span>Case Study</span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                            <polyline points="9 18 15 12 9 6"></polyline>
+                                        </svg>
+                                    </a>
+                                    <a href="https://staging.brainbeandev.com/releafspecialists/" target="_blank" rel="noopener noreferrer" class="px-4 py-2 rounded-xl text-xs font-semibold text-foreground bg-white/10 hover:bg-white/20 border border-white/15 transition-all flex items-center gap-1.5">
+                                        <span>Live Site</span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                            <polyline points="15 3 21 3 21 9"></polyline>
+                                            <line x1="10" y1="14" x2="21" y2="3"></line>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <!-- Card Body -->
+                            <div class="p-6">
+                                <div class="flex items-center justify-between gap-2 mb-2">
+                                    <h3 class="font-display text-xl font-bold text-foreground group-hover:text-primary transition-colors truncate">
+                                        Releaf Specialists
+                                    </h3>
+                                </div>
+                                <p class="text-xs text-muted-foreground line-clamp-2 mb-4 leading-relaxed">
+                                    Modern, high-converting digital platform developed for Releaf Specialists.
+                                </p>
+                                <div class="flex flex-wrap gap-1.5 mb-2">
+                                    <span class="px-2 py-0.5 rounded text-[11px] bg-white/5 border border-white/10 text-muted-foreground">GreenHash Theme</span><span class="px-2 py-0.5 rounded text-[11px] bg-white/5 border border-white/10 text-muted-foreground">Patient Consultation Flow</span><span class="px-2 py-0.5 rounded text-[11px] bg-white/5 border border-white/10 text-muted-foreground">State Certification Portal</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Card Footer Link -->
+                        <div class="px-6 pb-6 pt-2 border-t border-white/5 flex items-center justify-between text-xs">
+                            <a href="projects/releafspecialists.html" class="font-semibold text-primary hover:text-primary/80 flex items-center gap-1 transition-colors">
+                                <span>Explore 5 Screen Views</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                                    <polyline points="12 5 19 12 12 19"></polyline>
+                                </svg>
+                            </a>
+                            <a href="https://staging.brainbeandev.com/releafspecialists/" target="_blank" rel="noopener noreferrer" class="text-muted-foreground hover:text-foreground transition-colors" title="Visit live site">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                    <polyline points="15 3 21 3 21 9"></polyline>
+                                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Project: Bard Boys Oxnard - Concept 1 -->
+                    <div class="project-card group glass-card rounded-2xl overflow-hidden hover-lift flex flex-col justify-between border border-white/10 transition-all duration-300" data-category="case-study dispensary ecommerce">
+                        <div>
+                            <!-- Card Image Banner -->
+                            <div class="relative h-60 overflow-hidden bg-black/40">
+                                <img src="assets/projects/bardboysdemo1/page_1.png" alt="Bard Boys Oxnard - Concept 1" class="w-full h-full object-cover object-top transition-transform duration-500 group-hover:scale-105">
+                                
+                                <!-- Top Badges -->
+                                <div class="absolute top-3 left-3 flex items-center gap-2">
+                                    <span class="bg-background/80 backdrop-blur-md border border-white/10 text-foreground text-[11px] font-medium px-2.5 py-1 rounded-full">
+                                        Dispensary & Retail
+                                    </span>
+                                </div>
+                                <div class="absolute top-3 right-3">
+                                    <span class="bg-primary/90 text-white text-[11px] font-semibold px-2.5 py-1 rounded-full shadow-lg shadow-primary/30 flex items-center gap-1.5 backdrop-blur-sm">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                            <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                                            <circle cx="8.5" cy="8.5" r="1.5"></circle>
+                                            <polyline points="21 15 16 10 5 21"></polyline>
+                                        </svg>
+                                        5 Pages View
+                                    </span>
+                                </div>
+
+                                <!-- Overlay Hover Buttons -->
+                                <div class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center gap-3 p-4">
+                                    <a href="projects/bardboysdemo1.html" class="px-4 py-2 rounded-xl text-xs font-semibold text-white bg-primary hover:bg-primary/90 transition-all shadow-lg shadow-primary/30 flex items-center gap-1.5">
+                                        <span>Case Study</span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                            <polyline points="9 18 15 12 9 6"></polyline>
+                                        </svg>
+                                    </a>
+                                    <a href="https://staging.brainbeandev.com/bardboysdemo1/" target="_blank" rel="noopener noreferrer" class="px-4 py-2 rounded-xl text-xs font-semibold text-foreground bg-white/10 hover:bg-white/20 border border-white/15 transition-all flex items-center gap-1.5">
+                                        <span>Live Site</span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                            <polyline points="15 3 21 3 21 9"></polyline>
+                                            <line x1="10" y1="14" x2="21" y2="3"></line>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <!-- Card Body -->
+                            <div class="p-6">
+                                <div class="flex items-center justify-between gap-2 mb-2">
+                                    <h3 class="font-display text-xl font-bold text-foreground group-hover:text-primary transition-colors truncate">
+                                        Bard Boys Oxnard - Concept 1
+                                    </h3>
+                                </div>
+                                <p class="text-xs text-muted-foreground line-clamp-2 mb-4 leading-relaxed">
+                                    Modern, high-converting digital platform developed for Bard Boys Oxnard - Concept 1.
+                                </p>
+                                <div class="flex flex-wrap gap-1.5 mb-2">
+                                    <span class="px-2 py-0.5 rounded text-[11px] bg-white/5 border border-white/10 text-muted-foreground">Interactive Menu</span><span class="px-2 py-0.5 rounded text-[11px] bg-white/5 border border-white/10 text-muted-foreground">Dispensary UX</span><span class="px-2 py-0.5 rounded text-[11px] bg-white/5 border border-white/10 text-muted-foreground">Age Verification</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Card Footer Link -->
+                        <div class="px-6 pb-6 pt-2 border-t border-white/5 flex items-center justify-between text-xs">
+                            <a href="projects/bardboysdemo1.html" class="font-semibold text-primary hover:text-primary/80 flex items-center gap-1 transition-colors">
+                                <span>Explore 5 Screen Views</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                                    <polyline points="12 5 19 12 12 19"></polyline>
+                                </svg>
+                            </a>
+                            <a href="https://staging.brainbeandev.com/bardboysdemo1/" target="_blank" rel="noopener noreferrer" class="text-muted-foreground hover:text-foreground transition-colors" title="Visit live site">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                    <polyline points="15 3 21 3 21 9"></polyline>
+                                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Project: Bard Boys Oxnard - Concept 2 -->
+                    <div class="project-card group glass-card rounded-2xl overflow-hidden hover-lift flex flex-col justify-between border border-white/10 transition-all duration-300" data-category="case-study dispensary ecommerce">
+                        <div>
+                            <!-- Card Image Banner -->
+                            <div class="relative h-60 overflow-hidden bg-black/40">
+                                <img src="assets/projects/bardboysdemo2/page_1.png" alt="Bard Boys Oxnard - Concept 2" class="w-full h-full object-cover object-top transition-transform duration-500 group-hover:scale-105">
+                                
+                                <!-- Top Badges -->
+                                <div class="absolute top-3 left-3 flex items-center gap-2">
+                                    <span class="bg-background/80 backdrop-blur-md border border-white/10 text-foreground text-[11px] font-medium px-2.5 py-1 rounded-full">
+                                        Dispensary & Retail
+                                    </span>
+                                </div>
+                                <div class="absolute top-3 right-3">
+                                    <span class="bg-primary/90 text-white text-[11px] font-semibold px-2.5 py-1 rounded-full shadow-lg shadow-primary/30 flex items-center gap-1.5 backdrop-blur-sm">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                            <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                                            <circle cx="8.5" cy="8.5" r="1.5"></circle>
+                                            <polyline points="21 15 16 10 5 21"></polyline>
+                                        </svg>
+                                        5 Pages View
+                                    </span>
+                                </div>
+
+                                <!-- Overlay Hover Buttons -->
+                                <div class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center gap-3 p-4">
+                                    <a href="projects/bardboysdemo2.html" class="px-4 py-2 rounded-xl text-xs font-semibold text-white bg-primary hover:bg-primary/90 transition-all shadow-lg shadow-primary/30 flex items-center gap-1.5">
+                                        <span>Case Study</span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                            <polyline points="9 18 15 12 9 6"></polyline>
+                                        </svg>
+                                    </a>
+                                    <a href="https://staging.brainbeandev.com/bardboysdemo2/" target="_blank" rel="noopener noreferrer" class="px-4 py-2 rounded-xl text-xs font-semibold text-foreground bg-white/10 hover:bg-white/20 border border-white/15 transition-all flex items-center gap-1.5">
+                                        <span>Live Site</span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                            <polyline points="15 3 21 3 21 9"></polyline>
+                                            <line x1="10" y1="14" x2="21" y2="3"></line>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <!-- Card Body -->
+                            <div class="p-6">
+                                <div class="flex items-center justify-between gap-2 mb-2">
+                                    <h3 class="font-display text-xl font-bold text-foreground group-hover:text-primary transition-colors truncate">
+                                        Bard Boys Oxnard - Concept 2
+                                    </h3>
+                                </div>
+                                <p class="text-xs text-muted-foreground line-clamp-2 mb-4 leading-relaxed">
+                                    Modern, high-converting digital platform developed for Bard Boys Oxnard - Concept 2.
+                                </p>
+                                <div class="flex flex-wrap gap-1.5 mb-2">
+                                    <span class="px-2 py-0.5 rounded text-[11px] bg-white/5 border border-white/10 text-muted-foreground">Dark Mode Aesthetics</span><span class="px-2 py-0.5 rounded text-[11px] bg-white/5 border border-white/10 text-muted-foreground">Live Inventory UI</span><span class="px-2 py-0.5 rounded text-[11px] bg-white/5 border border-white/10 text-muted-foreground">Mobile-First Design</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Card Footer Link -->
+                        <div class="px-6 pb-6 pt-2 border-t border-white/5 flex items-center justify-between text-xs">
+                            <a href="projects/bardboysdemo2.html" class="font-semibold text-primary hover:text-primary/80 flex items-center gap-1 transition-colors">
+                                <span>Explore 5 Screen Views</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                                    <polyline points="12 5 19 12 12 19"></polyline>
+                                </svg>
+                            </a>
+                            <a href="https://staging.brainbeandev.com/bardboysdemo2/" target="_blank" rel="noopener noreferrer" class="text-muted-foreground hover:text-foreground transition-colors" title="Visit live site">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                    <polyline points="15 3 21 3 21 9"></polyline>
+                                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Project: Bard Boys OX -->
+                    <div class="project-card group glass-card rounded-2xl overflow-hidden hover-lift flex flex-col justify-between border border-white/10 transition-all duration-300" data-category="case-study dispensary ecommerce">
+                        <div>
+                            <!-- Card Image Banner -->
+                            <div class="relative h-60 overflow-hidden bg-black/40">
+                                <img src="assets/projects/bardboysox/page_1.png" alt="Bard Boys OX" class="w-full h-full object-cover object-top transition-transform duration-500 group-hover:scale-105">
+                                
+                                <!-- Top Badges -->
+                                <div class="absolute top-3 left-3 flex items-center gap-2">
+                                    <span class="bg-background/80 backdrop-blur-md border border-white/10 text-foreground text-[11px] font-medium px-2.5 py-1 rounded-full">
+                                        Brand Showcase
+                                    </span>
+                                </div>
+                                <div class="absolute top-3 right-3">
+                                    <span class="bg-primary/90 text-white text-[11px] font-semibold px-2.5 py-1 rounded-full shadow-lg shadow-primary/30 flex items-center gap-1.5 backdrop-blur-sm">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                            <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                                            <circle cx="8.5" cy="8.5" r="1.5"></circle>
+                                            <polyline points="21 15 16 10 5 21"></polyline>
+                                        </svg>
+                                        5 Pages View
+                                    </span>
+                                </div>
+
+                                <!-- Overlay Hover Buttons -->
+                                <div class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center gap-3 p-4">
+                                    <a href="projects/bardboysox.html" class="px-4 py-2 rounded-xl text-xs font-semibold text-white bg-primary hover:bg-primary/90 transition-all shadow-lg shadow-primary/30 flex items-center gap-1.5">
+                                        <span>Case Study</span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                            <polyline points="9 18 15 12 9 6"></polyline>
+                                        </svg>
+                                    </a>
+                                    <a href="https://bardboysox.brainbeandev.com/" target="_blank" rel="noopener noreferrer" class="px-4 py-2 rounded-xl text-xs font-semibold text-foreground bg-white/10 hover:bg-white/20 border border-white/15 transition-all flex items-center gap-1.5">
+                                        <span>Live Site</span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                            <polyline points="15 3 21 3 21 9"></polyline>
+                                            <line x1="10" y1="14" x2="21" y2="3"></line>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <!-- Card Body -->
+                            <div class="p-6">
+                                <div class="flex items-center justify-between gap-2 mb-2">
+                                    <h3 class="font-display text-xl font-bold text-foreground group-hover:text-primary transition-colors truncate">
+                                        Bard Boys OX
+                                    </h3>
+                                </div>
+                                <p class="text-xs text-muted-foreground line-clamp-2 mb-4 leading-relaxed">
+                                    Modern, high-converting digital platform developed for Bard Boys OX.
+                                </p>
+                                <div class="flex flex-wrap gap-1.5 mb-2">
+                                    <span class="px-2 py-0.5 rounded text-[11px] bg-white/5 border border-white/10 text-muted-foreground">Dynamic Layout</span><span class="px-2 py-0.5 rounded text-[11px] bg-white/5 border border-white/10 text-muted-foreground">WordPress</span><span class="px-2 py-0.5 rounded text-[11px] bg-white/5 border border-white/10 text-muted-foreground">Custom Product Grid</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Card Footer Link -->
+                        <div class="px-6 pb-6 pt-2 border-t border-white/5 flex items-center justify-between text-xs">
+                            <a href="projects/bardboysox.html" class="font-semibold text-primary hover:text-primary/80 flex items-center gap-1 transition-colors">
+                                <span>Explore 5 Screen Views</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                                    <polyline points="12 5 19 12 12 19"></polyline>
+                                </svg>
+                            </a>
+                            <a href="https://bardboysox.brainbeandev.com/" target="_blank" rel="noopener noreferrer" class="text-muted-foreground hover:text-foreground transition-colors" title="Visit live site">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                    <polyline points="15 3 21 3 21 9"></polyline>
+                                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Legacy: Eagle Distro -->
+                    <div class="project-card group glass-card rounded-2xl overflow-hidden hover-lift flex flex-col justify-between border border-white/10 transition-all duration-300" data-category="ecommerce dispensary">
+                        <div>
+                            <div class="relative h-60 overflow-hidden bg-black/40">
+                                <img src="https://raw.githubusercontent.com/rutvik333/my-portfolio/refs/heads/main/EagleDistro.png" alt="Eagle Distro" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                                <div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                                    <a href="https://www.eagledistro.com/" target="_blank" rel="noopener noreferrer" class="bg-primary text-white px-5 py-2 rounded-xl text-xs font-semibold flex items-center gap-1.5 shadow-lg shadow-primary/30">
+                                        <span>Visit Site</span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                            <polyline points="15 3 21 3 21 9"></polyline>
+                                            <line x1="10" y1="14" x2="21" y2="3"></line>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="p-6">
+                                <div class="flex items-center justify-between mb-1">
+                                    <h3 class="font-display text-xl font-bold text-foreground group-hover:text-primary transition-colors">Eagle Distro</h3>
+                                </div>
+                                <p class="text-xs text-muted-foreground">E-Commerce Wholesale</p>
+                            </div>
+                        </div>
+                        <div class="px-6 pb-6 pt-2 border-t border-white/5 flex items-center justify-between text-xs">
+                            <a href="https://www.eagledistro.com/" target="_blank" rel="noopener noreferrer" class="font-medium text-primary hover:text-primary/80 flex items-center gap-1">
+                                <span>Visit Live Store</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                    <polyline points="15 3 21 3 21 9"></polyline>
+                                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Legacy: Empire Smoke -->
+                    <div class="project-card group glass-card rounded-2xl overflow-hidden hover-lift flex flex-col justify-between border border-white/10 transition-all duration-300" data-category="ecommerce dispensary">
+                        <div>
+                            <div class="relative h-60 overflow-hidden bg-black/40">
+                                <img src="https://raw.githubusercontent.com/rutvik333/my-portfolio/refs/heads/main/Empire%20Smoke.png" alt="Empire Smoke" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                                <div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                                    <a href="https://empiresmokedist.com/" target="_blank" rel="noopener noreferrer" class="bg-primary text-white px-5 py-2 rounded-xl text-xs font-semibold flex items-center gap-1.5 shadow-lg shadow-primary/30">
+                                        <span>Visit Site</span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                            <polyline points="15 3 21 3 21 9"></polyline>
+                                            <line x1="10" y1="14" x2="21" y2="3"></line>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="p-6">
+                                <div class="flex items-center justify-between mb-1">
+                                    <h3 class="font-display text-xl font-bold text-foreground group-hover:text-primary transition-colors">Empire Smoke</h3>
+                                </div>
+                                <p class="text-xs text-muted-foreground">Wholesale Distribution</p>
+                            </div>
+                        </div>
+                        <div class="px-6 pb-6 pt-2 border-t border-white/5 flex items-center justify-between text-xs">
+                            <a href="https://empiresmokedist.com/" target="_blank" rel="noopener noreferrer" class="font-medium text-primary hover:text-primary/80 flex items-center gap-1">
+                                <span>Visit Live Store</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                    <polyline points="15 3 21 3 21 9"></polyline>
+                                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Legacy: Smoxy Girl -->
+                    <div class="project-card group glass-card rounded-2xl overflow-hidden hover-lift flex flex-col justify-between border border-white/10 transition-all duration-300" data-category="ecommerce food-lifestyle">
+                        <div>
+                            <div class="relative h-60 overflow-hidden bg-black/40">
+                                <img src="https://raw.githubusercontent.com/rutvik333/my-portfolio/refs/heads/main/Smoxygirl.png" alt="Smoxy Girl" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                                <div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                                    <a href="https://smoxygirl.com/" target="_blank" rel="noopener noreferrer" class="bg-primary text-white px-5 py-2 rounded-xl text-xs font-semibold flex items-center gap-1.5 shadow-lg shadow-primary/30">
+                                        <span>Visit Site</span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                            <polyline points="15 3 21 3 21 9"></polyline>
+                                            <line x1="10" y1="14" x2="21" y2="3"></line>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="p-6">
+                                <div class="flex items-center justify-between mb-1">
+                                    <h3 class="font-display text-xl font-bold text-foreground group-hover:text-primary transition-colors">Smoxy Girl</h3>
+                                </div>
+                                <p class="text-xs text-muted-foreground">Lifestyle Brand</p>
+                            </div>
+                        </div>
+                        <div class="px-6 pb-6 pt-2 border-t border-white/5 flex items-center justify-between text-xs">
+                            <a href="https://smoxygirl.com/" target="_blank" rel="noopener noreferrer" class="font-medium text-primary hover:text-primary/80 flex items-center gap-1">
+                                <span>Visit Live Store</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                    <polyline points="15 3 21 3 21 9"></polyline>
+                                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Legacy: Empire Cigar -->
+                    <div class="project-card group glass-card rounded-2xl overflow-hidden hover-lift flex flex-col justify-between border border-white/10 transition-all duration-300 cursor-default" data-category="ecommerce">
+                        <div>
+                            <div class="relative h-60 overflow-hidden bg-black/40">
+                                <img src="https://raw.githubusercontent.com/rutvik333/my-portfolio/refs/heads/main/empirecigar.png" alt="Empire Cigar" class="w-full h-full object-cover grayscale opacity-80">
+                                <div class="absolute top-3 right-3 bg-background/80 backdrop-blur-sm border border-white/10 px-3 py-1 rounded-full text-xs font-semibold text-primary">
+                                    Under Development
+                                </div>
+                            </div>
+                            <div class="p-6">
+                                <h3 class="font-display text-xl font-bold text-foreground mb-1">Empire Cigar</h3>
+                                <p class="text-xs text-muted-foreground">Under Development</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Legacy: Get Simple Mortgage -->
+                    <div class="project-card group glass-card rounded-2xl overflow-hidden hover-lift flex flex-col justify-between border border-white/10 transition-all duration-300" data-category="operations">
+                        <div>
+                            <div class="relative h-60 overflow-hidden bg-black/40">
+                                <img src="https://raw.githubusercontent.com/rutvik333/my-portfolio/main/getsimplemortgage.png" alt="Get Simple Mortgage" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                                <div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                                    <a href="https://getsimplemortgage.com/" target="_blank" rel="noopener noreferrer" class="bg-primary text-white px-5 py-2 rounded-xl text-xs font-semibold flex items-center gap-1.5 shadow-lg shadow-primary/30">
+                                        <span>Visit Site</span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                            <polyline points="15 3 21 3 21 9"></polyline>
+                                            <line x1="10" y1="14" x2="21" y2="3"></line>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="p-6">
+                                <div class="flex items-center justify-between mb-1">
+                                    <h3 class="font-display text-xl font-bold text-foreground group-hover:text-primary transition-colors">Get Simple Mortgage</h3>
+                                </div>
+                                <p class="text-xs text-muted-foreground">Financial & Mortgage</p>
+                            </div>
+                        </div>
+                        <div class="px-6 pb-6 pt-2 border-t border-white/5 flex items-center justify-between text-xs">
+                            <a href="https://getsimplemortgage.com/" target="_blank" rel="noopener noreferrer" class="font-medium text-primary hover:text-primary/80 flex items-center gap-1">
+                                <span>Visit Live Store</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                    <polyline points="15 3 21 3 21 9"></polyline>
+                                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Legacy: Chekit -->
+                    <div class="project-card group glass-card rounded-2xl overflow-hidden hover-lift flex flex-col justify-between border border-white/10 transition-all duration-300" data-category="operations">
+                        <div>
+                            <div class="relative h-60 overflow-hidden bg-black/40">
+                                <img src="https://raw.githubusercontent.com/rutvik333/my-portfolio/main/chekit.png" alt="Chekit" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                                <div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                                    <a href="https://www.chekit.com/" target="_blank" rel="noopener noreferrer" class="bg-primary text-white px-5 py-2 rounded-xl text-xs font-semibold flex items-center gap-1.5 shadow-lg shadow-primary/30">
+                                        <span>Visit Site</span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                            <polyline points="15 3 21 3 21 9"></polyline>
+                                            <line x1="10" y1="14" x2="21" y2="3"></line>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="p-6">
+                                <div class="flex items-center justify-between mb-1">
+                                    <h3 class="font-display text-xl font-bold text-foreground group-hover:text-primary transition-colors">Chekit</h3>
+                                </div>
+                                <p class="text-xs text-muted-foreground">SaaS Platform</p>
+                            </div>
+                        </div>
+                        <div class="px-6 pb-6 pt-2 border-t border-white/5 flex items-center justify-between text-xs">
+                            <a href="https://www.chekit.com/" target="_blank" rel="noopener noreferrer" class="font-medium text-primary hover:text-primary/80 flex items-center gap-1">
+                                <span>Visit Live Store</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                    <polyline points="15 3 21 3 21 9"></polyline>
+                                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Legacy: Pipe420 B2C -->
+                    <div class="project-card group glass-card rounded-2xl overflow-hidden hover-lift flex flex-col justify-between border border-white/10 transition-all duration-300" data-category="ecommerce dispensary">
+                        <div>
+                            <div class="relative h-60 overflow-hidden bg-black/40">
+                                <img src="pipe420b2c.png" alt="Pipe420 B2C" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                                <div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                                    <a href="https://pipe420.com" target="_blank" rel="noopener noreferrer" class="bg-primary text-white px-5 py-2 rounded-xl text-xs font-semibold flex items-center gap-1.5 shadow-lg shadow-primary/30">
+                                        <span>Visit Site</span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                            <polyline points="15 3 21 3 21 9"></polyline>
+                                            <line x1="10" y1="14" x2="21" y2="3"></line>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="p-6">
+                                <div class="flex items-center justify-between mb-1">
+                                    <h3 class="font-display text-xl font-bold text-foreground group-hover:text-primary transition-colors">Pipe420 B2C</h3>
+                                </div>
+                                <p class="text-xs text-muted-foreground">Retail E-Commerce</p>
+                            </div>
+                        </div>
+                        <div class="px-6 pb-6 pt-2 border-t border-white/5 flex items-center justify-between text-xs">
+                            <a href="https://pipe420.com" target="_blank" rel="noopener noreferrer" class="font-medium text-primary hover:text-primary/80 flex items-center gap-1">
+                                <span>Visit Live Store</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                    <polyline points="15 3 21 3 21 9"></polyline>
+                                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Legacy: City Smoke Shop -->
+                    <div class="project-card group glass-card rounded-2xl overflow-hidden hover-lift flex flex-col justify-between border border-white/10 transition-all duration-300" data-category="ecommerce dispensary">
+                        <div>
+                            <div class="relative h-60 overflow-hidden bg-black/40">
+                                <img src="citysmokeshop.png" alt="City Smoke Shop" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                                <div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                                    <a href="https://citysmokeshop.com/" target="_blank" rel="noopener noreferrer" class="bg-primary text-white px-5 py-2 rounded-xl text-xs font-semibold flex items-center gap-1.5 shadow-lg shadow-primary/30">
+                                        <span>Visit Site</span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                            <polyline points="15 3 21 3 21 9"></polyline>
+                                            <line x1="10" y1="14" x2="21" y2="3"></line>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="p-6">
+                                <div class="flex items-center justify-between mb-1">
+                                    <h3 class="font-display text-xl font-bold text-foreground group-hover:text-primary transition-colors">City Smoke Shop</h3>
+                                </div>
+                                <p class="text-xs text-muted-foreground">Retail Storefront</p>
+                            </div>
+                        </div>
+                        <div class="px-6 pb-6 pt-2 border-t border-white/5 flex items-center justify-between text-xs">
+                            <a href="https://citysmokeshop.com/" target="_blank" rel="noopener noreferrer" class="font-medium text-primary hover:text-primary/80 flex items-center gap-1">
+                                <span>Visit Live Store</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                    <polyline points="15 3 21 3 21 9"></polyline>
+                                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Legacy: Coaching und Corrections -->
+                    <div class="project-card group glass-card rounded-2xl overflow-hidden hover-lift flex flex-col justify-between border border-white/10 transition-all duration-300" data-category="operations food-lifestyle">
+                        <div>
+                            <div class="relative h-60 overflow-hidden bg-black/40">
+                                <img src="coachingundcorrections.png" alt="Coaching und Corrections" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                                <div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                                    <a href="https://coachingundcorrections.de/" target="_blank" rel="noopener noreferrer" class="bg-primary text-white px-5 py-2 rounded-xl text-xs font-semibold flex items-center gap-1.5 shadow-lg shadow-primary/30">
+                                        <span>Visit Site</span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                            <polyline points="15 3 21 3 21 9"></polyline>
+                                            <line x1="10" y1="14" x2="21" y2="3"></line>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="p-6">
+                                <div class="flex items-center justify-between mb-1">
+                                    <h3 class="font-display text-xl font-bold text-foreground group-hover:text-primary transition-colors">Coaching und Corrections</h3>
+                                </div>
+                                <p class="text-xs text-muted-foreground">Consulting & Coaching</p>
+                            </div>
+                        </div>
+                        <div class="px-6 pb-6 pt-2 border-t border-white/5 flex items-center justify-between text-xs">
+                            <a href="https://coachingundcorrections.de/" target="_blank" rel="noopener noreferrer" class="font-medium text-primary hover:text-primary/80 flex items-center gap-1">
+                                <span>Visit Live Store</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                    <polyline points="15 3 21 3 21 9"></polyline>
+                                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Legacy: Astrobooks -->
+                    <div class="project-card group glass-card rounded-2xl overflow-hidden hover-lift flex flex-col justify-between border border-white/10 transition-all duration-300" data-category="operations">
+                        <div>
+                            <div class="relative h-60 overflow-hidden bg-black/40">
+                                <img src="astrobooks.png" alt="Astrobooks" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                                <div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                                    <a href="https://astrobooks.in/" target="_blank" rel="noopener noreferrer" class="bg-primary text-white px-5 py-2 rounded-xl text-xs font-semibold flex items-center gap-1.5 shadow-lg shadow-primary/30">
+                                        <span>Visit Site</span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                            <polyline points="15 3 21 3 21 9"></polyline>
+                                            <line x1="10" y1="14" x2="21" y2="3"></line>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="p-6">
+                                <div class="flex items-center justify-between mb-1">
+                                    <h3 class="font-display text-xl font-bold text-foreground group-hover:text-primary transition-colors">Astrobooks</h3>
+                                </div>
+                                <p class="text-xs text-muted-foreground">Accounting & SaaS</p>
+                            </div>
+                        </div>
+                        <div class="px-6 pb-6 pt-2 border-t border-white/5 flex items-center justify-between text-xs">
+                            <a href="https://astrobooks.in/" target="_blank" rel="noopener noreferrer" class="font-medium text-primary hover:text-primary/80 flex items-center gap-1">
+                                <span>Visit Live Store</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                    <polyline points="15 3 21 3 21 9"></polyline>
+                                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -989,6 +2199,41 @@
                     sessionStorage.setItem('modalSeen', 'true');
                 }
             }, 10000);
+        });
+    </script>
+
+    <!-- Portfolio Filter Script -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const filterBtns = document.querySelectorAll('#portfolioFilter .filter-btn');
+            const projectCards = document.querySelectorAll('#projectsGrid .project-card');
+
+            filterBtns.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    const filter = btn.getAttribute('data-filter');
+
+                    // Update button styling
+                    filterBtns.forEach(b => {
+                        b.classList.remove('active', 'bg-primary', 'text-white', 'shadow-lg', 'shadow-primary/25', 'border-transparent');
+                        b.classList.add('border-white/10', 'bg-white/5', 'text-muted-foreground');
+                    });
+                    btn.classList.add('active', 'bg-primary', 'text-white', 'shadow-lg', 'shadow-primary/25', 'border-transparent');
+                    btn.classList.remove('border-white/10', 'bg-white/5', 'text-muted-foreground');
+
+                    // Filter cards
+                    projectCards.forEach(card => {
+                        const categories = card.getAttribute('data-category') || '';
+                        if (filter === 'all' || categories.includes(filter)) {
+                            card.style.display = 'flex';
+                            setTimeout(() => { card.style.opacity = '1'; card.style.transform = 'translateY(0)'; }, 50);
+                        } else {
+                            card.style.opacity = '0';
+                            card.style.transform = 'translateY(10px)';
+                            setTimeout(() => { card.style.display = 'none'; }, 200);
+                        }
+                    });
+                });
+            });
         });
     </script>
 </body>

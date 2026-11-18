@@ -1,0 +1,287 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Explore Pit Stop Deiseil’s selection of CBD and hemp products, including infused beverages, oils, softgels, and topicals.">
+<title>Pit Stop Deiseil | CBD & Hemp Shop</title>
+<link rel="icon" type="image/png" sizes="64x64" href="assets/favicon.png">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800;900&family=DM+Sans:wght@400;500;600;700&display=swap');
+:root{--ink:#182117;--forest:#16251a;--deep:#0d1a11;--lime:#dffa82;--paper:#f7f7ee;--muted:#535e51;--line:#dcded1;--display:"Barlow Condensed","Arial Narrow",Impact,sans-serif}
+*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.5 "DM Sans",Arial,sans-serif}html{scroll-behavior:smooth}a{color:inherit;text-decoration:none}button{font:inherit;color:inherit;cursor:pointer}a:focus-visible,button:focus-visible,input:focus-visible,summary:focus-visible{outline:3px solid #72912a;outline-offset:4px}img{display:block;width:100%}.shell{width:min(1240px,calc(100% - 64px));margin:auto}.skip{position:fixed;left:1rem;top:-10rem;background:var(--lime);z-index:10;padding:10px}.skip:focus{top:1rem}.top{background:var(--lime);font-size:12px;font-weight:800;letter-spacing:.15em;text-align:center;padding:7px 12px;text-transform:uppercase}.header{background:var(--deep);color:#f9faef}.nav{display:flex;align-items:center;justify-content:space-between;gap:24px;min-height:82px}.logo{display:flex;align-items:center;gap:10px;font:800 25px/.84 var(--display);text-transform:uppercase;flex-shrink:0;letter-spacing:.045em}.logo img{width:67px;height:53px;object-fit:contain;background:#f5f5ea;border-radius:6px;padding:4px}.links,.actions{display:flex;align-items:center;gap:25px;font-size:14px;font-weight:700}.links a:hover,.actions a:hover,footer a:hover{color:var(--lime)}.search{display:flex;border:1px solid #575f52;border-radius:6px;overflow:hidden}.search input{color:white;background:none;border:0;padding:8px 10px;width:117px;font:inherit}.search input::placeholder{color:#d8ddd4}.search button{background:none;border:0;padding:0 9px}.search svg,.cart svg{width:19px;height:19px;vertical-align:middle}.mobile{display:none}
+.hero{background:radial-gradient(ellipse at 80% 38%,#536834 0%,#2b4328 30%,var(--forest) 67%);color:#f8faef;overflow:hidden}.hero-inner{display:grid;grid-template-columns:1fr 1fr;min-height:490px;align-items:center;position:relative;isolation:isolate}.hero-copy{padding:55px 0 65px;z-index:1}.kicker{font-size:11px;font-weight:800;letter-spacing:.15em;text-transform:uppercase}.hero .kicker{color:var(--lime)}h1,h2{font-family:var(--display);text-transform:uppercase;font-weight:800;line-height:.94;letter-spacing:-.025em;margin:0}h1{font-size:clamp(65px,8.4vw,125px);margin:16px 0 22px}h1 em{display:block;color:var(--lime);font-style:normal}.hero p{max-width:370px;color:#eef0df;margin:0 0 25px}.buttons{display:flex;gap:10px;flex-wrap:wrap}.btn{display:inline-flex;align-items:center;justify-content:center;gap:18px;min-height:48px;border-radius:5px;padding:0 17px;font-size:14px;font-weight:800;background:var(--lime);color:var(--deep);border:1px solid var(--lime)}.btn:hover{background:#f1ffc7}.btn.secondary{background:transparent;color:#f8faef;border-color:#8b9b7a}.btn.secondary:hover{background:#33452f}.visual{position:relative;width:114%;display:grid;place-items:center;margin-left:-8%;height:100%}.visual::before,.visual::after{content:"";position:absolute;width:74%;aspect-ratio:1;border:1px solid #dae9b447;border-radius:50%;z-index:-1}.visual::after{width:62%;border-color:#dae9b42c}.visual img{max-height:505px;object-fit:contain;filter:drop-shadow(0 22px 35px #0e180ea0)}.checker{height:9px;background:repeating-conic-gradient(#172818 0% 25%,#dffa82 0% 50%) 0/18px 18px}
+.section{padding:60px 0}.heading{display:flex;align-items:end;justify-content:space-between;gap:16px;margin:0 0 23px}.heading h2{font-size:clamp(41px,5.8vw,65px)}.heading .kicker{color:#536633;margin-bottom:8px;display:block}.text-link{font-size:14px;font-weight:800;border-bottom:1px solid;padding-bottom:3px;white-space:nowrap}.category-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:15px}.category{display:flex;flex-direction:column;justify-content:space-between;border-radius:10px;overflow:hidden;background:var(--tile);border:1px solid #17281815}.category img{height:155px;object-fit:contain;padding:10px 18px 0;mix-blend-mode:multiply;transition:transform .23s}.category:hover img,.product:hover img{transform:scale(1.045)}.category span{padding:10px 15px 14px;display:flex;justify-content:space-between;align-items:center;font-weight:800}.category b{font-size:22px}
+.featured{background:#eeefe4;border-block:1px solid var(--line)}.filters{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:22px}.filters[hidden]{display:none}.filters button{border:1px solid #a9b09d;background:transparent;border-radius:999px;font-size:13px;font-weight:700;padding:7px 13px}.filters button[aria-pressed=true]{background:var(--forest);color:white;border-color:var(--forest)}.products{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.product{background:#fff;border:1px solid #dcdfd2;border-radius:10px;overflow:hidden}.product[hidden]{display:none}.product-image{display:block;background:#f8f8f4;overflow:hidden}.product img{height:218px;object-fit:contain;padding:14px;mix-blend-mode:multiply;transition:transform .23s}.product-info{padding:15px}.product-info .kicker{color:#546342}.product h3{font-size:17px;line-height:1.25;margin:6px 0 12px}.product h3 a:hover{text-decoration:underline}.product-bottom{display:flex;justify-content:space-between;align-items:center;gap:10px}.round{display:grid;place-items:center;width:34px;height:34px;border-radius:50%;background:var(--lime);font-size:20px}.round:hover{background:#cbe56e}
+.about{display:grid;grid-template-columns:1.2fr 1fr;align-items:center;gap:25px;background:#dfe6cd;padding:40px;border-radius:10px}.about h2{font-size:clamp(40px,5vw,59px);margin:5px 0 12px}.about p{margin:0;color:#364334;max-width:500px}.about .buttons{justify-content:flex-end}.about .btn{background:var(--forest);color:white;border-color:var(--forest)}.about .btn.secondary{background:transparent;color:var(--forest)}.about .btn:hover{opacity:.8}footer{background:var(--deep);color:white;padding:38px 0 20px}.footer-main{display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap}.footer-links{display:flex;flex-wrap:wrap;gap:12px 22px;font-size:14px}.fine{border-top:1px solid #4a5948;margin:25px 0 0;padding-top:14px;font-size:12px;color:#d0d9c9}
+@media(max-width:980px){.nav{gap:14px}.links,.actions{gap:13px}.search input{width:86px}.hero-inner{min-height:410px}h1{font-size:clamp(62px,10vw,104px)}}
+@media(max-width:760px){.shell{width:calc(100% - 32px)}.nav{flex-wrap:wrap;padding:12px 0;gap:10px}.links{display:none}.mobile{display:block;position:relative}.mobile summary{cursor:pointer;font-size:14px;font-weight:700}.mobile div{position:absolute;z-index:4;right:0;top:30px;background:var(--deep);min-width:150px;border:1px solid #596c52;border-radius:5px;padding:12px;display:grid;gap:10px}.actions .account{display:none}.hero-inner{grid-template-columns:1fr;min-height:0}.hero-copy{padding:34px 0 0}.visual{width:100%;margin:0;height:auto;max-height:300px}.visual img{height:clamp(160px,52vw,280px)}.visual::before{width:min(52%,245px)}.visual::after{width:min(43%,205px)}h1{margin:10px 0 17px}.hero p{margin-bottom:17px}.section{padding:40px 0}.category-grid,.products{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.category img{height:120px}.category span{padding:7px 11px 10px;font-size:14px}.product img{height:155px;padding:9px}.product-info{padding:11px}.product h3{font-size:15px;min-height:38px}.about{grid-template-columns:1fr;padding:24px;gap:16px}.about .buttons{justify-content:flex-start}}@media(max-width:390px){.search input{width:58px}.logo{font-size:19px}.logo img{width:48px;height:40px}.heading{align-items:start}.text-link{font-size:12px}.product img{height:125px}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;transition:none!important}}
+
+.products{grid-template-columns:repeat(4,minmax(0,1fr))}
+.product{display:flex;flex-direction:column}
+.product-info{display:flex;flex-direction:column;flex:1}
+.product-bottom{margin-top:auto}
+.product-image{position:relative}
+.product-prices{display:flex;gap:8px;align-items:baseline;flex-wrap:wrap}
+.product-prices del{font-size:.88em;color:var(--muted)}
+.sale-badge{position:absolute;z-index:1;top:12px;left:12px;background:var(--lime);border-radius:4px;padding:4px 8px;font-size:12px;font-weight:800}
+.sale-layout{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,3fr);gap:16px}
+.sale-banner{border-radius:10px;background:radial-gradient(ellipse at 100% 0,#465c32,var(--deep) 75%);color:white;display:grid;align-content:center;padding:clamp(25px,5vw,64px);justify-items:start}
+.sale-banner h3{font:800 clamp(30px,5vw,58px)/.95 var(--display);text-transform:uppercase;margin:0 0 15px;color:var(--lime)}
+.sale-banner p{margin:0 0 18px}
+.more-section,.social-section{background:#eeefe4;border-block:1px solid var(--line)}
+.social-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;max-width:960px;margin:auto;align-items:start}
+.social-item{min-width:0;overflow:hidden;border:1px solid var(--line);border-radius:10px;background:white}
+.social-item blockquote{margin:0;min-height:145px;display:grid;place-items:center;text-align:center;padding:16px}
+.social-item iframe{display:block;width:100%!important;min-width:0!important;max-width:none!important;margin:0!important;box-shadow:none!important}
+.social-item a{color:var(--forest);font-weight:800;text-decoration:underline}
+@media(max-width:760px){.products{grid-template-columns:repeat(2,minmax(0,1fr))}.sale-layout,.social-grid{grid-template-columns:1fr}.sale-banner{grid-row:1}.sale-layout>.product{max-width:425px;width:100%}.social-grid{max-width:480px}}
+
+.products .product-image{aspect-ratio:1;display:block}
+.products .product-image img{width:100%;height:100%;padding:0;object-fit:cover;mix-blend-mode:normal}
+.deal{display:grid;grid-template-columns:1fr 1fr;overflow:hidden;border-radius:16px;background:radial-gradient(ellipse at 90% 12%,#415733,var(--deep) 74%);color:#f7f8ee}
+.deal-photo{position:relative;overflow:hidden;min-height:340px}
+.deal-photo img{position:absolute;width:100%;height:100%;object-fit:cover;object-position:center 49%}
+.deal-copy{padding:clamp(25px,5vw,72px);align-self:center;border-left:6px solid var(--lime)}
+.deal-copy .kicker{color:var(--lime)}
+.deal h2{font-size:clamp(39px,5.5vw,76px);margin:12px 0 20px}
+.deal-prices{display:flex;align-items:center;flex-wrap:wrap;gap:11px;margin-bottom:20px}
+.deal-prices strong{font-size:30px;color:var(--lime)}
+.deal-prices del{color:#cbd4c8}
+.deal-prices span{border:1px solid #849477;border-radius:999px;padding:4px 9px;font-size:12px}
+.social-section{background:var(--deep);color:#f7f8ee}
+.social-header,.social-brand{display:flex;align-items:center;gap:14px}
+.social-header{justify-content:space-between;flex-wrap:wrap;margin-bottom:20px}
+.social-brand img{width:54px;height:54px;object-fit:contain;background:#f5f5ea;border-radius:10px;padding:5px}
+.social-brand h2{font:800 clamp(20px,3vw,34px)/1.08 "DM Sans",Arial,sans-serif;text-transform:none;letter-spacing:-.04em}
+.social-brand .kicker{color:var(--lime)}
+.ig-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}
+.ig-tile{position:relative;isolation:isolate;display:grid;place-items:center;overflow:hidden;aspect-ratio:1;border-radius:10px;background:repeating-linear-gradient(135deg,transparent 0 20px,#ffffff12 20px 21px),linear-gradient(150deg,#587244,#192519);border:1px solid #738469}
+.ig-tile-2{background-color:#374836;background-image:radial-gradient(circle at 70% 22%,#758652,#243326 78%)}
+.ig-tile-3{background-color:#324c38;background-image:repeating-linear-gradient(45deg,#9caf6f20 0 1px,transparent 1px 21px),linear-gradient(145deg,#365444,#15231e)}
+.ig-tile-4{background-color:#344233;background-image:radial-gradient(circle at 20% 30%,#8a8052,#2e392c 70%)}
+.ig-photo{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-1}
+.ig-mark{display:grid;place-items:center;width:52px;height:52px;border:1px solid #e4f1d69e;border-radius:50%;background:#101a13b8;color:white;font-size:28px}
+.ig-label{position:absolute;inset:auto 0 0;display:flex;justify-content:space-between;padding:12px;background:#0e1a13df;font-size:13px;font-weight:800}
+.ig-tile:hover .ig-label{background:var(--lime);color:var(--deep)}
+.ig-dialog{border:0;border-radius:12px;padding:0;width:min(530px,calc(100% - 24px));max-height:90vh;color:var(--ink)}
+.ig-dialog::backdrop{background:#080f0ade}
+.ig-dialog-bar{position:sticky;top:0;z-index:1;background:var(--paper);padding:8px 15px;display:flex;justify-content:space-between;align-items:center;font-size:14px;font-weight:800}
+.ig-dialog-bar button{border:0;background:transparent;font-size:28px;line-height:1.2}
+.ig-content iframe{width:100%;height:min(660px,75vh);border:0;display:block}
+@media(max-width:760px){.deal{grid-template-columns:1fr}.deal-photo{min-height:0;aspect-ratio:1.15}.deal-copy{border-left:0;border-top:5px solid var(--lime)}.ig-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+
+.site-footer{padding:48px 0 23px;border-top:1px solid #526249}
+.footer-grid{display:grid;grid-template-columns:minmax(0,2.25fr) repeat(3,minmax(0,1fr));gap:28px}
+.footer-grid h2{font:800 13px/1.25 "DM Sans",Arial,sans-serif;letter-spacing:.095em;color:var(--lime);margin:0 0 12px}
+.footer-brand .logo{display:inline-flex;margin-bottom:16px}
+.footer-brand p{margin:0;max-width:430px;color:#d0d9c9;font-size:14px}
+.footer-grid nav a{display:block;width:fit-content;margin-bottom:8px;font-size:14px}
+.footer-grid nav a span{color:var(--lime)}
+@media(max-width:760px){.footer-grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:20px 13px}.footer-brand{grid-column:1/-1}}
+@media(max-width:410px){.footer-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.products .product-image img{object-fit:contain;padding:8%;}
+.top-inner{display:flex;justify-content:space-between;gap:6px 20px}.top-links{display:flex;align-items:center;flex-wrap:wrap;gap:4px 15px}.top-links a:hover{text-decoration:underline}.top{font-size:12px;letter-spacing:0;text-transform:none}.veteran-heading{display:flex;align-items:center;gap:12px;margin-bottom:12px}.veteran-heading img{width:65px;height:65px;object-fit:contain}.veteran-heading h2{margin:0}@media(max-width:600px){.top-inner{flex-wrap:wrap;justify-content:center}.top-links{justify-content:center}}
+
+.mobile-menu-toggle{display:none}
+.mobile-drawer{position:fixed;inset:0 0 0 auto;margin:0;width:min(85vw,350px);max-width:none;height:100dvh;max-height:none;border:0;padding:18px 22px;background:var(--deep);color:#f7f8ee;box-shadow:-12px 0 36px #0006}
+.mobile-drawer::backdrop{background:#080f0ab8}
+.mobile-drawer-head{display:flex;justify-content:space-between;align-items:center;padding-bottom:10px;border-bottom:1px solid #526249}
+.mobile-drawer-head button{width:44px;height:44px;background:transparent;border:1px solid #526249;border-radius:6px;font-size:26px;line-height:1}
+.mobile-drawer nav a{display:block;padding:13px 0;border-bottom:1px solid #526249;font-weight:700}
+.mobile-drawer nav a:hover,.mobile-drawer nav a:focus-visible{color:var(--lime)}
+@media(max-width:760px){
+ .top{display:none}
+ .header .nav{display:grid;grid-template-columns:minmax(0,1fr) auto auto;align-items:center;gap:10px;padding:12px 0}
+ .header .nav .actions{display:contents}
+ .header .nav>.logo{grid-row:1;grid-column:1;justify-self:start}
+ .header .nav .cart{grid-row:1;grid-column:2;display:grid;place-items:center;width:44px;height:44px}
+ .header .nav .mobile-menu-toggle{grid-row:1;grid-column:3;display:inline-flex;align-items:center;justify-content:center;gap:6px;min-height:44px;padding:0 10px;background:transparent;border:1px solid #526249;border-radius:6px;font-size:13px;font-weight:800}
+ .mobile-menu-toggle svg{width:18px;height:18px}
+ .header .nav .search{grid-row:2;grid-column:1/-1;display:flex;width:100%;min-height:44px;background:#18271c}
+ .header .nav .search input[type=search]{flex:1;min-width:0;width:100%;padding:8px 12px;font-size:16px}
+ .header .nav .search button{width:44px;flex:0 0 44px}
+}
+@media(prefers-reduced-motion:no-preference){.mobile-drawer[open]{animation:menu-in .2s ease-out}@keyframes menu-in{from{transform:translateX(100%)}to{transform:translateX(0)}}}
+
+.social-section{overflow:hidden;overflow:clip}
+.section.social-section{padding-bottom:0}
+.instagram-car-lane{display:grid;place-items:center;margin:65px auto 0}
+.instagram-car{display:block;width:min(82%,clamp(210px,42vw,475px));height:auto;object-fit:contain;filter:drop-shadow(0 12px 19px #0008)}
+.hero .visual img{transform:translate3d(var(--car-x,0px),0,0)}
+.instagram-car{transform:translate3d(var(--car-x,0px),0,0) scaleX(-1)}
+@media(prefers-reduced-motion:reduce){.hero .visual img{transform:none}.instagram-car{transform:scaleX(-1)}}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<div class="top"><div class="shell top-inner">
+<div class="top-links"><a href="tel:+19126854367">912-685-4367</a><a href="mailto:Pitstopdeiseil@gmail.com">Pitstopdeiseil@gmail.com</a></div>
+<div class="top-links"><a href="https://pitstopdeiseil.com/affiliate-registration/">Become an Affiliate</a><a href="https://pitstopdeiseil.com/affliate-login/">Affiliate Login</a></div>
+</div></div>
+<header class="header"><div class="shell nav">
+<a class="logo" href="https://pitstopdeiseil.com/" aria-label="Pit Stop Deiseil home"><img src="assets/logo.webp" alt="Pit Stop Deiseil" decoding="async"><span aria-hidden="true">Pit Stop<br>Deiseil</span></a>
+<nav class="links" aria-label="Main navigation"><a href="https://pitstopdeiseil.com/shop-left-sidebar/">Shop</a><a href="#categories">Categories</a><a href="#on-sale">On Sale</a><a href="https://pitstopdeiseil.com/lab-reports/">Lab Reports</a><a href="https://pitstopdeiseil.com/about/">About</a></nav>
+<div class="actions">
+<form class="search" role="search" action="https://pitstopdeiseil.com/" method="get"><input type="search" name="s" placeholder="Search" aria-label="Search products" required><input type="hidden" name="post_type" value="product"><button aria-label="Submit search"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 4 4"/></svg></button></form>
+<a class="account" href="https://pitstopdeiseil.com/my-account/">Account</a><a class="cart" href="https://pitstopdeiseil.com/cart/" aria-label="Cart"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M4 8h16l1 13H3zM8 9V6a4 4 0 0 1 8 0v3"/></svg></a>
+<button class="mobile-menu-toggle" type="button" aria-controls="mobile-drawer" aria-haspopup="dialog" aria-expanded="false"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 6h18M3 12h18M3 18h18"/></svg><span>Menu</span></button>
+</div></div><dialog class="mobile-drawer" id="mobile-drawer" aria-labelledby="mobile-drawer-title">
+<div class="mobile-drawer-head"><strong id="mobile-drawer-title">Menu</strong><form method="dialog"><button aria-label="Close menu" autofocus>×</button></form></div>
+<nav aria-label="Mobile navigation"><a href="https://pitstopdeiseil.com/shop-left-sidebar/">Shop</a><a href="#categories">Categories</a><a href="#on-sale">On Sale</a><a href="https://pitstopdeiseil.com/lab-reports/">Lab Reports</a><a href="https://pitstopdeiseil.com/about/">About</a><a href="https://pitstopdeiseil.com/my-account/">Account</a></nav>
+</dialog></header>
+<main id="main">
+<section class="hero" aria-labelledby="hero-title"><div class="shell hero-inner">
+<div class="hero-copy"><span class="kicker">The CBD & hemp shop</span><h1 id="hero-title">Your next <em>Pit Stop.</em></h1><p>Explore hemp-infused drinks, CBD oils, softgels, and topicals.</p>
+<div class="buttons"><a class="btn" href="https://pitstopdeiseil.com/shop-left-sidebar/">Shop the store <span aria-hidden="true">↗</span></a><a class="btn secondary" href="#categories">Browse categories</a></div></div>
+<div class="visual"><img src="assets/race-car.webp" alt="Pit Stop Deiseil race car" decoding="async"></div></div><div class="checker" aria-hidden="true"></div></section>
+<section class="section shell" id="categories"><div class="heading"><div><h2>Shop by category</h2></div><a class="text-link" href="https://pitstopdeiseil.com/shop-left-sidebar/">View full shop ↗</a></div><div class="category-grid"><a class="category" style="--tile:#e4e9be" href="https://pitstopdeiseil.com/product-category/beverages/"><img src="assets/products/life-s-lemon-25mg-d9.png" alt="" loading="lazy" decoding="async"><span>Beverages<b aria-hidden="true">↗</b></span></a><a class="category" style="--tile:#f0e6d3" href="https://pitstopdeiseil.com/product-category/oils/"><img src="assets/products/tinctures-category.png" alt="" loading="lazy" decoding="async"><span>Oils<b aria-hidden="true">↗</b></span></a><a class="category" style="--tile:#e2e8d4" href="https://pitstopdeiseil.com/product-category/softgels/"><img src="assets/products/miracle-cbd-softgels-750mg-30ct.png" alt="" loading="lazy" decoding="async"><span>Softgels<b aria-hidden="true">↗</b></span></a><a class="category" style="--tile:#e9e0d9" href="https://pitstopdeiseil.com/product-category/lotion/"><img src="assets/products/lit-labs-face-body-lotion.png" alt="" loading="lazy" decoding="async"><span>Topicals<b aria-hidden="true">↗</b></span></a></div></section>
+<section class="section featured" id="featured"><div class="shell"><div class="heading"><h2>Featured products</h2></div>
+<div class="filters" role="group" aria-label="Filter featured products" hidden><button type="button" data-filter="All" aria-pressed="true">All</button><button type="button" data-filter="Beverages" aria-pressed="false">Beverages</button><button type="button" data-filter="Oils" aria-pressed="false">Oils</button><button type="button" data-filter="Softgels" aria-pressed="false">Softgels</button><button type="button" data-filter="Topicals" aria-pressed="false">Topicals</button></div>
+<div class="products"><article class="product" data-group="Beverages"><a class="product-image" href="https://pitstopdeiseil.com/product/lifes-lemon-25mg-d9/"><img src="assets/products/life-s-lemon-25mg-d9.png" alt="Life&#x27;s Lemon 25MG D9" loading="lazy" decoding="async"></a><div class="product-info"><span class="kicker">Beverages</span><h3><a href="https://pitstopdeiseil.com/product/lifes-lemon-25mg-d9/">Life&#x27;s Lemon 25MG D9</a></h3><div class="product-bottom"><strong>$19.99</strong><a class="round" href="https://pitstopdeiseil.com/product/lifes-lemon-25mg-d9/" aria-label="View Life&#x27;s Lemon 25MG D9">↗</a></div></div></article><article class="product" data-group="Beverages"><a class="product-image" href="https://pitstopdeiseil.com/product/canna-shots-pina-colada/"><img src="assets/products/canna-shots-pina-colada.png" alt="Canna Shots Pina Colada" loading="lazy" decoding="async"></a><div class="product-info"><span class="kicker">Beverages</span><h3><a href="https://pitstopdeiseil.com/product/canna-shots-pina-colada/">Canna Shots Pina Colada</a></h3><div class="product-bottom"><strong>$7.95</strong><a class="round" href="https://pitstopdeiseil.com/product/canna-shots-pina-colada/" aria-label="View Canna Shots Pina Colada">↗</a></div></div></article><article class="product" data-group="Softgels"><a class="product-image" href="https://pitstopdeiseil.com/product/miracle-cbd-softgels-750mg-30ct/"><img src="assets/products/miracle-cbd-softgels-750mg-30ct.png" alt="Miracle CBD Softgels 750mg 30ct" loading="lazy" decoding="async"></a><div class="product-info"><span class="kicker">Softgels</span><h3><a href="https://pitstopdeiseil.com/product/miracle-cbd-softgels-750mg-30ct/">Miracle CBD Softgels 750mg 30ct</a></h3><div class="product-bottom"><strong>$39.99</strong><a class="round" href="https://pitstopdeiseil.com/product/miracle-cbd-softgels-750mg-30ct/" aria-label="View Miracle CBD Softgels 750mg 30ct">↗</a></div></div></article><article class="product" data-group="Topicals"><a class="product-image" href="https://pitstopdeiseil.com/product/lit-labs-lavender-hand-and-face-cream/"><img src="assets/products/lit-labs-face-body-lotion.png" alt="Lit Labs Face &amp; Body Lotion" loading="lazy" decoding="async"></a><div class="product-info"><span class="kicker">Topicals</span><h3><a href="https://pitstopdeiseil.com/product/lit-labs-lavender-hand-and-face-cream/">Lit Labs Face &amp; Body Lotion</a></h3><div class="product-bottom"><strong>$24.99</strong><a class="round" href="https://pitstopdeiseil.com/product/lit-labs-lavender-hand-and-face-cream/" aria-label="View Lit Labs Face &amp; Body Lotion">↗</a></div></div></article><article class="product" data-group="Topicals"><a class="product-image" href="https://pitstopdeiseil.com/product/miracle-cbd-anti-aging-cream-500mg/"><img src="assets/products/miracle-cbd-anti-aging-cream-500mg.png" alt="Miracle CBD Anti Aging Cream 500mg" loading="lazy" decoding="async"></a><div class="product-info"><span class="kicker">Topicals</span><h3><a href="https://pitstopdeiseil.com/product/miracle-cbd-anti-aging-cream-500mg/">Miracle CBD Anti Aging Cream 500mg</a></h3><div class="product-bottom"><strong>$34.99</strong><a class="round" href="https://pitstopdeiseil.com/product/miracle-cbd-anti-aging-cream-500mg/" aria-label="View Miracle CBD Anti Aging Cream 500mg">↗</a></div></div></article><article class="product" data-group="Oils"><a class="product-image" href="https://pitstopdeiseil.com/product/pie-d8-1000mg-key-lime/"><img src="assets/products/pie-d8-1000mg-key-lime.png" alt="Pie D8 1000mg Key Lime" loading="lazy" decoding="async"></a><div class="product-info"><span class="kicker">Oils</span><h3><a href="https://pitstopdeiseil.com/product/pie-d8-1000mg-key-lime/">Pie D8 1000mg Key Lime</a></h3><div class="product-bottom"><strong>$22.50</strong><a class="round" href="https://pitstopdeiseil.com/product/pie-d8-1000mg-key-lime/" aria-label="View Pie D8 1000mg Key Lime">↗</a></div></div></article><article class="product" data-group="Topicals">
+<a class="product-image" href="https://pitstopdeiseil.com/product/bawdi-high-8000mg-high-dration-lotion-8oz/"><img src="assets/products/bawdi-high-8000mg-high-dration-lotion-8oz.png" alt="Bawdi High 8000mg High-Dration Lotion 8oz" loading="lazy" decoding="async"></a>
+<div class="product-info"><span class="kicker">Topicals</span><h3><a href="https://pitstopdeiseil.com/product/bawdi-high-8000mg-high-dration-lotion-8oz/">Bawdi High 8000mg High-Dration Lotion 8oz</a></h3>
+<div class="product-bottom"><div class="product-prices"><strong>$49.99</strong></div><a class="round" href="https://pitstopdeiseil.com/product/bawdi-high-8000mg-high-dration-lotion-8oz/" aria-label="View Bawdi High 8000mg High-Dration Lotion 8oz">↗</a></div></div></article><article class="product" data-group="Oils">
+<a class="product-image" href="https://pitstopdeiseil.com/product/dew-you/"><img src="assets/products/dew-you-cbd-body-oil.png" alt="Dew You!! CBD Body Oil" loading="lazy" decoding="async"></a>
+<div class="product-info"><span class="kicker">Oils</span><h3><a href="https://pitstopdeiseil.com/product/dew-you/">Dew You!! CBD Body Oil</a></h3>
+<div class="product-bottom"><div class="product-prices"><strong>$9.99</strong></div><a class="round" href="https://pitstopdeiseil.com/product/dew-you/" aria-label="View Dew You!! CBD Body Oil">↗</a></div></div></article></div></div></section>
+
+<section class="section shell" id="on-sale" aria-labelledby="sale-title">
+<div class="deal">
+<a class="deal-photo" href="https://pitstopdeiseil.com/product/thcp-pre-rolls/"><img src="assets/thcp-pre-rolls-promo.png" alt="PiT Stop Deiseil THCP Pre-rolls" loading="lazy" decoding="async"></a>
+<div class="deal-copy">
+<span class="kicker">On sale · Pre-rolls</span>
+<h2 id="sale-title">Pit Stop Deiseil<br>THCP Pre-rolls</h2>
+<div class="deal-prices"><strong>$4.00</strong><del>$4.99</del><span>Save $0.99</span></div>
+<a class="btn" href="https://pitstopdeiseil.com/product/thcp-pre-rolls/">Shop the deal <span aria-hidden="true">↗</span></a>
+</div></div></section>
+<section class="section more-section" aria-labelledby="more-title"><div class="shell">
+<div class="heading"><h2 id="more-title">More to explore</h2><a class="text-link" href="https://pitstopdeiseil.com/shop-left-sidebar/">View full shop ↗</a></div>
+<div class="products"><article class="product" data-group="Topicals">
+<a class="product-image" href="https://pitstopdeiseil.com/product/bawdi-high-blv-all-natural-deodorant-560mg-2oz/"><img src="assets/products/bawdi-high-blv-all-natural-deodorant-560mg-2oz.png" alt="Bawdi High BLV All Natural Deodorant 560mg 2oz." loading="lazy" decoding="async"></a>
+<div class="product-info"><span class="kicker">Topicals</span><h3><a href="https://pitstopdeiseil.com/product/bawdi-high-blv-all-natural-deodorant-560mg-2oz/">Bawdi High BLV All Natural Deodorant 560mg 2oz.</a></h3>
+<div class="product-bottom"><div class="product-prices"><strong>$14.99</strong></div><a class="round" href="https://pitstopdeiseil.com/product/bawdi-high-blv-all-natural-deodorant-560mg-2oz/" aria-label="View Bawdi High BLV All Natural Deodorant 560mg 2oz.">↗</a></div></div></article><article class="product" data-group="Topicals">
+<a class="product-image" href="https://pitstopdeiseil.com/product/bawdi-high-4000-mg-high-dration-lotion-4oz/"><img src="assets/products/bawdi-high-4000-mg-high-dration-lotion-4oz.png" alt="Bawdi High 4000 Mg High-Dration Lotion 4oz." loading="lazy" decoding="async"></a>
+<div class="product-info"><span class="kicker">Topicals</span><h3><a href="https://pitstopdeiseil.com/product/bawdi-high-4000-mg-high-dration-lotion-4oz/">Bawdi High 4000 Mg High-Dration Lotion 4oz.</a></h3>
+<div class="product-bottom"><div class="product-prices"><strong>$24.99</strong></div><a class="round" href="https://pitstopdeiseil.com/product/bawdi-high-4000-mg-high-dration-lotion-4oz/" aria-label="View Bawdi High 4000 Mg High-Dration Lotion 4oz.">↗</a></div></div></article><article class="product" data-group="Gummies">
+<a class="product-image" href="https://pitstopdeiseil.com/product/relax-relate-release-cbd-gummies-2/"><img src="assets/products/relax-relate-release-cbd-gummies.png" alt="Relax, Relate, Release CBD Gummies" loading="lazy" decoding="async"></a>
+<div class="product-info"><span class="kicker">Gummies</span><h3><a href="https://pitstopdeiseil.com/product/relax-relate-release-cbd-gummies-2/">Relax, Relate, Release CBD Gummies</a></h3>
+<div class="product-bottom"><div class="product-prices"><strong>$9.99</strong></div><a class="round" href="https://pitstopdeiseil.com/product/relax-relate-release-cbd-gummies-2/" aria-label="View Relax, Relate, Release CBD Gummies">↗</a></div></div></article><article class="product" data-group="Gummies">
+<a class="product-image" href="https://pitstopdeiseil.com/product/slumber-party-cbn-gummies/"><img src="assets/products/slumber-party-cbn-gummies.png" alt="Slumber Party CBN Gummies" loading="lazy" decoding="async"></a>
+<div class="product-info"><span class="kicker">Gummies</span><h3><a href="https://pitstopdeiseil.com/product/slumber-party-cbn-gummies/">Slumber Party CBN Gummies</a></h3>
+<div class="product-bottom"><div class="product-prices"><strong>$12.99</strong></div><a class="round" href="https://pitstopdeiseil.com/product/slumber-party-cbn-gummies/" aria-label="View Slumber Party CBN Gummies">↗</a></div></div></article></div></div></section>
+<section class="section shell"><div class="about"><div><h2>Get to know Pit Stop</h2><p>Learn about Pit Stop Deiseil or check product lab reports before you shop.</p></div><div class="buttons"><a class="btn" href="https://pitstopdeiseil.com/lab-reports/">View lab reports ↗</a><a class="btn secondary" href="https://pitstopdeiseil.com/about/">About us</a></div></div></section>
+<section class="section social-section" id="instagram" aria-labelledby="instagram-title"><div class="shell">
+<div class="social-header"><div class="social-brand"><img src="assets/logo.webp" alt="Pit Stop Deiseil" decoding="async"><div><span class="kicker">Instagram</span><h2 id="instagram-title">@pitstopdeiseil</h2></div></div>
+<a class="btn" href="https://www.instagram.com/pitstopdeiseil/" target="_blank" rel="noopener">Follow on Instagram ↗</a></div>
+<div class="ig-grid"><a class="ig-tile ig-tile-1" href="https://www.instagram.com/reel/DUrKjRskkHp/" target="_blank" rel="noopener" data-ig-post><img class="ig-photo" src="assets/instagram-high-dration.jpg" alt="" loading="lazy"><span class="ig-mark" aria-hidden="true">▷</span><span class="ig-label">Watch reel <b aria-hidden="true">↗</b></span></a><a class="ig-tile ig-tile-2" href="https://www.instagram.com/p/DTuGL3BDTHK/" target="_blank" rel="noopener" data-ig-post><img class="ig-photo" src="assets/instagram-book.jpg" alt="" loading="lazy"><span class="ig-mark" aria-hidden="true">◎</span><span class="ig-label">View post <b aria-hidden="true">↗</b></span></a><a class="ig-tile ig-tile-3" href="https://www.instagram.com/reel/DQZ-iNVEoD5/" target="_blank" rel="noopener" data-ig-post><img class="ig-photo" src="assets/instagram-bucees.jpg" alt="" loading="lazy"><span class="ig-mark" aria-hidden="true">▷</span><span class="ig-label">Watch reel <b aria-hidden="true">↗</b></span></a><a class="ig-tile ig-tile-4" href="https://www.instagram.com/p/DJ7Jy9aRUNa/" target="_blank" rel="noopener" data-ig-post>
+<img class="ig-photo" src="assets/instagram-pit-stop-booth.webp" alt="Pit Stop Deiseil booth at an outdoor event" loading="lazy"><span class="ig-mark" aria-hidden="true">◎</span><span class="ig-label">View post <b aria-hidden="true">↗</b></span>
+</a></div>
+<div class="instagram-car-lane" aria-hidden="true"><img class="instagram-car" src="assets/instagram-race-car.webp" alt="" width="1050" height="348" loading="lazy" decoding="async"></div>
+</div></section>
+<dialog class="ig-dialog" aria-label="Instagram post"><div class="ig-dialog-bar"><a class="ig-direct" target="_blank" rel="noopener">Open on Instagram ↗</a><form method="dialog"><button aria-label="Close Instagram post">×</button></form></div><div class="ig-content"></div></dialog>
+</main>
+<footer class="site-footer"><div class="shell">
+<div class="footer-grid">
+<div class="footer-brand"><a class="logo" href="https://pitstopdeiseil.com/" aria-label="Pit Stop Deiseil home"><img src="assets/logo.webp" alt="Pit Stop Deiseil" decoding="async"><span aria-hidden="true">Pit Stop<br>Deiseil</span></a>
+<div class="veteran-heading"><img src="assets/veteran-owned-business.png" alt="Verified Veteran Owned Business proud member badge" loading="lazy"><h2>Veteran Owned Business</h2></div>
+<p>At PiT Stop Deiseil, we’re not just a CBD product retailer but your partner in this race. Like a pit stop fuels racecars for the road ahead, we aim to be your partner in life’s journey by delivering premium wellness products to keep you moving forward.</p></div>
+<nav aria-label="Affiliate links"><h2>Affiliates</h2>
+<a href="https://pitstopdeiseil.com/affiliate-registration/">Become an Affiliate</a>
+<a href="https://pitstopdeiseil.com/affliate-login/">Affiliate Login</a></nav>
+<nav aria-label="Customer care"><h2>Customer Care</h2>
+<a href="https://pitstopdeiseil.com/privacy-policy-2">Privacy Policy</a>
+<a href="https://pitstopdeiseil.com/return-policy/">Return Policy</a>
+<a href="https://pitstopdeiseil.com/shipping-policy/">Shipping Policy</a>
+<a href="https://pitstopdeiseil.com/contact-us/">Contact</a></nav>
+<nav aria-label="Social media"><h2>Follow Us</h2>
+<a href="https://www.facebook.com/profile.php?id=61553583096251" target="_blank" rel="noopener">Facebook <span aria-hidden="true">↗</span></a>
+<a href="https://www.instagram.com/pitstopdeiseil/" target="_blank" rel="noopener">Instagram <span aria-hidden="true">↗</span></a></nav>
+</div><p class="fine">© 2026 PiT Stop Deiseil. All Rights Reserved.</p>
+</div></footer>
+<script>
+const filters = document.querySelector('.filters');
+const products = document.querySelectorAll('#featured .product');
+filters.hidden = false;
+filters.addEventListener('click', event => {
+  const selected = event.target.closest('button[data-filter]');
+  if (!selected) return;
+  filters.querySelectorAll('button').forEach(button => button.setAttribute('aria-pressed', String(button === selected)));
+  products.forEach(product => {
+    product.hidden = selected.dataset.filter !== 'All' && product.dataset.group !== selected.dataset.filter;
+  });
+});
+const menuButton = document.querySelector('.mobile-menu-toggle');
+const drawer = document.querySelector('#mobile-drawer');
+menuButton.addEventListener('click', () => {
+  drawer.showModal();
+  menuButton.setAttribute('aria-expanded', 'true');
+});
+drawer.addEventListener('click', event => {
+  const bounds = drawer.getBoundingClientRect();
+  const outside = event.target === drawer && (event.clientX < bounds.left || event.clientX > bounds.right);
+  if (outside || event.target.closest('a')) drawer.close();
+});
+drawer.addEventListener('close', () => menuButton.setAttribute('aria-expanded', 'false'));
+window.matchMedia('(max-width: 760px)').addEventListener('change', event => {
+  if (!event.matches && drawer.open) drawer.close();
+});
+
+const instagramDialog = document.querySelector('.ig-dialog');
+const instagramContent = instagramDialog.querySelector('.ig-content');
+document.querySelectorAll('[data-ig-post]').forEach(tile => {
+  tile.addEventListener('click', event => {
+    if (event.ctrlKey || event.metaKey || event.shiftKey || event.altKey || !instagramDialog.showModal) return;
+    event.preventDefault();
+    const frame = document.createElement('iframe');
+    frame.title = 'Instagram post';
+    frame.src = new URL('embed/', tile.href).href;
+    frame.allowFullscreen = true;
+    instagramDialog.querySelector('.ig-direct').href = tile.href;
+    instagramContent.replaceChildren(frame);
+    instagramDialog.showModal();
+  });
+});
+instagramDialog.addEventListener('close', () => instagramContent.replaceChildren());
+
+const hero = document.querySelector('.hero');
+const heroCar = hero.querySelector('.visual img');
+const instagramLane = document.querySelector('.instagram-car-lane');
+const instagramCar = instagramLane.querySelector('img');
+const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+let carFrame = 0;
+
+const clampProgress = value => Math.min(1, Math.max(0, value));
+function positionCars() {
+  carFrame = 0;
+  if (reducedMotion.matches) {
+    heroCar.style.removeProperty('--car-x');
+    instagramCar.style.removeProperty('--car-x');
+    return;
+  }
+
+  const heroBounds = hero.getBoundingClientRect();
+  const laneBounds = instagramLane.getBoundingClientRect();
+  const viewportWidth = document.documentElement.clientWidth;
+  const viewportHeight = window.innerHeight;
+  const departure = clampProgress(-heroBounds.top / (heroBounds.height * 0.75));
+  const arrivalStart = viewportHeight - Math.min(44, viewportHeight * 0.06);
+  const arrivalEnd = viewportHeight * 0.48;
+  const arrival = clampProgress((arrivalStart - laneBounds.top) / (arrivalStart - arrivalEnd));
+  const heroTravel = viewportWidth - heroCar.offsetParent.getBoundingClientRect().left + 40;
+  const instagramTravel = viewportWidth - (laneBounds.left + laneBounds.width / 2 - instagramCar.offsetWidth / 2) + 40;
+
+  heroCar.style.setProperty('--car-x', `${heroTravel * departure ** 1.25}px`);
+  instagramCar.style.setProperty('--car-x', `${instagramTravel * (1 - arrival) ** 2}px`);
+}
+function scheduleCars() {
+  if (!carFrame) carFrame = requestAnimationFrame(positionCars);
+}
+window.addEventListener('scroll', scheduleCars, {passive: true});
+window.addEventListener('resize', scheduleCars);
+window.addEventListener('load', scheduleCars);
+reducedMotion.addEventListener('change', scheduleCars);
+positionCars();
+</script>
+</body></html>

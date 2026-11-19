@@ -83,6 +83,11 @@
             padding-bottom: 6rem;
         }
 
+        html {
+            scroll-behavior: smooth;
+            scroll-padding-top: 6rem;
+        }
+
         @keyframes float {
 
             0%,
@@ -220,43 +225,90 @@
     </header>
 
     <main>
-        <!-- Hero Section -->
-        <section
-            class="min-h-screen flex flex-col justify-center items-center relative overflow-hidden section-padding pt-32">
-            <div class="absolute top-1/4 left-1/4 w-96 h-96 bg-primary/20 rounded-full blur-[100px] animate-float">
-            </div>
-            <div class="absolute bottom-1/4 right-1/4 w-80 h-80 bg-primary/10 rounded-full blur-[100px] animate-float"
-                style="animation-delay: -3s;"></div>
+                <!-- Hero Section -->
+        <section class="min-h-screen flex flex-col justify-center items-center relative overflow-hidden section-padding pt-32 pb-20">
+            <!-- Ambient Lighting Glows -->
+            <div class="absolute top-1/4 left-1/4 w-[500px] h-[500px] bg-primary/20 rounded-full blur-[140px] pointer-events-none animate-float"></div>
+            <div class="absolute bottom-1/4 right-1/4 w-[450px] h-[450px] bg-purple-600/15 rounded-full blur-[140px] pointer-events-none animate-float" style="animation-delay: -3s;"></div>
+            <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-gradient-to-b from-primary/5 via-transparent to-transparent rounded-full blur-[160px] pointer-events-none"></div>
 
             <div class="container mx-auto max-w-5xl relative z-10 px-6">
                 <div class="text-center">
-                    <p class="text-primary font-medium tracking-widest uppercase text-sm mb-4">Web Developer & Website
-                        Manager</p>
-                    <h1 class="font-display text-5xl md:text-7xl lg:text-8xl font-bold mb-6 leading-tight">Hi, I'm <span
-                            class="text-gradient">Rahil Patel</span></h1>
-                    <p class="text-muted-foreground text-lg md:text-xl max-w-2xl mx-auto mb-8 leading-relaxed">
-                        Expert in building and maintaining high-performance websites using <span
-                            class="text-foreground font-medium">WordPress, Shopify, and Webflow</span>. I bridge the gap
-                        between creative design and technical execution.
+                    <!-- Availability Pill Badge -->
+                    <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-xs font-semibold bg-white/5 border border-white/10 text-white backdrop-blur-md mb-6 shadow-lg shadow-black/40">
+                        <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+                        Available for Freelance &amp; Full-Time Roles
+                        <span class="text-primary font-bold ml-1">&rarr;</span>
+                    </div>
+
+                    <!-- Main Hero Headline -->
+                    <h1 class="font-display text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-black tracking-tight mb-6 leading-[1.08] text-white">
+                        Engineering High-Converting <br class="hidden sm:inline">
+                        <span class="text-gradient">Web Experiences</span>
+                    </h1>
+
+                    <!-- Hero Subtitle -->
+                    <p class="text-muted-foreground text-base sm:text-lg md:text-xl max-w-3xl mx-auto mb-10 leading-relaxed font-normal">
+                        Hi, I'm <strong class="text-white font-semibold">Rahil Patel</strong> — Web Developer &amp; Website Manager specialized in scalable <span class="text-white font-medium">WordPress, Shopify, &amp; bespoke web platforms</span>. Bridging pixel-perfect creative design with high-performance engineering.
                     </p>
-                    <div class="flex flex-wrap justify-center gap-4 mb-12">
+
+                    <!-- Hero CTA Buttons -->
+                    <div class="flex flex-wrap justify-center items-center gap-4 mb-16">
+                        <a href="#projects"
+                            class="px-8 py-4 rounded-xl bg-gradient-to-r from-primary via-purple-600 to-indigo-600 hover:from-primary/90 hover:to-indigo-500 text-white font-semibold text-sm sm:text-base shadow-xl shadow-primary/30 hover:shadow-primary/50 hover:scale-105 transition-all duration-300 flex items-center justify-center gap-2 cursor-pointer">
+                            <span>Explore 28+ Projects</span>
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                                <polyline points="12 5 19 12 12 19"></polyline>
+                            </svg>
+                        </a>
                         <button onclick="openModal()"
-                            class="px-8 py-4 bg-primary text-primary-foreground font-medium rounded-lg hover:glow-primary transition-all duration-300 hover:scale-105 cursor-pointer">Get
-                            In Touch</button>
-                        <a href="#experience"
-                            class="px-8 py-4 glass-card text-foreground font-medium rounded-lg hover:border-primary/50 transition-all duration-300">View
-                            Experience</a>
+                            class="px-8 py-4 rounded-xl glass-card text-white font-semibold text-sm sm:text-base border border-white/15 hover:border-primary/50 hover:bg-white/10 transition-all duration-300 flex items-center justify-center gap-2 cursor-pointer">
+                            <span>Get In Touch</span>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                            </svg>
+                        </button>
+                        <a href="https://raw.githubusercontent.com/rutvik333/my-portfolio/1818ceec7d9a31e93d7dbc585c9e7325d4ddcac1/Rahil%20Patel.pdf" target="_blank"
+                            class="px-6 py-4 rounded-xl bg-white/5 border border-white/10 text-muted-foreground hover:text-white hover:bg-white/10 font-semibold text-sm sm:text-base transition-all duration-300 flex items-center justify-center gap-2">
+                            <span>Resume</span>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                                <polyline points="7 10 12 15 17 10"></polyline>
+                                <line x1="12" y1="15" x2="12" y2="3"></line>
+                            </svg>
+                        </a>
+                    </div>
+
+                    <!-- Credibility Metrics Bar -->
+                    <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 max-w-4xl mx-auto pt-8 border-t border-white/10 text-left">
+                        <div class="glass-card p-5 rounded-2xl border border-white/10 hover-lift">
+                            <p class="font-display font-extrabold text-2xl sm:text-3xl text-white">28+</p>
+                            <p class="text-xs text-muted-foreground mt-1 font-medium">Shipped Projects</p>
+                        </div>
+                        <div class="glass-card p-5 rounded-2xl border border-white/10 hover-lift">
+                            <p class="font-display font-extrabold text-2xl sm:text-3xl text-emerald-400">99.9%</p>
+                            <p class="text-xs text-muted-foreground mt-1 font-medium">Production Uptime</p>
+                        </div>
+                        <div class="glass-card p-5 rounded-2xl border border-white/10 hover-lift">
+                            <p class="font-display font-extrabold text-2xl sm:text-3xl text-purple-400">1+ Years</p>
+                            <p class="text-xs text-muted-foreground mt-1 font-medium">Industry Experience</p>
+                        </div>
+                        <div class="glass-card p-5 rounded-2xl border border-white/10 hover-lift">
+                            <p class="font-display font-extrabold text-2xl sm:text-3xl text-cyan-400">&lt; 1s</p>
+                            <p class="text-xs text-muted-foreground mt-1 font-medium">Core Web Vitals</p>
+                        </div>
                     </div>
                 </div>
             </div>
 
-            <div class="absolute bottom-8">
+            <!-- Scroll Down Indicator -->
+            <div class="mt-12">
                 <a href="#tech-stack"
                     class="flex flex-col items-center text-muted-foreground hover:text-primary transition-colors animate-bounce">
-                    <span class="text-sm mb-2">Scroll Down</span>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                        class="w-5 h-5">
+                    <span class="text-xs font-medium uppercase tracking-wider mb-2">Explore Skills</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                         <path d="M12 5v14"></path>
                         <path d="m19 12-7 7-7-7"></path>
                     </svg>
@@ -264,7 +316,7 @@
             </div>
         </section>
 
-                <!-- Tech Stack & Skills -->
+        <!-- Tech Stack & Skills -->
         <section id="tech-stack" class="section-padding relative">
             <div class="absolute top-0 left-0 w-full h-full bg-primary/5 blur-[120px] pointer-events-none"></div>
             <div class="container mx-auto max-w-6xl px-6 relative z-10">
@@ -1938,67 +1990,148 @@
             </div>
         </section>
 
-        <!-- About/Profile -->
-        <section id="about" class="section-padding relative">
-            <div class="container mx-auto max-w-6xl px-6">
-                <div class="text-center mb-16">
-                    <p class="text-primary font-medium tracking-widest uppercase text-sm mb-4">Profile</p>
-                    <h2 class="font-display text-4xl md:text-5xl font-bold mb-6">Turning Ideas Into <span
-                            class="text-gradient">Digital Reality</span></h2>
+                <!-- About/Profile -->
+        <section id="about" class="section-padding relative overflow-hidden">
+            <div class="absolute top-1/3 left-10 w-96 h-96 bg-primary/10 rounded-full blur-[140px] pointer-events-none"></div>
+
+            <div class="container mx-auto max-w-6xl px-6 relative z-10">
+                <!-- Section Header -->
+                <div class="text-center max-w-3xl mx-auto mb-16">
+                    <p class="text-primary font-medium tracking-widest uppercase text-xs mb-3">Profile &amp; Background</p>
+                    <h2 class="font-display text-4xl sm:text-5xl font-bold mb-4 text-white">
+                        Turning Ideas Into <span class="text-gradient">Digital Reality</span>
+                    </h2>
+                    <p class="text-muted-foreground text-sm sm:text-base leading-relaxed">
+                        Driven by web performance, robust CMS architecture, and conversion-centered design execution.
+                    </p>
                 </div>
-                <div class="grid md:grid-cols-2 gap-12 items-center">
-                    <div>
-                        <p class="text-muted-foreground text-lg leading-relaxed mb-6">Dynamic Web Developer & Website
-                            Manager with 1+ years of experience across Brainbean Technolabs and Infonaya.</p>
-                        <p class="text-muted-foreground text-lg leading-relaxed mb-6">Expert in building and maintaining
-                            high-performance websites using WordPress, Shopify, and Webflow. Proficient in PHP for
-                            backend logic and Figma for high-fidelity UI design.</p>
-                        <p class="text-muted-foreground text-lg leading-relaxed">Proven ability to bridge the gap
-                            between creative design and technical execution, focusing on <span
-                                class="text-foreground font-medium">Technical SEO, Speed Optimization, and E-commerce
-                                growth</span>.</p>
-                        <div class="mt-8">
+
+                <!-- Bento Grid Layout -->
+                <div class="grid lg:grid-cols-12 gap-8 items-stretch">
+                    <!-- Left Bio Card (7 cols) -->
+                    <div class="lg:col-span-7 glass-card rounded-3xl p-8 sm:p-10 border border-white/10 flex flex-col justify-between relative overflow-hidden">
+                        <div class="absolute -top-20 -right-20 w-60 h-60 bg-purple-500/15 rounded-full blur-3xl pointer-events-none"></div>
+
+                        <div>
+                            <div class="flex items-center gap-3 mb-6">
+                                <div class="w-12 h-12 rounded-2xl bg-gradient-to-tr from-primary to-purple-600 flex items-center justify-center font-extrabold text-base text-white shadow-lg shadow-primary/25">
+                                    RP
+                                </div>
+                                <div>
+                                    <h3 class="font-display font-bold text-xl text-white">Rahil Patel</h3>
+                                    <p class="text-xs text-muted-foreground">Web Developer &amp; Website Manager</p>
+                                </div>
+                            </div>
+
+                            <p class="text-muted-foreground text-sm sm:text-base leading-relaxed mb-4">
+                                Dynamic Web Developer &amp; Site Manager with <strong class="text-white">1+ years of experience</strong> across Brainbean Technolabs and Infonaya Softwares. I bridge the gap between creative design and technical execution.
+                            </p>
+                            <p class="text-muted-foreground text-sm sm:text-base leading-relaxed mb-4">
+                                Expert in building, optimizing, and maintaining revenue-generating storefronts across <strong class="text-white">WordPress, Shopify, and Webflow</strong>. Proficient in PHP for custom backend functionality, Liquid for Shopify architectures, and modern JavaScript for interactive UX.
+                            </p>
+                            <p class="text-muted-foreground text-sm sm:text-base leading-relaxed mb-6">
+                                My approach centers on measurable impact: <strong class="text-white">Core Web Vitals acceleration, Technical SEO structure, and scalable e-commerce conversions</strong>.
+                            </p>
+
+                            <!-- Focus Pills -->
+                            <div class="flex flex-wrap gap-2 mb-8">
+                                <span class="px-3 py-1 rounded-full text-xs font-medium bg-white/5 border border-white/10 text-zinc-300">⚡ Speed Optimization</span>
+                                <span class="px-3 py-1 rounded-full text-xs font-medium bg-white/5 border border-white/10 text-zinc-300">🛒 E-Commerce Growth</span>
+                                <span class="px-3 py-1 rounded-full text-xs font-medium bg-white/5 border border-white/10 text-zinc-300">🔍 Technical SEO</span>
+                                <span class="px-3 py-1 rounded-full text-xs font-medium bg-white/5 border border-white/10 text-zinc-300">🎨 Figma to Code</span>
+                                <span class="px-3 py-1 rounded-full text-xs font-medium bg-white/5 border border-white/10 text-zinc-300">🔒 99.9% Site Uptime</span>
+                            </div>
+                        </div>
+
+                        <!-- Action Buttons -->
+                        <div class="flex flex-wrap items-center gap-4 pt-6 border-t border-white/10">
                             <a href="https://raw.githubusercontent.com/rutvik333/my-portfolio/1818ceec7d9a31e93d7dbc585c9e7325d4ddcac1/Rahil%20Patel.pdf"
                                 target="_blank"
-                                class="inline-flex items-center gap-2 px-6 py-3 bg-white/5 border border-white/10 font-medium rounded-lg hover:bg-white/10 transition-all duration-300 text-foreground cursor-pointer">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
-                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                    stroke-linejoin="round">
+                                class="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-primary hover:bg-primary/90 text-white font-semibold text-xs sm:text-sm shadow-lg shadow-primary/25 hover:shadow-primary/40 hover:scale-105 transition-all">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                     <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
                                     <polyline points="7 10 12 15 17 10"></polyline>
                                     <line x1="12" y1="15" x2="12" y2="3"></line>
                                 </svg>
-                                Download Resume
+                                <span>Download Resume (PDF)</span>
                             </a>
+                            <button onclick="openModal()"
+                                class="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-white/5 hover:bg-white/10 border border-white/10 text-white font-semibold text-xs sm:text-sm transition-all cursor-pointer">
+                                <span>Hire Me</span>
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                                    <polyline points="12 5 19 12 12 19"></polyline>
+                                </svg>
+                            </button>
                         </div>
                     </div>
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                        <div class="glass-card p-6 rounded-xl hover-lift">
-                            <h3 class="font-display font-semibold text-foreground mb-1 text-lg">Education</h3>
-                            <p class="text-primary font-medium mt-2">Bachelor of Engineering</p>
-                            <p class="text-muted-foreground text-sm">Gujarat Technological University<br>(2021 - 2024)
-                            </p>
-                            <div class="h-px bg-border my-3"></div>
-                            <p class="text-primary font-medium">12th Pass</p>
-                            <p class="text-muted-foreground text-sm">JNV - CBSE BOARD<br>(2019 - 2020)</p>
+
+                    <!-- Right Column Bento Cards (5 cols) -->
+                    <div class="lg:col-span-5 flex flex-col gap-6">
+                        <!-- Education Card -->
+                        <div class="glass-card rounded-3xl p-6 sm:p-8 border border-white/10 hover-lift relative overflow-hidden">
+                            <div class="flex items-center gap-3 mb-6">
+                                <div class="w-10 h-10 rounded-xl bg-purple-500/15 border border-purple-500/30 flex items-center justify-center text-purple-400">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                                        <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+                                    </svg>
+                                </div>
+                                <h3 class="font-display font-bold text-xl text-white">Education &amp; Credentials</h3>
+                            </div>
+
+                            <div class="space-y-4">
+                                <div class="p-4 rounded-2xl bg-white/[0.03] border border-white/5">
+                                    <div class="flex items-center justify-between gap-2 mb-1">
+                                        <h4 class="font-semibold text-white text-sm">Bachelor of Engineering (B.E.)</h4>
+                                        <span class="text-[10px] font-semibold text-primary px-2.5 py-0.5 rounded-full bg-primary/10 border border-primary/20">2021 – 2024</span>
+                                    </div>
+                                    <p class="text-xs text-muted-foreground">Gujarat Technological University (GTU)</p>
+                                </div>
+
+                                <div class="p-4 rounded-2xl bg-white/[0.03] border border-white/5">
+                                    <div class="flex items-center justify-between gap-2 mb-1">
+                                        <h4 class="font-semibold text-white text-sm">Higher Secondary (12th Science)</h4>
+                                        <span class="text-[10px] font-semibold text-muted-foreground px-2.5 py-0.5 rounded-full bg-white/5 border border-white/10">2019 – 2020</span>
+                                    </div>
+                                    <p class="text-xs text-muted-foreground">Jawahar Navodaya Vidyalaya (JNV) — CBSE Board</p>
+                                </div>
+                            </div>
                         </div>
-                        <div class="glass-card p-6 rounded-xl hover-lift">
-                            <h3 class="font-display font-semibold text-foreground mb-4">Core Disciplines
-                            </h3>
-                            <ul class="text-sm text-muted-foreground space-y-2">
-                                <li class="flex items-center gap-2">
-                                    <div class="w-1.5 h-1.5 rounded-full bg-primary"></div>Technical SEO
-                                </li>
-                                <li class="flex items-center gap-2">
-                                    <div class="w-1.5 h-1.5 rounded-full bg-primary"></div>Speed Optimization
-                                </li>
-                                <li class="flex items-center gap-2">
-                                    <div class="w-1.5 h-1.5 rounded-full bg-primary"></div>E-commerce Growth
-                                </li>
-                                <li class="flex items-center gap-2">
-                                    <div class="w-1.5 h-1.5 rounded-full bg-primary"></div>UI/UX Design
-                                </li>
-                            </ul>
+
+                        <!-- Core Disciplines Card -->
+                        <div class="glass-card rounded-3xl p-6 sm:p-8 border border-white/10 hover-lift relative overflow-hidden flex-1 flex flex-col justify-between">
+                            <div>
+                                <div class="flex items-center gap-3 mb-5">
+                                    <div class="w-10 h-10 rounded-xl bg-cyan-500/15 border border-cyan-500/30 flex items-center justify-center text-cyan-400">
+                                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                            <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+                                            <polyline points="2 17 12 22 22 17"></polyline>
+                                            <polyline points="2 12 12 17 22 12"></polyline>
+                                        </svg>
+                                    </div>
+                                    <h3 class="font-display font-bold text-xl text-white">Core Engineering Pillars</h3>
+                                </div>
+
+                                <div class="grid grid-cols-2 gap-3">
+                                    <div class="p-3.5 rounded-2xl bg-white/[0.03] border border-white/5">
+                                        <p class="text-xs font-semibold text-white mb-0.5">⚡ Speed Audits</p>
+                                        <p class="text-[11px] text-muted-foreground">Sub-second loads &amp; CWV</p>
+                                    </div>
+                                    <div class="p-3.5 rounded-2xl bg-white/[0.03] border border-white/5">
+                                        <p class="text-xs font-semibold text-white mb-0.5">🛒 E-Com UX</p>
+                                        <p class="text-[11px] text-muted-foreground">Shopify &amp; WooCommerce</p>
+                                    </div>
+                                    <div class="p-3.5 rounded-2xl bg-white/[0.03] border border-white/5">
+                                        <p class="text-xs font-semibold text-white mb-0.5">🔍 Technical SEO</p>
+                                        <p class="text-[11px] text-muted-foreground">Structured Schema data</p>
+                                    </div>
+                                    <div class="p-3.5 rounded-2xl bg-white/[0.03] border border-white/5">
+                                        <p class="text-xs font-semibold text-white mb-0.5">🎨 High Fidelity</p>
+                                        <p class="text-[11px] text-muted-foreground">Pixel-perfect Figma code</p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -2006,61 +2139,120 @@
         </section>
 
         <!-- Experience -->
-        <section id="experience" class="section-padding relative">
-            <div class="absolute top-1/2 right-0 w-64 h-64 bg-primary/10 rounded-full blur-[100px]"></div>
-            <div class="container mx-auto max-w-6xl px-6 relative z-10">
+        <section id="experience" class="section-padding relative overflow-hidden">
+            <div class="absolute top-1/2 right-0 w-80 h-80 bg-primary/10 rounded-full blur-[140px] pointer-events-none"></div>
+
+            <div class="container mx-auto max-w-5xl px-6 relative z-10">
+                <!-- Section Header -->
                 <div class="text-center mb-16">
-                    <p class="text-primary font-medium tracking-widest uppercase text-sm mb-4">My Journey</p>
-                    <h2 class="font-display text-4xl md:text-5xl font-bold mb-6">Work <span
-                            class="text-gradient">Experience</span></h2>
+                    <p class="text-primary font-medium tracking-widest uppercase text-xs mb-3">Career Journey</p>
+                    <h2 class="font-display text-4xl sm:text-5xl font-bold mb-4 text-white">
+                        Work <span class="text-gradient">Experience</span>
+                    </h2>
+                    <p class="text-muted-foreground text-sm sm:text-base max-w-2xl mx-auto">
+                        Proven track record of managing production websites, leading e-commerce launches, and engineering custom web solutions.
+                    </p>
                 </div>
 
-                <div class="space-y-6">
-                    <!-- Brainbean -->
-                    <div class="glass-card p-8 rounded-2xl hover-lift">
-                        <div class="flex flex-col md:flex-row justify-between md:items-center mb-6">
-                            <div>
-                                <h3 class="font-display text-2xl font-bold text-foreground">Jr. Website Manager / Web
-                                    Developer</h3>
-                                <p class="text-primary font-medium text-lg">Brainbean Technolabs</p>
+                <div class="space-y-8">
+                    <!-- Brainbean Technolabs Card -->
+                    <div class="group relative rounded-3xl p-8 sm:p-10 border backdrop-blur-xl transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl overflow-hidden"
+                         style="background: radial-gradient(circle at 90% 10%, rgba(108, 71, 255, 0.2) 0%, transparent 55%), linear-gradient(135deg, rgba(22, 18, 38, 0.9) 0%, rgba(12, 10, 24, 0.9) 100%); border-color: rgba(108, 71, 255, 0.25);">
+                        <div class="flex flex-col md:flex-row justify-between md:items-start gap-4 mb-6">
+                            <div class="flex items-start gap-4">
+                                <div class="w-12 h-12 rounded-2xl bg-primary/20 border border-primary/30 flex items-center justify-center text-primary font-bold text-lg shrink-0 group-hover:scale-110 transition-transform">
+                                    BT
+                                </div>
+                                <div>
+                                    <h3 class="font-display text-2xl sm:text-3xl font-bold text-white mb-1 group-hover:text-primary transition-colors">
+                                        Jr. Website Manager / Web Developer
+                                    </h3>
+                                    <p class="text-primary font-semibold text-base sm:text-lg">Brainbean Technolabs</p>
+                                </div>
                             </div>
-                            <div
-                                class="mt-2 md:mt-0 px-4 py-2 bg-primary/10 text-primary rounded-full text-sm font-semibold inline-flex w-fit">
-                                2024 - PRESENT
+                            <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-xs font-semibold bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 w-fit shrink-0">
+                                <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+                                2024 – PRESENT • Full-Time
                             </div>
                         </div>
-                        <p class="text-muted-foreground leading-relaxed">
-                            Oversee daily operations and maintenance of multiple client websites, ensuring 99.9% uptime.
-                            Collaborate with design and marketing teams to implement site updates that improved page
-                            load speeds. Manage Shopify store configurations, including product migrations and payment
-                            gateway integrations.
-                        </p>
+
+                        <!-- Key Achievements Bullet Points -->
+                        <div class="space-y-3.5 mb-8 text-sm text-muted-foreground leading-relaxed">
+                            <div class="flex items-start gap-3">
+                                <span class="w-1.5 h-1.5 rounded-full bg-primary mt-2 shrink-0"></span>
+                                <span><strong class="text-white">Daily Production Operations:</strong> Oversee daily operations, hosting environments, and continuous maintenance across 20+ live client websites, guaranteeing a <strong class="text-emerald-400">99.9% uptime</strong> standard.</span>
+                            </div>
+                            <div class="flex items-start gap-3">
+                                <span class="w-1.5 h-1.5 rounded-full bg-primary mt-2 shrink-0"></span>
+                                <span><strong class="text-white">Core Web Vitals Optimization:</strong> Partnered closely with design and marketing teams to audit and refactor performance bottlenecks, accelerating mobile page load speeds and reducing bounce rates.</span>
+                            </div>
+                            <div class="flex items-start gap-3">
+                                <span class="w-1.5 h-1.5 rounded-full bg-primary mt-2 shrink-0"></span>
+                                <span><strong class="text-white">E-Commerce Architecture:</strong> Spearheaded Shopify &amp; WooCommerce setups, product catalog migrations, custom Liquid/PHP logic, and payment gateway integrations.</span>
+                            </div>
+                        </div>
+
+                        <!-- Tech Stack Tags -->
+                        <div class="flex flex-wrap gap-2 pt-6 border-t border-white/10">
+                            <span class="px-3 py-1 rounded-lg text-xs font-medium bg-white/5 border border-white/10 text-zinc-300">WordPress</span>
+                            <span class="px-3 py-1 rounded-lg text-xs font-medium bg-white/5 border border-white/10 text-zinc-300">Shopify</span>
+                            <span class="px-3 py-1 rounded-lg text-xs font-medium bg-white/5 border border-white/10 text-zinc-300">WooCommerce</span>
+                            <span class="px-3 py-1 rounded-lg text-xs font-medium bg-white/5 border border-white/10 text-zinc-300">PHP</span>
+                            <span class="px-3 py-1 rounded-lg text-xs font-medium bg-white/5 border border-white/10 text-zinc-300">Speed Optimization</span>
+                            <span class="px-3 py-1 rounded-lg text-xs font-medium bg-white/5 border border-white/10 text-zinc-300">DNS &amp; Hosting</span>
+                        </div>
                     </div>
 
-                    <!-- Infonaya -->
-                    <div class="glass-card p-8 rounded-2xl hover-lift">
-                        <div class="flex flex-col md:flex-row justify-between md:items-center mb-6">
-                            <div>
-                                <h3 class="font-display text-2xl font-bold text-foreground">Wordpress Developer Intern
-                                </h3>
-                                <p class="text-primary font-medium text-lg">Infonaya Softwares</p>
+                    <!-- Infonaya Softwares Card -->
+                    <div class="group relative rounded-3xl p-8 sm:p-10 border backdrop-blur-xl transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl overflow-hidden"
+                         style="background: radial-gradient(circle at 90% 10%, rgba(56, 189, 248, 0.18) 0%, transparent 55%), linear-gradient(135deg, rgba(14, 22, 36, 0.9) 0%, rgba(10, 15, 26, 0.9) 100%); border-color: rgba(56, 189, 248, 0.25);">
+                        <div class="flex flex-col md:flex-row justify-between md:items-start gap-4 mb-6">
+                            <div class="flex items-start gap-4">
+                                <div class="w-12 h-12 rounded-2xl bg-cyan-500/20 border border-cyan-500/30 flex items-center justify-center text-cyan-400 font-bold text-lg shrink-0 group-hover:scale-110 transition-transform">
+                                    IS
+                                </div>
+                                <div>
+                                    <h3 class="font-display text-2xl sm:text-3xl font-bold text-white mb-1 group-hover:text-cyan-400 transition-colors">
+                                        WordPress Developer Intern
+                                    </h3>
+                                    <p class="text-cyan-400 font-semibold text-base sm:text-lg">Infonaya Softwares</p>
+                                </div>
                             </div>
-                            <div
-                                class="mt-2 md:mt-0 px-4 py-2 bg-primary/10 text-primary rounded-full text-sm font-semibold inline-flex w-fit">
-                                2024 - 2024
+                            <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-xs font-semibold bg-white/5 text-zinc-300 border border-white/10 w-fit shrink-0">
+                                2024 – 2024 • Internship
                             </div>
                         </div>
-                        <p class="text-muted-foreground leading-relaxed">
-                            Developed custom WordPress themes and landing pages using HTML, CSS, and PHP. Assisted in
-                            the migration of legacy sites to modern WordPress environments. Debugged plugin conflicts
-                            and resolved responsive design issues across mobile and desktop.
-                        </p>
+
+                        <!-- Key Achievements Bullet Points -->
+                        <div class="space-y-3.5 mb-8 text-sm text-muted-foreground leading-relaxed">
+                            <div class="flex items-start gap-3">
+                                <span class="w-1.5 h-1.5 rounded-full bg-cyan-400 mt-2 shrink-0"></span>
+                                <span><strong class="text-white">Custom Theme Development:</strong> Built custom WordPress themes and high-converting landing pages utilizing semantic HTML5, modern CSS3, and PHP.</span>
+                            </div>
+                            <div class="flex items-start gap-3">
+                                <span class="w-1.5 h-1.5 rounded-full bg-cyan-400 mt-2 shrink-0"></span>
+                                <span><strong class="text-white">Legacy Site Migrations:</strong> Assisted senior engineers in migrating legacy websites into modern, secure WordPress environments with zero data loss.</span>
+                            </div>
+                            <div class="flex items-start gap-3">
+                                <span class="w-1.5 h-1.5 rounded-full bg-cyan-400 mt-2 shrink-0"></span>
+                                <span><strong class="text-white">Debugging &amp; Responsive QA:</strong> Diagnosed and resolved plugin conflicts, responsiveness bugs across mobile/tablet, and cross-browser discrepancies.</span>
+                            </div>
+                        </div>
+
+                        <!-- Tech Stack Tags -->
+                        <div class="flex flex-wrap gap-2 pt-6 border-t border-white/10">
+                            <span class="px-3 py-1 rounded-lg text-xs font-medium bg-white/5 border border-white/10 text-zinc-300">WordPress</span>
+                            <span class="px-3 py-1 rounded-lg text-xs font-medium bg-white/5 border border-white/10 text-zinc-300">PHP</span>
+                            <span class="px-3 py-1 rounded-lg text-xs font-medium bg-white/5 border border-white/10 text-zinc-300">HTML5 / CSS3</span>
+                            <span class="px-3 py-1 rounded-lg text-xs font-medium bg-white/5 border border-white/10 text-zinc-300">JavaScript</span>
+                            <span class="px-3 py-1 rounded-lg text-xs font-medium bg-white/5 border border-white/10 text-zinc-300">Responsive Design</span>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
 
-                <!-- Contact Section -->
+        <!-- Contact Section -->
         <section id="contact" class="section-padding relative border-t border-white/5 overflow-hidden">
             <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-primary/10 rounded-full blur-[160px] pointer-events-none"></div>
 

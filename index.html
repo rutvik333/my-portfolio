@@ -226,88 +226,51 @@
 
     <main>
                 <!-- Hero Section -->
-        <section class="min-h-screen flex flex-col justify-center items-center relative overflow-hidden section-padding pt-32 pb-20">
+        <section class="min-h-screen flex flex-col justify-center items-center relative overflow-hidden section-padding pt-36 pb-20">
             <!-- Ambient Lighting Glows -->
             <div class="absolute top-1/4 left-1/4 w-[500px] h-[500px] bg-primary/20 rounded-full blur-[140px] pointer-events-none animate-float"></div>
             <div class="absolute bottom-1/4 right-1/4 w-[450px] h-[450px] bg-purple-600/15 rounded-full blur-[140px] pointer-events-none animate-float" style="animation-delay: -3s;"></div>
-            <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-gradient-to-b from-primary/5 via-transparent to-transparent rounded-full blur-[160px] pointer-events-none"></div>
 
-            <div class="container mx-auto max-w-5xl relative z-10 px-6">
-                <div class="text-center">
-                    <!-- Availability Pill Badge -->
-                    <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-xs font-semibold bg-white/5 border border-white/10 text-white backdrop-blur-md mb-6 shadow-lg shadow-black/40">
-                        <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
-                        Available for Freelance &amp; Full-Time Roles
-                        <span class="text-primary font-bold ml-1">&rarr;</span>
-                    </div>
+            <div class="container mx-auto max-w-4xl relative z-10 px-6 text-center">
+                <!-- Availability Pill Badge -->
+                <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-xs font-medium bg-white/5 border border-white/10 text-zinc-300 backdrop-blur-md mb-8">
+                    <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+                    Available for Freelance &amp; Full-Time
+                </div>
 
-                    <!-- Main Hero Headline -->
-                    <h1 class="font-display text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-black tracking-tight mb-6 leading-[1.08] text-white">
-                        Engineering High-Converting <br class="hidden sm:inline">
-                        <span class="text-gradient">Web Experiences</span>
-                    </h1>
+                <!-- Main Hero Headline -->
+                <h1 class="font-display text-5xl sm:text-7xl md:text-8xl font-black tracking-tight mb-6 text-white leading-tight">
+                    Hi, I'm <span class="text-gradient">Rahil Patel</span>
+                </h1>
 
-                    <!-- Hero Subtitle -->
-                    <p class="text-muted-foreground text-base sm:text-lg md:text-xl max-w-3xl mx-auto mb-10 leading-relaxed font-normal">
-                        Hi, I'm <strong class="text-white font-semibold">Rahil Patel</strong> — Web Developer &amp; Website Manager specialized in scalable <span class="text-white font-medium">WordPress, Shopify, &amp; bespoke web platforms</span>. Bridging pixel-perfect creative design with high-performance engineering.
-                    </p>
+                <!-- Clean Subtitle -->
+                <p class="text-muted-foreground text-base sm:text-xl max-w-2xl mx-auto mb-10 font-normal leading-relaxed">
+                    Web Developer &amp; Website Manager specialized in high-performance WordPress &amp; Shopify websites.
+                </p>
 
-                    <!-- Hero CTA Buttons -->
-                    <div class="flex flex-wrap justify-center items-center gap-4 mb-16">
-                        <a href="#projects"
-                            class="px-8 py-4 rounded-xl bg-gradient-to-r from-primary via-purple-600 to-indigo-600 hover:from-primary/90 hover:to-indigo-500 text-white font-semibold text-sm sm:text-base shadow-xl shadow-primary/30 hover:shadow-primary/50 hover:scale-105 transition-all duration-300 flex items-center justify-center gap-2 cursor-pointer">
-                            <span>Explore 28+ Projects</span>
-                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-                                <line x1="5" y1="12" x2="19" y2="12"></line>
-                                <polyline points="12 5 19 12 12 19"></polyline>
-                            </svg>
-                        </a>
-                        <button onclick="openModal()"
-                            class="px-8 py-4 rounded-xl glass-card text-white font-semibold text-sm sm:text-base border border-white/15 hover:border-primary/50 hover:bg-white/10 transition-all duration-300 flex items-center justify-center gap-2 cursor-pointer">
-                            <span>Get In Touch</span>
-                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
-                            </svg>
-                        </button>
-                        <a href="https://raw.githubusercontent.com/rutvik333/my-portfolio/1818ceec7d9a31e93d7dbc585c9e7325d4ddcac1/Rahil%20Patel.pdf" target="_blank"
-                            class="px-6 py-4 rounded-xl bg-white/5 border border-white/10 text-muted-foreground hover:text-white hover:bg-white/10 font-semibold text-sm sm:text-base transition-all duration-300 flex items-center justify-center gap-2">
-                            <span>Resume</span>
-                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
-                                <polyline points="7 10 12 15 17 10"></polyline>
-                                <line x1="12" y1="15" x2="12" y2="3"></line>
-                            </svg>
-                        </a>
-                    </div>
-
-                    <!-- Credibility Metrics Bar -->
-                    <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 max-w-4xl mx-auto pt-8 border-t border-white/10 text-left">
-                        <div class="glass-card p-5 rounded-2xl border border-white/10 hover-lift">
-                            <p class="font-display font-extrabold text-2xl sm:text-3xl text-white">28+</p>
-                            <p class="text-xs text-muted-foreground mt-1 font-medium">Shipped Projects</p>
-                        </div>
-                        <div class="glass-card p-5 rounded-2xl border border-white/10 hover-lift">
-                            <p class="font-display font-extrabold text-2xl sm:text-3xl text-emerald-400">99.9%</p>
-                            <p class="text-xs text-muted-foreground mt-1 font-medium">Production Uptime</p>
-                        </div>
-                        <div class="glass-card p-5 rounded-2xl border border-white/10 hover-lift">
-                            <p class="font-display font-extrabold text-2xl sm:text-3xl text-purple-400">1+ Years</p>
-                            <p class="text-xs text-muted-foreground mt-1 font-medium">Industry Experience</p>
-                        </div>
-                        <div class="glass-card p-5 rounded-2xl border border-white/10 hover-lift">
-                            <p class="font-display font-extrabold text-2xl sm:text-3xl text-cyan-400">&lt; 1s</p>
-                            <p class="text-xs text-muted-foreground mt-1 font-medium">Core Web Vitals</p>
-                        </div>
-                    </div>
+                <!-- Hero CTA Buttons -->
+                <div class="flex flex-wrap justify-center items-center gap-4">
+                    <a href="#projects"
+                        class="px-8 py-3.5 rounded-xl bg-gradient-to-r from-primary via-purple-600 to-indigo-600 hover:opacity-95 text-white font-semibold text-sm sm:text-base shadow-xl shadow-primary/25 hover:shadow-primary/40 hover:scale-105 transition-all duration-300 flex items-center gap-2 cursor-pointer">
+                        <span>View Projects</span>
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="5" y1="12" x2="19" y2="12"></line>
+                            <polyline points="12 5 19 12 12 19"></polyline>
+                        </svg>
+                    </a>
+                    <button onclick="openModal()"
+                        class="px-8 py-3.5 rounded-xl glass-card text-white font-semibold text-sm sm:text-base border border-white/15 hover:border-primary/50 hover:bg-white/10 transition-all duration-300 flex items-center gap-2 cursor-pointer">
+                        <span>Get In Touch</span>
+                    </button>
                 </div>
             </div>
 
             <!-- Scroll Down Indicator -->
-            <div class="mt-12">
+            <div class="absolute bottom-10 left-1/2 -translate-x-1/2">
                 <a href="#tech-stack"
-                    class="flex flex-col items-center text-muted-foreground hover:text-primary transition-colors animate-bounce">
-                    <span class="text-xs font-medium uppercase tracking-wider mb-2">Explore Skills</span>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                    class="flex flex-col items-center text-muted-foreground hover:text-white transition-colors group">
+                    <span class="text-[11px] font-medium uppercase tracking-widest mb-2 opacity-60 group-hover:opacity-100 transition-opacity">Scroll Down</span>
+                    <svg class="animate-bounce" width="18" height="18" viewBox="0 0 24 24" fill="none"
                         stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                         <path d="M12 5v14"></path>
                         <path d="m19 12-7 7-7-7"></path>

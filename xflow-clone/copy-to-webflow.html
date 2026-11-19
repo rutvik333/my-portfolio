@@ -132,6 +132,7 @@
       // Webflow expects application/json on the system clipboard
       const listener = function(e) {
         e.clipboardData.setData('application/json', jsonStr);
+        e.clipboardData.setData('text/plain', jsonStr);
         e.preventDefault();
       };
 

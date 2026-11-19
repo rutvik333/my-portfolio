@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pit Stop Deiseil - Concept 2 - Case Study | Rahil Patel Portfolio</title>
+    <meta name="description" content="Case study of Pit Stop Deiseil Concept 2 (Dark Luxury & Botanical) developed by Rahil Patel - Web Developer & Site Manager. Visual showcase of 5 key pages, technical stack, and architecture.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        border: "hsl(var(--border))",
+                        background: "hsl(var(--background))",
+                        foreground: "hsl(var(--foreground))",
+                        primary: {
+                            DEFAULT: "hsl(var(--primary))",
+                            foreground: "hsl(var(--primary-foreground))",
+                        },
+                        muted: {
+                            DEFAULT: "hsl(var(--muted))",
+                            foreground: "hsl(var(--muted-foreground))",
+                        },
+                    },
+                    fontFamily: {
+                        display: ['Inter', 'sans-serif'],
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+        :root {
+            --background: 240 10% 4%;
+            --foreground: 0 0% 98%;
+            --primary: 252 100% 65%;
+            --primary-foreground: 0 0% 100%;
+            --muted: 240 5% 15%;
+            --muted-foreground: 240 5% 65%;
+            --border: 240 5% 20%;
+            --gradient-primary: linear-gradient(135deg, hsl(252, 100%, 65%), hsl(280, 100%, 65%));
+        }
+
+        body {
+            background-color: hsl(var(--background));
+            color: hsl(var(--foreground));
+            font-family: 'Inter', sans-serif;
+            overflow-x: hidden;
+        }
+
+        .text-gradient {
+            background: var(--gradient-primary);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .glass-card {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.07);
+        }
+
+        .glass-card-hover {
+            transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        .glass-card-hover:hover {
+            background: rgba(255, 255, 255, 0.05);
+            border-color: rgba(255, 255, 255, 0.15);
+            transform: translateY(-4px);
+            box-shadow: 0 15px 35px -10px rgba(0, 0, 0, 0.6);
+        }
+
+        .tab-btn.active {
+            background: hsl(var(--primary));
+            color: #ffffff;
+            border-color: transparent;
+            box-shadow: 0 4px 20px -2px rgba(108, 71, 255, 0.4);
+        }
+
+        .tab-btn:not(.active) {
+            background: rgba(255, 255, 255, 0.04);
+            color: hsl(var(--muted-foreground));
+            border-color: rgba(255, 255, 255, 0.08);
+        }
+
+        .tab-btn:not(.active):hover {
+            background: rgba(255, 255, 255, 0.08);
+            color: hsl(var(--foreground));
+        }
+
+        #lightboxModal {
+            transition: opacity 0.25s ease;
+        }
+    </style>
+</head>
+
+<body class="min-h-screen flex flex-col antialiased">
+    <!-- Navbar -->
+    <header class="sticky top-0 z-50 glass-card border-b border-white/5 bg-background/80 backdrop-blur-md">
+        <div class="container mx-auto max-w-7xl px-4 sm:px-6 h-20 flex items-center justify-between">
+            <a href="../index.html" class="flex items-center gap-3 group">
+                <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-primary to-purple-500 flex items-center justify-center font-bold text-lg text-white shadow-lg shadow-primary/20 group-hover:scale-105 transition-transform">
+                    RP
+                </div>
+                <div>
+                    <span class="font-display font-bold text-lg text-foreground block group-hover:text-primary transition-colors">Rahil Patel</span>
+                    <span class="text-xs text-muted-foreground block -mt-1">Portfolio & Case Studies</span>
+                </div>
+            </a>
+
+            <div class="flex items-center gap-3 sm:gap-4">
+                <a href="../index.html#projects" class="inline-flex items-center gap-2 px-4 py-2 rounded-xl text-sm font-medium text-muted-foreground hover:text-foreground hover:bg-white/5 transition-all">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="19" y1="12" x2="5" y2="12"></line>
+                        <polyline points="12 19 5 12 12 5"></polyline>
+                    </svg>
+                    <span>All Projects</span>
+                </a>
+                <a href="../pit-stop-deiseil/design-2.html" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl text-sm font-semibold text-white bg-primary hover:bg-primary/90 transition-all shadow-lg shadow-primary/25 hover:shadow-primary/40 hover:-translate-y-0.5">
+                    <span>Visit Live Demo</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                        <polyline points="15 3 21 3 21 9"></polyline>
+                        <line x1="10" y1="14" x2="21" y2="3"></line>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main class="flex-grow">
+        <!-- Hero Section -->
+        <section class="relative pt-12 pb-16 overflow-hidden">
+            <!-- Glow background -->
+            <div class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-primary/15 rounded-full blur-3xl pointer-events-none"></div>
+
+            <div class="container mx-auto max-w-7xl px-4 sm:px-6 relative z-10">
+                <!-- Breadcrumb -->
+                <nav class="flex items-center gap-2 text-xs text-muted-foreground mb-6 uppercase tracking-wider">
+                    <a href="../index.html" class="hover:text-foreground transition-colors">Home</a>
+                    <span>/</span>
+                    <a href="../index.html#projects" class="hover:text-foreground transition-colors">Projects</a>
+                    <span>/</span>
+                    <span class="text-primary font-medium">Pit Stop Deiseil - Concept 2</span>
+                </nav>
+
+                <div class="grid lg:grid-cols-12 gap-8 items-start">
+                    <div class="lg:col-span-8">
+                        <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full text-xs font-semibold bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 mb-4">
+                            <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+                            E-Commerce &amp; Dispensary
+                        </div>
+                        <h1 class="text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-tight text-foreground font-display mb-4">
+                            Pit Stop Deiseil - Concept 2
+                        </h1>
+                        <p class="text-lg md:text-xl text-primary/90 font-medium mb-6">
+                            Dark Luxury &amp; Botanical Apothecary Digital Storefront
+                        </p>
+                        <p class="text-muted-foreground text-base leading-relaxed max-w-3xl mb-8">
+                            Engineered an immersive dark-mode botanical storefront for Pit Stop Deiseil. Showcases high-contrast typography, rich gold terpene accents, responsive product carousel, 21+ compliance age gates, interactive dosage guidance, and live lab COA validation.
+                        </p>
+
+                        <!-- Tech Stack Badges -->
+                        <div class="flex flex-wrap items-center gap-2">
+                            <span class="text-xs uppercase font-semibold text-muted-foreground tracking-wider mr-2">Tech Stack:</span>
+                            <span class="px-2.5 py-1 rounded-lg text-xs font-medium bg-white/5 border border-white/10 text-foreground">Tailwind CSS</span>
+                            <span class="px-2.5 py-1 rounded-lg text-xs font-medium bg-white/5 border border-white/10 text-foreground">Modern JavaScript</span>
+                            <span class="px-2.5 py-1 rounded-lg text-xs font-medium bg-white/5 border border-white/10 text-foreground">Dark Luxury UI</span>
+                            <span class="px-2.5 py-1 rounded-lg text-xs font-medium bg-white/5 border border-white/10 text-foreground">E-Commerce UX</span>
+                            <span class="px-2.5 py-1 rounded-lg text-xs font-medium bg-white/5 border border-white/10 text-foreground">Bento Architecture</span>
+                            <span class="px-2.5 py-1 rounded-lg text-xs font-medium bg-white/5 border border-white/10 text-foreground">Responsive Design</span>
+                        </div>
+                    </div>
+
+                    <!-- Meta Details Sidebar -->
+                    <div class="lg:col-span-4">
+                        <div class="glass-card rounded-2xl p-6 border border-white/10 flex flex-col gap-4 text-sm">
+                            <div class="flex items-center justify-between pb-3 border-b border-white/5">
+                                <span class="text-muted-foreground">Client:</span>
+                                <span class="font-medium text-foreground">Pit Stop Deiseil (Concept 02)</span>
+                            </div>
+                            <div class="flex items-center justify-between pb-3 border-b border-white/5">
+                                <span class="text-muted-foreground">Role:</span>
+                                <span class="font-medium text-foreground">Web Developer &amp; UI/UX Architect</span>
+                            </div>
+                            <div class="flex items-center justify-between pb-3 border-b border-white/5">
+                                <span class="text-muted-foreground">Category:</span>
+                                <span class="font-medium text-foreground">E-Commerce &amp; Dispensary</span>
+                            </div>
+                            <div class="flex items-center justify-between pb-3 border-b border-white/5">
+                                <span class="text-muted-foreground">Captured Pages:</span>
+                                <span class="font-medium text-primary">5 Key Views</span>
+                            </div>
+                            <div class="flex items-center justify-between pb-3 border-b border-white/5">
+                                <span class="text-muted-foreground">Status:</span>
+                                <span class="inline-flex items-center gap-1.5 text-emerald-400 font-medium text-xs bg-emerald-400/10 px-2.5 py-1 rounded-full">
+                                    <span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span> Live / Client Project
+                                </span>
+                            </div>
+                            <div class="pt-2 flex flex-col gap-2">
+                                <a href="../pit-stop-deiseil/design-2.html" target="_blank" class="w-full text-center py-2 px-3 rounded-lg bg-primary hover:bg-primary/90 text-xs font-semibold text-white transition-all shadow-md shadow-primary/25">
+                                    Open Dark Luxury (Concept 02) ↗
+                                </a>
+                                <a href="../pit-stop-deiseil/index.html" target="_blank" class="w-full text-center py-2 px-3 rounded-lg bg-white/5 hover:bg-white/10 border border-white/10 text-xs font-semibold text-foreground transition-all">
+                                    Open Flagship (Concept 01) ↗
+                                </a>
+                                <a href="../pit-stop-deiseil/design-3.html" target="_blank" class="w-full text-center py-2 px-3 rounded-lg bg-white/5 hover:bg-white/10 border border-white/10 text-xs font-semibold text-foreground transition-all">
+                                    Open Racing Theme (Concept 03) ↗
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Interactive Screen Showcase -->
+        <section id="showcase" class="py-12 bg-white/[0.01] border-y border-white/5">
+            <div class="container mx-auto max-w-7xl px-4 sm:px-6">
+                <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-8">
+                    <div>
+                        <h2 class="text-2xl font-bold font-display text-foreground">Interactive Screen Showcase</h2>
+                        <p class="text-sm text-muted-foreground mt-1">Explore Dark Luxury aesthetic, flagship botanical, and product formulary</p>
+                    </div>
+
+                    <!-- Screen Tabs -->
+                    <div class="flex items-center gap-2 overflow-x-auto pb-2 md:pb-0 scrollbar-none" id="screenTabs">
+                        <button class="tab-btn active px-4 py-2 rounded-xl text-xs font-semibold whitespace-nowrap transition-all border" data-index="0">1. Dark Luxury (Concept 02)</button>
+                        <button class="tab-btn px-4 py-2 rounded-xl text-xs font-semibold whitespace-nowrap transition-all border" data-index="1">2. Flagship Store (Concept 01)</button>
+                        <button class="tab-btn px-4 py-2 rounded-xl text-xs font-semibold whitespace-nowrap transition-all border" data-index="2">3. Racing Concept</button>
+                        <button class="tab-btn px-4 py-2 rounded-xl text-xs font-semibold whitespace-nowrap transition-all border" data-index="3">4. Product Formulary</button>
+                        <button class="tab-btn px-4 py-2 rounded-xl text-xs font-semibold whitespace-nowrap transition-all border" data-index="4">5. Standards & Story</button>
+                    </div>
+                </div>
+
+                <!-- Showcase Main Stage -->
+                <div class="glass-card rounded-2xl p-4 sm:p-6 border border-white/10">
+                    <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pb-4 border-b border-white/5 mb-6">
+                        <div>
+                            <div class="flex items-center gap-2">
+                                <span id="currentScreenNumber" class="text-xs font-mono font-bold text-primary px-2 py-0.5 rounded bg-primary/10 border border-primary/20">VIEW #1 OF 5</span>
+                                <h3 id="currentScreenTitle" class="text-lg font-bold font-display text-foreground">Dark Luxury & Botanical Concept</h3>
+                            </div>
+                            <p id="currentScreenDescription" class="text-xs text-muted-foreground mt-1">High-contrast dark apothecary aesthetic highlighting deep greens, gold terpenes, and premium product presentation.</p>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <button id="openLightboxBtn" class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-medium bg-white/5 hover:bg-white/10 border border-white/10 text-muted-foreground hover:text-foreground transition-all">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <polyline points="15 3 21 3 21 9"></polyline>
+                                    <polyline points="9 21 3 21 3 15"></polyline>
+                                    <line x1="21" y1="3" x2="14" y2="10"></line>
+                                    <line x1="3" y1="21" x2="10" y2="14"></line>
+                                </svg>
+                                <span>Fullscreen</span>
+                            </button>
+                            <a id="currentScreenUrl" href="../pit-stop-deiseil/design-2.html" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-semibold text-white bg-primary hover:bg-primary/90 transition-all shadow-md shadow-primary/20">
+                                <span>Open Page</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                    <polyline points="15 3 21 3 21 9"></polyline>
+                                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Main Image Display -->
+                    <div class="relative rounded-xl overflow-hidden bg-black/60 border border-white/10 group cursor-pointer" id="activeImageWrapper">
+                        <img id="activeScreenshot" src="../assets/projects/pitstopdeiseil/page_2.png" alt="Pit Stop Deiseil - Concept 02 Dark Luxury" class="w-full h-auto max-h-[720px] object-top object-contain mx-auto transition-opacity duration-300">
+                        
+                        <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center gap-3">
+                            <span class="px-4 py-2 rounded-xl text-xs font-semibold text-white bg-primary/90 backdrop-blur-md shadow-lg flex items-center gap-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <circle cx="11" cy="11" r="8"></circle>
+                                    <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                                    <line x1="11" y1="8" x2="11" y2="14"></line>
+                                    <line x1="8" y1="11" x2="14" y2="11"></line>
+                                </svg>
+                                <span>Click to View Full Size</span>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- All 5 Pages Grid Overview -->
+                <div class="mt-16">
+                    <div class="flex items-center justify-between mb-6">
+                        <div>
+                            <h3 class="text-xl font-bold font-display text-foreground">All 5 Captured Views at a Glance</h3>
+                            <p class="text-xs text-muted-foreground mt-1">Select any thumbnail to view it in the main stage</p>
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-5">
+                        <div class="thumb-card ring-2 ring-primary glass-card glass-card-hover rounded-xl overflow-hidden cursor-pointer group border border-white/10" data-index="0">
+                            <div class="relative h-32 overflow-hidden bg-black/40">
+                                <img src="../assets/projects/pitstopdeiseil/page_2.png" alt="Dark Luxury Concept" class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-300">
+                                <div class="absolute top-2 left-2 px-2 py-0.5 rounded bg-black/70 text-[10px] font-mono text-white">#1</div>
+                            </div>
+                            <div class="p-3">
+                                <h4 class="text-xs font-semibold text-foreground truncate group-hover:text-primary transition-colors">Dark Luxury</h4>
+                                <p class="text-[11px] text-muted-foreground truncate mt-0.5">Apothecary Editorial</p>
+                            </div>
+                        </div>
+
+                        <div class="thumb-card glass-card glass-card-hover rounded-xl overflow-hidden cursor-pointer group border border-white/10" data-index="1">
+                            <div class="relative h-32 overflow-hidden bg-black/40">
+                                <img src="../assets/projects/pitstopdeiseil/page_1.png" alt="Flagship Concept" class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-300">
+                                <div class="absolute top-2 left-2 px-2 py-0.5 rounded bg-black/70 text-[10px] font-mono text-white">#2</div>
+                            </div>
+                            <div class="p-3">
+                                <h4 class="text-xs font-semibold text-foreground truncate group-hover:text-primary transition-colors">Flagship Store</h4>
+                                <p class="text-[11px] text-muted-foreground truncate mt-0.5">Botanical &amp; E-Commerce</p>
+                            </div>
+                        </div>
+
+                        <div class="thumb-card glass-card glass-card-hover rounded-xl overflow-hidden cursor-pointer group border border-white/10" data-index="2">
+                            <div class="relative h-32 overflow-hidden bg-black/40">
+                                <img src="../assets/projects/pitstopdeiseil/page_3.png" alt="Racing Theme" class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-300">
+                                <div class="absolute top-2 left-2 px-2 py-0.5 rounded bg-black/70 text-[10px] font-mono text-white">#3</div>
+                            </div>
+                            <div class="p-3">
+                                <h4 class="text-xs font-semibold text-foreground truncate group-hover:text-primary transition-colors">Racing Theme</h4>
+                                <p class="text-[11px] text-muted-foreground truncate mt-0.5">Speed &amp; Superstore Focus</p>
+                            </div>
+                        </div>
+
+                        <div class="thumb-card glass-card glass-card-hover rounded-xl overflow-hidden cursor-pointer group border border-white/10" data-index="3">
+                            <div class="relative h-32 overflow-hidden bg-black/40">
+                                <img src="../assets/projects/pitstopdeiseil/page_4.png" alt="Product Formulary" class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-300">
+                                <div class="absolute top-2 left-2 px-2 py-0.5 rounded bg-black/70 text-[10px] font-mono text-white">#4</div>
+                            </div>
+                            <div class="p-3">
+                                <h4 class="text-xs font-semibold text-foreground truncate group-hover:text-primary transition-colors">Product Formulary</h4>
+                                <p class="text-[11px] text-muted-foreground truncate mt-0.5">Categorized Cannabinoids</p>
+                            </div>
+                        </div>
+
+                        <div class="thumb-card glass-card glass-card-hover rounded-xl overflow-hidden cursor-pointer group border border-white/10" data-index="4">
+                            <div class="relative h-32 overflow-hidden bg-black/40">
+                                <img src="../assets/projects/pitstopdeiseil/page_5.png" alt="Standards & Story" class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-300">
+                                <div class="absolute top-2 left-2 px-2 py-0.5 rounded bg-black/70 text-[10px] font-mono text-white">#5</div>
+                            </div>
+                            <div class="p-3">
+                                <h4 class="text-xs font-semibold text-foreground truncate group-hover:text-primary transition-colors">Standards &amp; Story</h4>
+                                <p class="text-[11px] text-muted-foreground truncate mt-0.5">Pillars, Book &amp; COA Lookup</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Technical Deep Dive & Highlights -->
+        <section class="py-16">
+            <div class="container mx-auto max-w-7xl px-4 sm:px-6">
+                <div class="grid md:grid-cols-2 gap-8 items-stretch">
+                    <!-- Key Highlights -->
+                    <div class="glass-card rounded-2xl p-8 border border-white/10 flex flex-col justify-between">
+                        <div>
+                            <div class="w-12 h-12 rounded-xl bg-primary/10 text-primary flex items-center justify-center mb-6">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+                                </svg>
+                            </div>
+                            <h3 class="text-2xl font-bold font-display text-foreground mb-4">Key Development Highlights</h3>
+                            <ul class="space-y-4">
+                                <li class="flex items-start gap-3 text-sm text-muted-foreground">
+                                    <span class="w-1.5 h-1.5 rounded-full bg-primary mt-2 shrink-0"></span>
+                                    <span>Engineered Concept 02 Dark Luxury Apothecary direction emphasizing deep forest greens, gold accents, and high-fashion product layouts.</span>
+                                </li>
+                                <li class="flex items-start gap-3 text-sm text-muted-foreground">
+                                    <span class="w-1.5 h-1.5 rounded-full bg-primary mt-2 shrink-0"></span>
+                                    <span>Built an interactive Formula Matcher quiz guiding customers to optimal cannabinoid ratios based on primary wellness targets.</span>
+                                </li>
+                                <li class="flex items-start gap-3 text-sm text-muted-foreground">
+                                    <span class="w-1.5 h-1.5 rounded-full bg-primary mt-2 shrink-0"></span>
+                                    <span>Integrated dynamic slide-out cart drawer with free shipping progress bar, promo code simulator, and real-time subtotals.</span>
+                                </li>
+                                <li class="flex items-start gap-3 text-sm text-muted-foreground">
+                                    <span class="w-1.5 h-1.5 rounded-full bg-primary mt-2 shrink-0"></span>
+                                    <span>Developed interactive Certificate of Analysis (COA) batch search validating Farm Bill compliant THC (&lt;0.3%), pesticide, and heavy metal testing.</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Responsibilities & Standards -->
+                    <div class="glass-card rounded-2xl p-8 border border-white/10 flex flex-col justify-between">
+                        <div>
+                            <div class="w-12 h-12 rounded-xl bg-purple-500/10 text-purple-400 flex items-center justify-center mb-6">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+                                    <polyline points="2 17 12 22 22 17"></polyline>
+                                    <polyline points="2 12 12 17 22 12"></polyline>
+                                </svg>
+                            </div>
+                            <h3 class="text-2xl font-bold font-display text-foreground mb-4">Engineering Standards</h3>
+                            <div class="space-y-4 text-sm text-muted-foreground">
+                                <div class="p-4 rounded-xl bg-white/[0.02] border border-white/5">
+                                    <h4 class="font-semibold text-foreground mb-1">⚡ Performance &amp; Core Web Vitals</h4>
+                                    <p>Sub-second render times, modern web fonts loading, lightweight icon sprites, and zero bloated third-party dependencies.</p>
+                                </div>
+                                <div class="p-4 rounded-xl bg-white/[0.02] border border-white/5">
+                                    <h4 class="font-semibold text-foreground mb-1">📱 Responsive &amp; Cross-Device Compatibility</h4>
+                                    <p>Pixel-perfect fluidity across all breakpoints from smartphone viewports to ultra-wide desktop monitors.</p>
+                                </div>
+                                <div class="p-4 rounded-xl bg-white/[0.02] border border-white/5">
+                                    <h4 class="font-semibold text-foreground mb-1">🔒 Legal Compliance &amp; Age Verification</h4>
+                                    <p>21+ regulatory age gate modal with persistent session storage, FDA health disclosures, and state-specific hemp shipping disclaimers.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Next/Prev Project Navigation Bar -->
+                <div class="mt-16 pt-8 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between gap-4">
+                    <a href="pitstopdeiseil.html" class="inline-flex items-center gap-3 px-6 py-3 rounded-xl glass-card-hover border border-white/10 text-sm font-medium text-muted-foreground hover:text-foreground w-full sm:w-auto justify-center sm:justify-start">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="19" y1="12" x2="5" y2="12"></line>
+                            <polyline points="12 19 5 12 12 5"></polyline>
+                        </svg>
+                        <span>Previous: <strong class="text-foreground">Pit Stop Deiseil (Concept 1)</strong></span>
+                    </a>
+
+                    <a href="../index.html#projects" class="px-6 py-3 text-xs uppercase tracking-wider font-semibold text-primary hover:text-primary/80 transition-colors">
+                        View All Projects
+                    </a>
+
+                    <a href="smokedistribution.html" class="inline-flex items-center gap-3 px-6 py-3 rounded-xl glass-card-hover border border-white/10 text-sm font-medium text-muted-foreground hover:text-foreground w-full sm:w-auto justify-center sm:justify-end">
+                        <span>Next: <strong class="text-foreground">Smoke Distribution</strong></span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="5" y1="12" x2="19" y2="12"></line>
+                            <polyline points="12 5 19 12 12 19"></polyline>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Banner -->
+        <section class="py-16 bg-gradient-to-b from-transparent to-primary/10">
+            <div class="container mx-auto max-w-5xl px-4 sm:px-6 text-center">
+                <div class="glass-card rounded-3xl p-8 sm:p-12 border border-white/10 relative overflow-hidden">
+                    <div class="absolute -right-20 -bottom-20 w-64 h-64 bg-primary/20 rounded-full blur-3xl pointer-events-none"></div>
+                    <h3 class="text-2xl sm:text-3xl font-extrabold font-display text-foreground mb-4">
+                        Ready to elevate your digital presence?
+                    </h3>
+                    <p class="text-muted-foreground text-base max-w-xl mx-auto mb-8">
+                        Let's collaborate to build high-performance, conversion-oriented websites and manage your online growth.
+                    </p>
+                    <div class="flex flex-wrap items-center justify-center gap-4">
+                        <a href="../index.html#contact" class="px-8 py-3.5 rounded-xl font-semibold text-white bg-primary hover:bg-primary/90 transition-all shadow-lg shadow-primary/30">
+                            Get In Touch
+                        </a>
+                        <a href="../pit-stop-deiseil/design-2.html" target="_blank" rel="noopener noreferrer" class="px-8 py-3.5 rounded-xl font-semibold text-foreground bg-white/5 hover:bg-white/10 border border-white/10 transition-all">
+                            Visit Concept 02 Live Demo ↗
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="py-8 border-t border-white/5 text-center text-xs text-muted-foreground">
+        <div class="container mx-auto px-4">
+            <p>&copy; 2026 Rahil Patel. All rights reserved. Web Developer &amp; Website Manager.</p>
+        </div>
+    </footer>
+
+    <!-- Fullscreen Lightbox Modal -->
+    <div id="lightboxModal" class="fixed inset-0 z-50 bg-black/90 backdrop-blur-md hidden items-center justify-center p-4">
+        <button id="closeLightboxBtn" class="absolute top-6 right-6 p-3 rounded-full bg-white/10 hover:bg-white/20 text-white transition-all">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="18" y1="6" x2="6" y2="18"></line>
+                <line x1="6" y1="6" x2="18" y2="18"></line>
+            </svg>
+        </button>
+        <img id="lightboxImage" src="" alt="Fullscreen Screenshot" class="max-w-full max-h-[90vh] object-contain rounded-xl shadow-2xl">
+    </div>
+
+    <!-- Interactive Script -->
+    <script>
+        const pagesData = [
+            {
+                "id": 1,
+                "title": "1. Dark Luxury",
+                "page_name": "Dark Luxury & Botanical Concept (Concept 02)",
+                "url": "../pit-stop-deiseil/design-2.html",
+                "image": "assets/projects/pitstopdeiseil/page_2.png",
+                "description": "High-contrast dark apothecary aesthetic highlighting deep greens, gold terpenes, and premium product presentation."
+            },
+            {
+                "id": 2,
+                "title": "2. Flagship Store",
+                "page_name": "Botanical Superstore (Flagship Concept 01)",
+                "url": "../pit-stop-deiseil/index.html",
+                "image": "assets/projects/pitstopdeiseil/page_1.png",
+                "description": "Clean botanical dispensary design featuring age gate verification, interactive formula matcher, and real-time cart drawer."
+            },
+            {
+                "id": 3,
+                "title": "3. Racing Concept",
+                "page_name": "Racing & Superstore Focus (Concept 03)",
+                "url": "../pit-stop-deiseil/design-3.html",
+                "image": "assets/projects/pitstopdeiseil/page_3.png",
+                "description": "High-energy racing pit stop theme emphasizing speed, community prize wheel, and Metter Georgia hemp heritage."
+            },
+            {
+                "id": 4,
+                "title": "4. Product Formulary",
+                "page_name": "Product Formulary & Grid",
+                "url": "../pit-stop-deiseil/index.html#shop",
+                "image": "assets/projects/pitstopdeiseil/page_4.png",
+                "description": "Curated product catalog showcasing D9 Lemonade, Highdration 1000mg Lotion, CBD Softgels, and functional mushrooms."
+            },
+            {
+                "id": 5,
+                "title": "5. Standards & Story",
+                "page_name": "Pillars & Community Story",
+                "url": "../pit-stop-deiseil/index.html#standards",
+                "image": "assets/projects/pitstopdeiseil/page_5.png",
+                "description": "4-Pillars of excellence, veteran-owned rigor, Sadie Souliloquy recovery story, and Certificate of Analysis (COA) lookup."
+            }
+        ];
+
+        let currentIndex = 0;
+
+        function updateScreen(index) {
+            currentIndex = index;
+            const data = pagesData[index];
+
+            // Update Tab states
+            document.querySelectorAll('.tab-btn').forEach((btn, i) => {
+                if (i === index) {
+                    btn.classList.add('active');
+                } else {
+                    btn.classList.remove('active');
+                }
+            });
+
+            // Update Thumbnail borders
+            document.querySelectorAll('.thumb-card').forEach((card, i) => {
+                if (i === index) {
+                    card.classList.add('ring-2', 'ring-primary');
+                } else {
+                    card.classList.remove('ring-2', 'ring-primary');
+                }
+            });
+
+            // Update Header info
+            document.getElementById('currentScreenNumber').textContent = `VIEW #${data.id} OF 5`;
+            document.getElementById('currentScreenTitle').textContent = data.page_name;
+            document.getElementById('currentScreenDescription').textContent = data.description;
+            document.getElementById('currentScreenUrl').href = data.url;
+
+            // Fade transition for image
+            const imgEl = document.getElementById('activeScreenshot');
+            imgEl.style.opacity = '0';
+            setTimeout(() => {
+                imgEl.src = '../' + data.image;
+                imgEl.alt = data.page_name;
+                imgEl.style.opacity = '1';
+            }, 150);
+        }
+
+        // Click on tabs
+        document.querySelectorAll('.tab-btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                const idx = parseInt(btn.getAttribute('data-index'), 10);
+                updateScreen(idx);
+            });
+        });
+
+        // Click on thumbnails
+        document.querySelectorAll('.thumb-card').forEach(card => {
+            card.addEventListener('click', () => {
+                const idx = parseInt(card.getAttribute('data-index'), 10);
+                updateScreen(idx);
+                document.getElementById('showcase').scrollIntoView({ behavior: 'smooth' });
+            });
+        });
+
+        // Lightbox
+        const modal = document.getElementById('lightboxModal');
+        const modalImg = document.getElementById('lightboxImage');
+
+        function openModal() {
+            modalImg.src = '../' + pagesData[currentIndex].image;
+            modal.classList.remove('hidden');
+            modal.classList.add('flex');
+        }
+
+        function closeModal() {
+            modal.classList.add('hidden');
+            modal.classList.remove('flex');
+        }
+
+        document.getElementById('activeImageWrapper').addEventListener('click', openModal);
+        document.getElementById('openLightboxBtn').addEventListener('click', openModal);
+        document.getElementById('closeLightboxBtn').addEventListener('click', closeModal);
+        modal.addEventListener('click', (e) => {
+            if (e.target === modal) closeModal();
+        });
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') closeModal();
+        });
+    </script>
+</body>
+</html>

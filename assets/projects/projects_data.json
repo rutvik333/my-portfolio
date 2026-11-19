@@ -1,7 +1,7 @@
 [
   {
     "slug": "pitstopdeiseil",
-    "name": "Pit Stop Deiseil",
+    "name": "Pit Stop Deiseil - Concept 1",
     "url": "pit-stop-deiseil/index.html",
     "category": "E-Commerce & Dispensary",
     "tech": [
@@ -34,6 +34,63 @@
         "id": 3,
         "title": "Racing Concept",
         "page_name": "Racing & Superstore Focus",
+        "url": "pit-stop-deiseil/design-3.html",
+        "image": "assets/projects/pitstopdeiseil/page_3.png",
+        "description": "High-energy racing pit stop theme emphasizing speed, community prize wheel, and Metter Georgia hemp heritage."
+      },
+      {
+        "id": 4,
+        "title": "Product Formulary",
+        "page_name": "Product Formulary & Grid",
+        "url": "pit-stop-deiseil/index.html#shop",
+        "image": "assets/projects/pitstopdeiseil/page_4.png",
+        "description": "Curated product catalog showcasing D9 Lemonade, Highdration 1000mg Lotion, CBD Softgels, and functional mushrooms."
+      },
+      {
+        "id": 5,
+        "title": "Standards & Story",
+        "page_name": "Pillars & Community Story",
+        "url": "pit-stop-deiseil/index.html#standards",
+        "image": "assets/projects/pitstopdeiseil/page_5.png",
+        "description": "4-Pillars of excellence, veteran-owned rigor, Sadie Souliloquy recovery story, and Certificate of Analysis (COA) lookup."
+      }
+    ]
+  },
+  {
+    "slug": "pitstopdeiseil-concept2",
+    "name": "Pit Stop Deiseil - Concept 2",
+    "url": "pit-stop-deiseil/design-2.html",
+    "category": "E-Commerce & Dispensary",
+    "tech": [
+      "Tailwind CSS",
+      "Modern JavaScript",
+      "Dark Luxury UI",
+      "E-Commerce UX",
+      "Bento Architecture",
+      "Responsive Design"
+    ],
+    "description": "High-contrast dark apothecary aesthetic highlighting deep greens, gold terpenes, interactive lab results, and premium dispensary presentation.",
+    "pages": [
+      {
+        "id": 1,
+        "title": "Dark Luxury",
+        "page_name": "Dark Luxury & Botanical Concept (Concept 02)",
+        "url": "pit-stop-deiseil/design-2.html",
+        "image": "assets/projects/pitstopdeiseil/page_2.png",
+        "description": "High-contrast dark apothecary aesthetic highlighting deep greens, gold terpenes, and premium product presentation."
+      },
+      {
+        "id": 2,
+        "title": "Flagship Store",
+        "page_name": "Botanical Superstore (Flagship Concept 01)",
+        "url": "pit-stop-deiseil/index.html",
+        "image": "assets/projects/pitstopdeiseil/page_1.png",
+        "description": "Clean botanical dispensary design featuring age gate verification, interactive formula matcher, and real-time cart drawer."
+      },
+      {
+        "id": 3,
+        "title": "Racing Concept",
+        "page_name": "Racing & Superstore Focus (Concept 03)",
         "url": "pit-stop-deiseil/design-3.html",
         "image": "assets/projects/pitstopdeiseil/page_3.png",
         "description": "High-energy racing pit stop theme emphasizing speed, community prize wheel, and Metter Georgia hemp heritage."

@@ -146,46 +146,78 @@
 
 <body class="min-h-screen bg-background overflow-x-hidden selection:bg-primary/30 selection:text-white dark">
 
-    <!-- Navbar -->
-    <nav class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 py-4 nav-backdrop">
-        <div class="container mx-auto max-w-6xl px-6 flex items-center justify-between">
-            <a href="#" class="font-display text-xl font-bold text-foreground">
-                <span class="text-gradient">R</span>ahil
-            </a>
-            <div class="flex items-center gap-6">
-                <div class="hidden md:flex items-center gap-8">
+        <!-- Navbar -->
+    <header class="fixed top-0 left-0 right-0 z-50 px-4 sm:px-6 pt-3 sm:pt-4 transition-all duration-300" id="mainHeader">
+        <div class="container mx-auto max-w-6xl">
+            <nav class="rounded-2xl sm:rounded-full px-5 py-3 border border-white/10 bg-black/60 backdrop-blur-xl shadow-2xl flex items-center justify-between gap-4 transition-all duration-300 hover:border-white/20">
+                <!-- Brand / Full Name -->
+                <a href="#" class="flex items-center gap-3 group">
+                    <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-primary via-purple-500 to-indigo-500 flex items-center justify-center font-extrabold text-sm text-white shadow-lg shadow-primary/30 group-hover:scale-105 group-hover:shadow-primary/50 transition-all duration-300">
+                        RP
+                    </div>
+                    <div class="flex flex-col">
+                        <span class="font-display font-extrabold text-base sm:text-lg text-white tracking-tight group-hover:text-primary transition-colors flex items-center gap-2">
+                            Rahil Patel
+                            <span class="inline-block w-2 h-2 rounded-full bg-emerald-400 animate-pulse" title="Available for hire"></span>
+                        </span>
+                        <span class="text-[11px] text-muted-foreground font-medium tracking-tight -mt-0.5 hidden xs:inline">Web Developer &amp; Site Manager</span>
+                    </div>
+                </a>
+
+                <!-- Navigation Links (Centered) -->
+                <div class="hidden md:flex items-center gap-1 bg-white/[0.03] p-1 rounded-full border border-white/5">
                     <a href="#tech-stack"
-                        class="text-muted-foreground hover:text-foreground transition-colors relative group">
-                        Skills
-                        <span
-                            class="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full"></span>
+                        class="px-4 py-1.5 rounded-full text-xs font-semibold text-muted-foreground hover:text-white hover:bg-white/10 transition-all">
+                        Skills &amp; Tools
                     </a>
                     <a href="#projects"
-                        class="text-muted-foreground hover:text-foreground transition-colors relative group">
+                        class="px-4 py-1.5 rounded-full text-xs font-semibold text-muted-foreground hover:text-white hover:bg-white/10 transition-all">
                         Projects
-                        <span
-                            class="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full"></span>
                     </a>
                     <a href="#about"
-                        class="text-muted-foreground hover:text-foreground transition-colors relative group">
+                        class="px-4 py-1.5 rounded-full text-xs font-semibold text-muted-foreground hover:text-white hover:bg-white/10 transition-all">
                         About
-                        <span
-                            class="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full"></span>
                     </a>
                     <a href="#experience"
-                        class="text-muted-foreground hover:text-foreground transition-colors relative group">
+                        class="px-4 py-1.5 rounded-full text-xs font-semibold text-muted-foreground hover:text-white hover:bg-white/10 transition-all">
                         Experience
-                        <span
-                            class="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full"></span>
+                    </a>
+                    <a href="#contact"
+                        class="px-4 py-1.5 rounded-full text-xs font-semibold text-muted-foreground hover:text-white hover:bg-white/10 transition-all">
+                        Contact
                     </a>
                 </div>
-                <button onclick="openModal()"
-                    class="px-5 py-2 bg-primary text-primary-foreground font-medium rounded-lg hover:glow-primary transition-all duration-300 text-sm cursor-pointer whitespace-nowrap">
-                    Hire Me
-                </button>
+
+                <!-- Right Action Buttons -->
+                <div class="flex items-center gap-3">
+                    <button onclick="openModal()"
+                        class="px-5 py-2 rounded-full bg-gradient-to-r from-primary to-purple-600 hover:from-primary/90 hover:to-purple-500 text-white font-semibold text-xs sm:text-sm shadow-lg shadow-primary/25 hover:shadow-primary/40 hover:scale-105 transition-all duration-300 flex items-center gap-2 cursor-pointer whitespace-nowrap">
+                        <span>Let's Talk</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="5" y1="12" x2="19" y2="12"></line>
+                            <polyline points="12 5 19 12 12 19"></polyline>
+                        </svg>
+                    </button>
+                    <!-- Mobile Menu Button -->
+                    <button id="mobileMenuBtn" class="md:hidden p-2 rounded-xl text-muted-foreground hover:text-white bg-white/5 border border-white/10" aria-label="Toggle mobile menu">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="3" y1="12" x2="21" y2="12"></line>
+                            <line x1="3" y1="6" x2="21" y2="6"></line>
+                            <line x1="3" y1="18" x2="21" y2="18"></line>
+                        </svg>
+                    </button>
+                </div>
+            </nav>
+            <!-- Mobile Menu Dropdown -->
+            <div id="mobileMenu" class="md:hidden hidden mt-2 rounded-2xl p-4 bg-black/90 border border-white/10 backdrop-blur-xl shadow-2xl flex flex-col gap-2">
+                <a href="#tech-stack" class="px-4 py-2 rounded-xl text-sm font-semibold text-muted-foreground hover:text-white hover:bg-white/10 transition-all">Skills &amp; Tools</a>
+                <a href="#projects" class="px-4 py-2 rounded-xl text-sm font-semibold text-muted-foreground hover:text-white hover:bg-white/10 transition-all">Projects</a>
+                <a href="#about" class="px-4 py-2 rounded-xl text-sm font-semibold text-muted-foreground hover:text-white hover:bg-white/10 transition-all">About</a>
+                <a href="#experience" class="px-4 py-2 rounded-xl text-sm font-semibold text-muted-foreground hover:text-white hover:bg-white/10 transition-all">Experience</a>
+                <a href="#contact" class="px-4 py-2 rounded-xl text-sm font-semibold text-muted-foreground hover:text-white hover:bg-white/10 transition-all">Contact</a>
             </div>
         </div>
-    </nav>
+    </header>
 
     <main>
         <!-- Hero Section -->
@@ -2028,71 +2060,247 @@
             </div>
         </section>
 
-        <!-- Contact -->
-        <section id="contact" class="section-padding relative border-t border-white/5">
-            <div class="absolute bottom-0 right-0 w-96 h-96 bg-primary/10 rounded-full blur-[120px]"></div>
-            <div class="container mx-auto max-w-4xl relative z-10 px-6">
-                <div class="text-center mb-16">
-                    <p class="text-primary font-medium tracking-widest uppercase text-sm mb-4">Let's Connect</p>
-                    <h2 class="font-display text-4xl md:text-5xl font-bold mb-6">Get In <span
-                            class="text-gradient">Touch</span></h2>
+                <!-- Contact Section -->
+        <section id="contact" class="section-padding relative border-t border-white/5 overflow-hidden">
+            <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-primary/10 rounded-full blur-[160px] pointer-events-none"></div>
+
+            <div class="container mx-auto max-w-6xl relative z-10 px-6">
+                <!-- Section Header -->
+                <div class="text-center max-w-3xl mx-auto mb-16">
+                    <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-xs font-semibold bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 mb-4">
+                        <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+                        Available for Freelance Projects &amp; Full-Time Roles
+                    </div>
+                    <h2 class="font-display text-4xl sm:text-5xl md:text-6xl font-extrabold text-white mb-5 tracking-tight">
+                        Let's Build Something <span class="text-gradient">Extraordinary</span>
+                    </h2>
+                    <p class="text-muted-foreground text-sm sm:text-base leading-relaxed">
+                        Have an upcoming project, e-commerce superstore to build, or need dedicated site management? Reach out directly via WhatsApp, Email, or Phone for an immediate response.
+                    </p>
                 </div>
-                <div class="grid md:grid-cols-3 gap-6">
-                    <!-- Phone -->
-                    <a href="tel:+916355485729"
-                        class="glass-card rounded-2xl p-8 text-center hover-lift flex flex-col items-center justify-center">
-                        <div
-                            class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mb-6 text-primary transition-transform group-hover:scale-110">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24"
-                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round">
-                                <path
-                                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
-                                </path>
-                            </svg>
+
+                <!-- 3 Premium Interactive Contact Cards -->
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+                    <!-- WhatsApp -->
+                    <a href="https://wa.me/919016235994" target="_blank" rel="noopener noreferrer"
+                        class="group relative rounded-3xl p-8 border backdrop-blur-xl transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl flex flex-col justify-between"
+                        style="background: radial-gradient(circle at 80% 20%, rgba(37, 211, 102, 0.22) 0%, transparent 60%), linear-gradient(135deg, rgba(16, 32, 22, 0.85) 0%, rgba(10, 20, 15, 0.85) 100%); border-color: rgba(37, 211, 102, 0.25);">
+                        <div>
+                            <div class="w-14 h-14 rounded-2xl bg-[#25D366]/15 border border-[#25D366]/30 flex items-center justify-center text-[#25D366] mb-6 group-hover:scale-110 shadow-[0_0_20px_rgba(37,211,102,0.3)] transition-all">
+                                <svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M19.05 4.91A9.816 9.816 0 0 0 12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01zm-7.01 15.24c-1.48 0-2.93-.4-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.264 8.264 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.25-8.24 2.2 0 4.27.86 5.82 2.42a8.18 8.18 0 0 1 2.41 5.83c.02 4.54-3.68 8.23-8.23 8.23zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.12-.17.25-.64.81-.78.98-.15.17-.29.19-.54.07-.25-.12-1.05-.39-2-1.23-.74-.66-1.23-1.47-1.38-1.72-.15-.25-.02-.38.11-.51.11-.11.25-.29.37-.43.12-.15.17-.25.25-.42.08-.17.04-.31-.02-.44s-.56-1.36-.77-1.86c-.2-.49-.41-.42-.56-.43h-.48c-.17 0-.44.06-.67.31-.23.25-.88.86-.88 2.1 0 1.24.9 2.44 1.03 2.61.12.17 1.77 2.71 4.3 3.79.6.26 1.07.41 1.44.53.61.19 1.16.17 1.6.1.49-.07 1.47-.6 1.68-1.18.21-.58.21-1.07.15-1.18-.07-.12-.23-.19-.48-.31z"/>
+                                </svg>
+                            </div>
+                            <span class="text-xs font-semibold uppercase tracking-wider text-[#25D366] block mb-1">Instant Messaging</span>
+                            <h3 class="font-display text-2xl font-bold text-white mb-2">WhatsApp Chat</h3>
+                            <p class="text-xs text-muted-foreground mb-4">Fastest response for quick questions, quotes, and project kickoffs.</p>
+                            <div class="px-3 py-2 rounded-xl bg-black/40 border border-white/5 font-mono text-sm text-emerald-300 font-semibold mb-6 flex items-center justify-between">
+                                <span>+91 90162 35994</span>
+                                <span class="w-2 h-2 rounded-full bg-emerald-400"></span>
+                            </div>
                         </div>
-                        <h3 class="font-display text-xl font-bold text-foreground mb-2">Phone</h3>
-                        <span class="mt-2 px-5 py-2 bg-primary/10 text-primary rounded-full font-medium transition-colors group-hover:bg-primary group-hover:text-primary-foreground">Call Now</span>
+                        <div class="w-full py-3 px-4 rounded-xl font-semibold text-xs text-white bg-[#25D366] hover:bg-[#20ba5a] flex items-center justify-center gap-2 shadow-lg shadow-[#25D366]/20 transition-all">
+                            <span>Chat on WhatsApp</span>
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                        </div>
                     </a>
 
                     <!-- Email -->
                     <a href="mailto:rutvikpagi302@gmail.com"
-                        class="glass-card rounded-2xl p-8 text-center hover-lift flex flex-col items-center justify-center">
-                        <div
-                            class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mb-6 text-primary transition-transform group-hover:scale-110">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24"
-                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round">
-                                <rect width="20" height="16" x="2" y="4" rx="2"></rect>
-                                <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
-                            </svg>
+                        class="group relative rounded-3xl p-8 border backdrop-blur-xl transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl flex flex-col justify-between"
+                        style="background: radial-gradient(circle at 80% 20%, rgba(108, 71, 255, 0.25) 0%, transparent 60%), linear-gradient(135deg, rgba(22, 16, 40, 0.85) 0%, rgba(12, 10, 26, 0.85) 100%); border-color: rgba(108, 71, 255, 0.3);">
+                        <div>
+                            <div class="w-14 h-14 rounded-2xl bg-primary/20 border border-primary/30 flex items-center justify-center text-primary mb-6 group-hover:scale-110 shadow-[0_0_20px_rgba(108,71,255,0.3)] transition-all">
+                                <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <rect width="20" height="16" x="2" y="4" rx="2"></rect>
+                                    <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+                                </svg>
+                            </div>
+                            <span class="text-xs font-semibold uppercase tracking-wider text-primary block mb-1">Direct Inbox</span>
+                            <h3 class="font-display text-2xl font-bold text-white mb-2">Email Address</h3>
+                            <p class="text-xs text-muted-foreground mb-4">Detailed project specs, RFPs, scope documents, and collaboration.</p>
+                            <div class="px-3 py-2 rounded-xl bg-black/40 border border-white/5 font-mono text-xs text-purple-300 font-semibold mb-6 truncate flex items-center justify-between">
+                                <span class="truncate">rutvikpagi302@gmail.com</span>
+                                <span class="w-2 h-2 rounded-full bg-primary shrink-0 ml-1"></span>
+                            </div>
                         </div>
-                        <h3 class="font-display text-xl font-bold text-foreground mb-2">Email</h3>
-                        <span class="mt-2 px-5 py-2 bg-primary/10 text-primary rounded-full font-medium transition-colors group-hover:bg-primary group-hover:text-primary-foreground">Mail Now</span>
+                        <div class="w-full py-3 px-4 rounded-xl font-semibold text-xs text-white bg-primary hover:bg-primary/90 flex items-center justify-center gap-2 shadow-lg shadow-primary/25 transition-all">
+                            <span>Send an Email</span>
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+                        </div>
                     </a>
 
-                    <!-- WhatsApp -->
-                    <a href="https://wa.me/919016235994" target="_blank"
-                        class="glass-card rounded-2xl p-8 text-center hover-lift flex flex-col items-center justify-center">
-                        <div
-                            class="w-16 h-16 bg-[#25D366]/10 rounded-full flex items-center justify-center mb-6 text-[#25D366] transition-transform group-hover:scale-110">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24"
-                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round">
-                                <path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"></path>
-                            </svg>
+                    <!-- Phone -->
+                    <a href="tel:+916355485729"
+                        class="group relative rounded-3xl p-8 border backdrop-blur-xl transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl flex flex-col justify-between"
+                        style="background: radial-gradient(circle at 80% 20%, rgba(56, 189, 248, 0.22) 0%, transparent 60%), linear-gradient(135deg, rgba(12, 24, 38, 0.85) 0%, rgba(10, 16, 28, 0.85) 100%); border-color: rgba(56, 189, 248, 0.25);">
+                        <div>
+                            <div class="w-14 h-14 rounded-2xl bg-cyan-500/15 border border-cyan-500/30 flex items-center justify-center text-cyan-400 mb-6 group-hover:scale-110 shadow-[0_0_20px_rgba(56,189,248,0.3)] transition-all">
+                                <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                                </svg>
+                            </div>
+                            <span class="text-xs font-semibold uppercase tracking-wider text-cyan-400 block mb-1">Direct Consultation</span>
+                            <h3 class="font-display text-2xl font-bold text-white mb-2">Phone Call</h3>
+                            <p class="text-xs text-muted-foreground mb-4">Urgent technical consultation, business inquiries, and phone interviews.</p>
+                            <div class="px-3 py-2 rounded-xl bg-black/40 border border-white/5 font-mono text-sm text-cyan-300 font-semibold mb-6 flex items-center justify-between">
+                                <span>+91 63554 85729</span>
+                                <span class="w-2 h-2 rounded-full bg-cyan-400"></span>
+                            </div>
                         </div>
-                        <h3 class="font-display text-xl font-bold text-foreground mb-2">WhatsApp</h3>
-                        <span class="mt-2 px-5 py-2 bg-[#25D366]/10 text-[#25D366] rounded-full font-medium transition-colors group-hover:bg-[#25D366] group-hover:text-white">WhatsApp Now</span>
+                        <div class="w-full py-3 px-4 rounded-xl font-semibold text-xs text-white bg-cyan-600 hover:bg-cyan-500 flex items-center justify-center gap-2 shadow-lg shadow-cyan-600/20 transition-all">
+                            <span>Call Directly</span>
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M15.05 5A5 5 0 0 1 19 8.95M15.05 1A9 9 0 0 1 23 8.94m-1 7.98v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                        </div>
                     </a>
+                </div>
+
+                <!-- Direct Message & Consultation Box -->
+                <div class="glass-card rounded-3xl p-8 sm:p-10 border border-white/10 relative overflow-hidden">
+                    <div class="absolute -top-24 -right-24 w-80 h-80 bg-primary/20 rounded-full blur-3xl pointer-events-none"></div>
+                    <div class="grid lg:grid-cols-12 gap-8 items-center relative z-10">
+                        <div class="lg:col-span-5">
+                            <h3 class="font-display text-2xl sm:text-3xl font-bold text-white mb-3">Send a Project Note</h3>
+                            <p class="text-sm text-muted-foreground leading-relaxed mb-6">
+                                Provide your requirements below and I will get back to you promptly with an initial scope, technical assessment, and timeline.
+                            </p>
+                            <div class="space-y-3 text-xs text-muted-foreground">
+                                <div class="flex items-center gap-2">
+                                    <span class="w-2 h-2 rounded-full bg-emerald-400"></span>
+                                    <span>Rapid turnaround on modern e-commerce stores</span>
+                                </div>
+                                <div class="flex items-center gap-2">
+                                    <span class="w-2 h-2 rounded-full bg-primary"></span>
+                                    <span>WordPress, Shopify, Webflow &amp; Tailwind CSS</span>
+                                </div>
+                                <div class="flex items-center gap-2">
+                                    <span class="w-2 h-2 rounded-full bg-purple-400"></span>
+                                    <span>End-to-end design, code delivery &amp; maintenance</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="lg:col-span-7">
+                            <form onsubmit="handleContactSubmit(event)" class="space-y-4">
+                                <div class="grid sm:grid-cols-2 gap-4">
+                                    <div>
+                                        <label class="block text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-1.5">Your Name</label>
+                                        <input type="text" id="contactName" required placeholder="e.g. Alex Morgan" class="w-full px-4 py-3 rounded-xl bg-white/5 border border-white/10 text-white placeholder-muted-foreground/60 text-sm focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-all">
+                                    </div>
+                                    <div>
+                                        <label class="block text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-1.5">Your Email</label>
+                                        <input type="email" id="contactEmail" required placeholder="alex@company.com" class="w-full px-4 py-3 rounded-xl bg-white/5 border border-white/10 text-white placeholder-muted-foreground/60 text-sm focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-all">
+                                    </div>
+                                </div>
+                                <div>
+                                    <label class="block text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-1.5">Project Scope / Details</label>
+                                    <textarea id="contactMessage" required rows="3" placeholder="Describe what you want to build or manage..." class="w-full px-4 py-3 rounded-xl bg-white/5 border border-white/10 text-white placeholder-muted-foreground/60 text-sm focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-all resize-none"></textarea>
+                                </div>
+                                <div class="flex flex-col sm:flex-row items-center justify-between gap-4">
+                                    <button type="submit" class="w-full sm:w-auto px-8 py-3.5 rounded-xl font-semibold text-sm text-white bg-gradient-to-r from-primary to-purple-600 hover:from-primary/90 hover:to-purple-500 shadow-lg shadow-primary/30 hover:shadow-primary/50 hover:scale-[1.02] transition-all duration-300 flex items-center justify-center gap-2 cursor-pointer">
+                                        <span>Send Message</span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                            <line x1="22" y1="2" x2="11" y2="13"></line>
+                                            <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                                        </svg>
+                                    </button>
+                                    <span id="formFeedback" class="text-xs text-emerald-400 font-medium hidden">Message ready! Connecting...</span>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
     </main>
 
-    <footer class="py-8 px-6 border-t border-white/10">
-        <div class="container mx-auto max-w-6xl text-center">
-            <p class="text-muted-foreground text-sm">© 2026 Rahil Patel. All rights reserved.</p>
+    <!-- Modern Comprehensive Footer -->
+    <footer class="pt-16 pb-12 border-t border-white/10 bg-black/80 relative z-10 overflow-hidden">
+        <div class="container mx-auto max-w-6xl px-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10 pb-12 border-b border-white/10">
+                <!-- Col 1: Brand & Bio (5 cols) -->
+                <div class="lg:col-span-5">
+                    <a href="#" class="flex items-center gap-3 group mb-4">
+                        <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-primary to-purple-500 flex items-center justify-center font-extrabold text-sm text-white shadow-lg shadow-primary/30 group-hover:scale-105 transition-all">
+                            RP
+                        </div>
+                        <div>
+                            <span class="font-display font-extrabold text-lg text-white block group-hover:text-primary transition-colors">Rahil Patel</span>
+                            <span class="text-xs text-muted-foreground block -mt-1">Web Developer &amp; Site Manager</span>
+                        </div>
+                    </a>
+                    <p class="text-sm text-muted-foreground leading-relaxed max-w-sm mb-6">
+                        Specializing in high-converting e-commerce superstores, wholesale distribution platforms, and bespoke web applications with modern design and flawless performance.
+                    </p>
+                    <!-- Social Pills -->
+                    <div class="flex items-center gap-2">
+                        <a href="https://wa.me/919016235994" target="_blank" rel="noopener noreferrer" class="w-9 h-9 rounded-xl bg-white/5 hover:bg-[#25D366]/20 border border-white/10 hover:border-[#25D366]/40 text-muted-foreground hover:text-[#25D366] flex items-center justify-center transition-all" title="WhatsApp">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M19.05 4.91A9.816 9.816 0 0 0 12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01zm-7.01 15.24c-1.48 0-2.93-.4-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.264 8.264 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.25-8.24 2.2 0 4.27.86 5.82 2.42a8.18 8.18 0 0 1 2.41 5.83c.02 4.54-3.68 8.23-8.23 8.23zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.12-.17.25-.64.81-.78.98-.15.17-.29.19-.54.07-.25-.12-1.05-.39-2-1.23-.74-.66-1.23-1.47-1.38-1.72-.15-.25-.02-.38.11-.51.11-.11.25-.29.37-.43.12-.15.17-.25.25-.42.08-.17.04-.31-.02-.44s-.56-1.36-.77-1.86c-.2-.49-.41-.42-.56-.43h-.48c-.17 0-.44.06-.67.31-.23.25-.88.86-.88 2.1 0 1.24.9 2.44 1.03 2.61.12.17 1.77 2.71 4.3 3.79.6.26 1.07.41 1.44.53.61.19 1.16.17 1.6.1.49-.07 1.47-.6 1.68-1.18.21-.58.21-1.07.15-1.18-.07-.12-.23-.19-.48-.31z"/></svg>
+                        </a>
+                        <a href="mailto:rutvikpagi302@gmail.com" class="w-9 h-9 rounded-xl bg-white/5 hover:bg-primary/20 border border-white/10 hover:border-primary/40 text-muted-foreground hover:text-primary flex items-center justify-center transition-all" title="Email">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"></rect><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path></svg>
+                        </a>
+                        <a href="tel:+916355485729" class="w-9 h-9 rounded-xl bg-white/5 hover:bg-cyan-500/20 border border-white/10 hover:border-cyan-500/40 text-muted-foreground hover:text-cyan-400 flex items-center justify-center transition-all" title="Call">
+                            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                        </a>
+                        <a href="https://github.com/rutvik333" target="_blank" rel="noopener noreferrer" class="w-9 h-9 rounded-xl bg-white/5 hover:bg-white/20 border border-white/10 hover:border-white/30 text-muted-foreground hover:text-white flex items-center justify-center transition-all" title="GitHub">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.1-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2z"/></svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Col 2: Navigation Links (2 cols) -->
+                <div class="lg:col-span-2 sm:col-span-1">
+                    <h4 class="font-display font-bold text-sm text-white uppercase tracking-wider mb-4">Navigation</h4>
+                    <ul class="space-y-2.5 text-xs text-muted-foreground">
+                        <li><a href="#tech-stack" class="hover:text-primary transition-colors">Skills &amp; Tech</a></li>
+                        <li><a href="#projects" class="hover:text-primary transition-colors">Featured Projects</a></li>
+                        <li><a href="#about" class="hover:text-primary transition-colors">About Profile</a></li>
+                        <li><a href="#experience" class="hover:text-primary transition-colors">Work Experience</a></li>
+                        <li><a href="#contact" class="hover:text-primary transition-colors">Get in Touch</a></li>
+                    </ul>
+                </div>
+
+                <!-- Col 3: Services (3 cols) -->
+                <div class="lg:col-span-3 sm:col-span-1">
+                    <h4 class="font-display font-bold text-sm text-white uppercase tracking-wider mb-4">Core Specialties</h4>
+                    <ul class="space-y-2.5 text-xs text-muted-foreground">
+                        <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-primary"></span><span>E-Commerce Superstores</span></li>
+                        <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-purple-400"></span><span>Wholesale &amp; B2B Distribution</span></li>
+                        <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span><span>Dispensary UX &amp; Menus</span></li>
+                        <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-cyan-400"></span><span>Custom WordPress &amp; Shopify</span></li>
+                        <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-amber-400"></span><span>Core Web Vitals &amp; Speed</span></li>
+                    </ul>
+                </div>
+
+                <!-- Col 4: Availability Status (2 cols) -->
+                <div class="lg:col-span-2">
+                    <h4 class="font-display font-bold text-sm text-white uppercase tracking-wider mb-4">Availability</h4>
+                    <div class="p-3.5 rounded-xl bg-white/[0.03] border border-white/5 space-y-2">
+                        <div class="flex items-center gap-2 text-xs text-emerald-400 font-semibold">
+                            <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+                            Available Now
+                        </div>
+                        <p class="text-[11px] text-muted-foreground leading-relaxed">
+                            Accepting new client projects &amp; contract opportunities.
+                        </p>
+                        <button onclick="openModal()" class="w-full mt-2 py-1.5 px-3 rounded-lg text-xs font-semibold text-white bg-primary/20 hover:bg-primary/30 border border-primary/30 text-center transition-all cursor-pointer">
+                            Hire Rahil
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer Bottom -->
+            <div class="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-muted-foreground">
+                <p>&copy; 2026 <strong class="text-white font-medium">Rahil Patel</strong>. All rights reserved. Crafted with precision &amp; modern web standards.</p>
+                <a href="#" class="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg bg-white/5 hover:bg-white/10 text-muted-foreground hover:text-white transition-all border border-white/5">
+                    <span>Back to Top</span>
+                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="12" y1="19" x2="12" y2="5"></line>
+                        <polyline points="5 12 12 5 19 12"></polyline>
+                    </svg>
+                </a>
+            </div>
         </div>
     </footer>
 
@@ -2235,6 +2443,42 @@
                 });
             });
         });
+    </script>
+    <!-- Mobile Menu & Contact Form Script -->
+    <script>
+        // Mobile Menu Toggle
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        if (mobileMenuBtn && mobileMenu) {
+            mobileMenuBtn.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+            });
+            mobileMenu.querySelectorAll('a').forEach(link => {
+                link.addEventListener('click', () => {
+                    mobileMenu.classList.add('hidden');
+                });
+            });
+        }
+
+        // Contact Form Submission Handler
+        function handleContactSubmit(e) {
+            e.preventDefault();
+            const name = document.getElementById('contactName').value;
+            const email = document.getElementById('contactEmail').value;
+            const message = document.getElementById('contactMessage').value;
+            const feedback = document.getElementById('formFeedback');
+
+            if (feedback) {
+                feedback.classList.remove('hidden');
+            }
+
+            const subject = encodeURIComponent(`Project Inquiry from ${name}`);
+            const body = encodeURIComponent(`Hello Rahil,\n\nName: ${name}\nEmail: ${email}\n\nProject Scope & Message:\n${message}\n\nBest regards,\n${name}`);
+            
+            setTimeout(() => {
+                window.location.href = `mailto:rutvikpagi302@gmail.com?subject=${subject}&body=${body}`;
+            }, 600);
+        }
     </script>
 </body>
 

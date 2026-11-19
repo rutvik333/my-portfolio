@@ -1,0 +1,225 @@
+{
+  "type": "@webflow/XscpData",
+  "payload": {
+    "nodes": [
+      {
+        "_id": "ae7f59e6-1e79-4cf1-8b2d-42650cd9705b",
+        "text": true,
+        "v": "Move money faster, save more on every transfer"
+      },
+      {
+        "_id": "2b184528-821a-445f-84c2-fac8551124e7",
+        "text": true,
+        "v": "Save 50% FX Cost \u2022 No transaction limits \u2022 No hidden fees"
+      },
+      {
+        "_id": "b71314ce-d408-4792-bc93-792715e5da68",
+        "text": true,
+        "v": "Get Started"
+      },
+      {
+        "_id": "ccf06253-8031-4636-96e6-76ffdcad58c2",
+        "type": "Heading",
+        "tag": "h1",
+        "classes": [
+          "5797d90a-2b5e-4dd9-bd77-4cfb03a52302"
+        ],
+        "children": [
+          "ae7f59e6-1e79-4cf1-8b2d-42650cd9705b"
+        ],
+        "data": {
+          "tag": "h1"
+        }
+      },
+      {
+        "_id": "66dabf2f-ef38-43ea-86bd-1cfef1f82d06",
+        "type": "Paragraph",
+        "tag": "p",
+        "classes": [
+          "91ac3705-79fe-4fd1-bf7d-fdbfcb082f9a"
+        ],
+        "children": [
+          "2b184528-821a-445f-84c2-fac8551124e7"
+        ],
+        "data": {
+          "tag": "p"
+        }
+      },
+      {
+        "_id": "9b76065c-259d-432d-87f9-459932eb419c",
+        "type": "Link",
+        "tag": "a",
+        "classes": [
+          "3f4c837d-c79f-44f2-9f73-c1b2b9ede588"
+        ],
+        "children": [
+          "b71314ce-d408-4792-bc93-792715e5da68"
+        ],
+        "data": {
+          "button": true,
+          "link": {
+            "mode": "external",
+            "url": "#"
+          }
+        }
+      },
+      {
+        "_id": "867f5de4-37f4-40e7-9924-da4d47759b82",
+        "type": "Image",
+        "tag": "img",
+        "classes": [
+          "2ab34f2c-be36-4c8a-b51e-01a8677b1ebf"
+        ],
+        "children": [],
+        "data": {
+          "attr": {
+            "src": "https://raw.githubusercontent.com/rutvik333/my-portfolio/main/xflow-clone/globe_clean.png",
+            "alt": "Xflow Global Payments"
+          }
+        }
+      },
+      {
+        "_id": "4e4f5804-2eca-438c-80bb-b34f40595bc8",
+        "type": "Block",
+        "tag": "div",
+        "classes": [
+          "653a737f-1aed-4122-bd93-22870621410e"
+        ],
+        "children": [
+          "867f5de4-37f4-40e7-9924-da4d47759b82"
+        ],
+        "data": {
+          "tag": "div",
+          "text": false
+        }
+      },
+      {
+        "_id": "8aec9fbf-2642-4003-89d2-0706bf26196f",
+        "type": "Block",
+        "tag": "div",
+        "classes": [
+          "4ed37c49-e636-4973-b70e-b4e8b4abaf34"
+        ],
+        "children": [
+          "ccf06253-8031-4636-96e6-76ffdcad58c2",
+          "66dabf2f-ef38-43ea-86bd-1cfef1f82d06",
+          "9b76065c-259d-432d-87f9-459932eb419c",
+          "4e4f5804-2eca-438c-80bb-b34f40595bc8"
+        ],
+        "data": {
+          "tag": "div",
+          "text": false
+        }
+      },
+      {
+        "_id": "ae57374e-d8af-47c1-965c-2e1e0f5aaf3d",
+        "type": "Section",
+        "tag": "section",
+        "classes": [
+          "beba20bb-e3be-4c33-812a-29e9ba3c594d"
+        ],
+        "children": [
+          "8aec9fbf-2642-4003-89d2-0706bf26196f"
+        ],
+        "data": {
+          "tag": "section",
+          "text": false
+        }
+      }
+    ],
+    "styles": [
+      {
+        "_id": "beba20bb-e3be-4c33-812a-29e9ba3c594d",
+        "fake": false,
+        "type": "class",
+        "name": "xflow-hero-section",
+        "namespace": "",
+        "comb": "",
+        "styleLess": "display: flex; width: 100%; padding-top: 32px; padding-left: 24px; padding-right: 24px; flex-direction: column; align-items: center; background-color: #ffffff;",
+        "variants": {},
+        "children": []
+      },
+      {
+        "_id": "4ed37c49-e636-4973-b70e-b4e8b4abaf34",
+        "fake": false,
+        "type": "class",
+        "name": "xflow-hero-card",
+        "namespace": "",
+        "comb": "",
+        "styleLess": "position: relative; overflow: hidden; width: 100%; max-width: 1280px; padding-top: 72px; padding-left: 20px; padding-right: 20px; border-radius: 28px; background-color: #edf2fe; border: 1px solid #dce5fa; text-align: center; display: flex; flex-direction: column; align-items: center;",
+        "variants": {},
+        "children": []
+      },
+      {
+        "_id": "5797d90a-2b5e-4dd9-bd77-4cfb03a52302",
+        "fake": false,
+        "type": "class",
+        "name": "xflow-hero-heading",
+        "namespace": "",
+        "comb": "",
+        "styleLess": "font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-size: 54px; line-height: 1.15; font-weight: 800; color: #0a0f1d; letter-spacing: -1.5px; max-width: 860px; margin-bottom: 16px;",
+        "variants": {},
+        "children": []
+      },
+      {
+        "_id": "91ac3705-79fe-4fd1-bf7d-fdbfcb082f9a",
+        "fake": false,
+        "type": "class",
+        "name": "xflow-hero-subtitle",
+        "namespace": "",
+        "comb": "",
+        "styleLess": "font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-size: 18px; font-weight: 500; color: #475569; margin-bottom: 32px;",
+        "variants": {},
+        "children": []
+      },
+      {
+        "_id": "3f4c837d-c79f-44f2-9f73-c1b2b9ede588",
+        "fake": false,
+        "type": "class",
+        "name": "xflow-hero-button",
+        "namespace": "",
+        "comb": "",
+        "styleLess": "display: inline-block; padding-top: 16px; padding-bottom: 16px; padding-left: 36px; padding-right: 36px; border-radius: 10px; background-color: #0b0f19; font-family: -apple-system, BlinkMacSystemFont, sans-serif; font-size: 16px; font-weight: 700; color: #ffffff; text-decoration: none;",
+        "variants": {},
+        "children": []
+      },
+      {
+        "_id": "653a737f-1aed-4122-bd93-22870621410e",
+        "fake": false,
+        "type": "class",
+        "name": "xflow-globe-wrapper",
+        "namespace": "",
+        "comb": "",
+        "styleLess": "width: 100%; max-width: 1000px; margin-top: 48px; display: flex; justify-content: center; align-items: flex-end;",
+        "variants": {},
+        "children": []
+      },
+      {
+        "_id": "2ab34f2c-be36-4c8a-b51e-01a8677b1ebf",
+        "fake": false,
+        "type": "class",
+        "name": "xflow-globe-image",
+        "namespace": "",
+        "comb": "",
+        "styleLess": "width: 100%; max-width: 900px; height: auto; display: block;",
+        "variants": {},
+        "children": []
+      }
+    ],
+    "assets": [],
+    "ix1": [],
+    "ix2": {
+      "interactions": [],
+      "actionLists": [],
+      "events": []
+    }
+  },
+  "meta": {
+    "unlinkedSymbolCount": 0,
+    "droppedLinks": 0,
+    "dynBindRemovedCount": 0,
+    "dynListBindRemovedCount": 0,
+    "paginationRemovedCount": 0,
+    "universalBindingsRemovedCount": 0
+  }
+}

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Copy Xflow Native Components to Webflow</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background-color: #0c0f17;
+      color: #ffffff;
+      padding: 40px 20px;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .container {
+      max-width: 720px;
+      width: 100%;
+    }
+    h1 {
+      font-size: 32px;
+      font-weight: 800;
+      margin-bottom: 8px;
+    }
+    p.lead {
+      color: #94a3b8;
+      font-size: 16px;
+      margin-bottom: 32px;
+      line-height: 1.5;
+    }
+    .card {
+      background: #151b28;
+      border: 1px solid #1e293b;
+      border-radius: 16px;
+      padding: 24px;
+      margin-bottom: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: all 0.2s ease;
+    }
+    .card:hover {
+      border-color: #3b82f6;
+      box-shadow: 0 10px 30px rgba(59, 130, 246, 0.15);
+    }
+    .card-info h3 {
+      margin: 0 0 6px 0;
+      font-size: 18px;
+      color: #ffffff;
+    }
+    .card-info p {
+      margin: 0;
+      font-size: 13px;
+      color: #94a3b8;
+    }
+    button.copy-btn {
+      background: #3b82f6;
+      color: #ffffff;
+      border: none;
+      padding: 12px 24px;
+      border-radius: 10px;
+      font-size: 14px;
+      font-weight: 600;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      transition: all 0.2s ease;
+    }
+    button.copy-btn:hover {
+      background: #2563eb;
+      transform: scale(1.03);
+    }
+    button.copy-btn.copied {
+      background: #10b981;
+    }
+    .toast {
+      position: fixed;
+      bottom: 24px;
+      background: #10b981;
+      color: #ffffff;
+      padding: 12px 24px;
+      border-radius: 10px;
+      font-weight: 600;
+      display: none;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>🚀 1-Click Native Webflow Components</h1>
+    <p class="lead">
+      Click a button below to copy <strong>100% Native Webflow Elements</strong> directly to your clipboard, then switch to your Webflow Designer canvas and press <strong>Ctrl + V</strong> (or Cmd + V).<br>
+      No HTML embeds. Every heading, paragraph, button, and image is completely editable on your visual canvas!
+    </p>
+
+    <!-- Component 1 -->
+    <div class="card">
+      <div class="card-info">
+        <h3>1. Xflow Hero Section</h3>
+        <p>Curved grid card, H1 heading, subtitle, CTA button, and 3D globe illustration.</p>
+      </div>
+      <button class="copy-btn" onclick="copyXflow('hero', this)">
+        <span>📋 Copy to Webflow</span>
+      </button>
+    </div>
+
+    <!-- Component 2 -->
+    <div class="card">
+      <div class="card-info">
+        <h3>2. 4-Column Use Cases Bento Grid</h3>
+        <p>Exporters, Funded Startups, Fintech Platforms, Freelancers cards with badges.</p>
+      </div>
+      <button class="copy-btn" onclick="copyXflow('usecases', this)">
+        <span>📋 Copy to Webflow</span>
+      </button>
+    </div>
+  </div>
+
+  <div id="toast" class="toast">✅ Copied to Webflow! Now press Ctrl + V in Webflow Designer!</div>
+
+  <script>
+    const dataHero = {"type": "@webflow/XscpData", "payload": {"nodes": [{"_id": "54e37ff9-2f66-48ac-9c43-64f8aea4affb", "text": true, "v": "Move money faster, save more on every transfer"}, {"_id": "ba1751f9-9569-4245-a42a-e7af1ea6e570", "type": "Heading", "tag": "h1", "classes": ["e5adc81b-6eb7-47a6-b566-aa403defca5c"], "children": ["54e37ff9-2f66-48ac-9c43-64f8aea4affb"], "data": {"tag": "h1"}}, {"_id": "df27acbd-b743-4195-899b-aaa3147ecf12", "text": true, "v": "Save 50% FX Cost \u2022 No transaction limits \u2022 No hidden fees"}, {"_id": "30726f3c-8744-46ef-8323-694be09e3d9c", "type": "Paragraph", "tag": "p", "classes": ["5b298691-8806-49ad-bf17-9c70269734b5"], "children": ["df27acbd-b743-4195-899b-aaa3147ecf12"], "data": {"tag": "p"}}, {"_id": "63e2a62f-c57b-404b-92c5-849bde0ed147", "text": true, "v": "Get Started"}, {"_id": "e68741cd-a3c9-4965-885d-2ac62edd09cb", "type": "Link", "tag": "a", "classes": ["645024e9-e8db-4a5e-b556-e2d3dbf97a62"], "children": ["63e2a62f-c57b-404b-92c5-849bde0ed147"], "data": {"button": true, "link": {"mode": "external", "url": "#"}}}, {"_id": "25520c5d-7570-448b-838d-7013ae8519af", "type": "Image", "tag": "img", "classes": ["62259da9-0a51-4b23-bf86-088db64220ed"], "children": [], "data": {"attr": {"src": "https://raw.githubusercontent.com/rutvik333/my-portfolio/main/xflow-clone/globe_clean.png", "alt": "Xflow Global Payments"}}}, {"_id": "3f20a6cd-f0e1-4f9b-a5ea-ab84912abe8b", "type": "Block", "tag": "div", "classes": ["88f202ab-5a9d-45c0-9f0f-2371454314ae"], "children": ["ba1751f9-9569-4245-a42a-e7af1ea6e570", "30726f3c-8744-46ef-8323-694be09e3d9c", "e68741cd-a3c9-4965-885d-2ac62edd09cb", "25520c5d-7570-448b-838d-7013ae8519af"], "data": {"tag": "div", "text": false}}, {"_id": "364eb7ed-dbc0-43c4-a578-59f36f9a6032", "type": "Section", "tag": "section", "classes": ["977254d6-a2a1-46f9-ade4-0e788f19b6b2"], "children": ["3f20a6cd-f0e1-4f9b-a5ea-ab84912abe8b"], "data": {"tag": "section", "text": false}}], "styles": [{"_id": "977254d6-a2a1-46f9-ade4-0e788f19b6b2", "fake": false, "type": "class", "name": "xflow-hero-sec", "namespace": "", "comb": "", "styleLess": "display: flex; width: 100%; padding-top: 32px; padding-left: 24px; padding-right: 24px; flex-direction: column; align-items: center; background-color: #ffffff;", "variants": {}, "children": []}, {"_id": "88f202ab-5a9d-45c0-9f0f-2371454314ae", "fake": false, "type": "class", "name": "xflow-hero-card", "namespace": "", "comb": "", "styleLess": "position: relative; overflow: hidden; width: 100%; max-width: 1280px; padding-top: 72px; padding-left: 20px; padding-right: 20px; border-radius: 28px; background-color: #edf2fe; border: 1px solid #dce5fa; text-align: center; display: flex; flex-direction: column; align-items: center;", "variants": {}, "children": []}, {"_id": "e5adc81b-6eb7-47a6-b566-aa403defca5c", "fake": false, "type": "class", "name": "xflow-h1", "namespace": "", "comb": "", "styleLess": "font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-size: 54px; line-height: 1.15; font-weight: 800; color: #0a0f1d; letter-spacing: -1.5px; max-width: 860px; margin-bottom: 16px;", "variants": {}, "children": []}, {"_id": "5b298691-8806-49ad-bf17-9c70269734b5", "fake": false, "type": "class", "name": "xflow-subtitle", "namespace": "", "comb": "", "styleLess": "font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-size: 18px; font-weight: 500; color: #475569; margin-bottom: 32px;", "variants": {}, "children": []}, {"_id": "645024e9-e8db-4a5e-b556-e2d3dbf97a62", "fake": false, "type": "class", "name": "xflow-button", "namespace": "", "comb": "", "styleLess": "display: inline-block; padding-top: 16px; padding-bottom: 16px; padding-left: 36px; padding-right: 36px; border-radius: 10px; background-color: #0b0f19; font-family: -apple-system, BlinkMacSystemFont, sans-serif; font-size: 16px; font-weight: 700; color: #ffffff; text-decoration: none;", "variants": {}, "children": []}, {"_id": "62259da9-0a51-4b23-bf86-088db64220ed", "fake": false, "type": "class", "name": "xflow-globe-img", "namespace": "", "comb": "", "styleLess": "width: 100%; max-width: 900px; height: auto; display: block; margin-top: 48px;", "variants": {}, "children": []}], "assets": [], "ix1": [], "ix2": {"interactions": [], "actionLists": [], "events": []}}, "meta": {"unlinkedSymbolCount": 0, "droppedLinks": 0, "dynBindRemovedCount": 0, "dynListBindRemovedCount": 0, "paginationRemovedCount": 0, "universalBindingsRemovedCount": 0}};
+    const dataUsecases = {"type": "@webflow/XscpData", "payload": {"nodes": [{"_id": "3fd22f48-42d6-4da8-b995-4b38cbf38472", "text": true, "v": "Exporters"}, {"_id": "356b7c0e-aa43-4ac1-8f05-a4ce4ca2858e", "type": "Heading", "tag": "h3", "classes": ["17a42163-e938-4c8b-b7d0-e422d9451f13"], "children": ["3fd22f48-42d6-4da8-b995-4b38cbf38472"], "data": {"tag": "h3"}}, {"_id": "6b5fe052-4921-4791-ac8b-c62112fe58a8", "text": true, "v": "Get paid seamlessly by global clients"}, {"_id": "8e02d751-c172-4395-98eb-18ba2b6298dc", "type": "Paragraph", "tag": "p", "classes": ["4a96edee-9baa-417c-9bf6-5c0798cbd8cf"], "children": ["6b5fe052-4921-4791-ac8b-c62112fe58a8"], "data": {"tag": "p"}}, {"_id": "c09607b9-0b11-4b7e-a76c-09092a2abb50", "type": "Block", "tag": "div", "classes": [], "children": ["356b7c0e-aa43-4ac1-8f05-a4ce4ca2858e", "8e02d751-c172-4395-98eb-18ba2b6298dc"], "data": {"tag": "div", "text": false}}, {"_id": "d9f1a1c3-7d89-4b08-9a70-ea986da88e6a", "text": true, "v": "140+ countries supported"}, {"_id": "36cfcf93-125e-4656-8780-97a965b8061b", "type": "Block", "tag": "div", "classes": ["e1cd05df-d51f-4c7e-8447-d4ec9941b18b"], "children": ["d9f1a1c3-7d89-4b08-9a70-ea986da88e6a"], "data": {"tag": "div", "text": false}}, {"_id": "2d116a6b-d9c1-4d91-82fd-d3a88f972f44", "type": "Block", "tag": "div", "classes": ["9b74db19-b402-41e7-b54e-85765bf17cf3"], "children": ["c09607b9-0b11-4b7e-a76c-09092a2abb50", "36cfcf93-125e-4656-8780-97a965b8061b"], "data": {"tag": "div", "text": false}}, {"_id": "ee46a188-b686-4779-a42d-3e1c38bc4dd7", "text": true, "v": "Funded Startups"}, {"_id": "3e823a7c-b6a2-47ba-8a16-752dc6bf33c7", "type": "Heading", "tag": "h3", "classes": ["17a42163-e938-4c8b-b7d0-e422d9451f13"], "children": ["ee46a188-b686-4779-a42d-3e1c38bc4dd7"], "data": {"tag": "h3"}}, {"_id": "fb23d962-640f-44a6-893d-d7970059360c", "text": true, "v": "Transfer funds between global and Indian entities"}, {"_id": "2cf839a3-51b7-42bb-b6f8-aa5aeebfcb8d", "type": "Paragraph", "tag": "p", "classes": ["4a96edee-9baa-417c-9bf6-5c0798cbd8cf"], "children": ["fb23d962-640f-44a6-893d-d7970059360c"], "data": {"tag": "p"}}, {"_id": "bfed124a-b4a0-4944-ab05-29a184c7d78f", "type": "Block", "tag": "div", "classes": [], "children": ["3e823a7c-b6a2-47ba-8a16-752dc6bf33c7", "2cf839a3-51b7-42bb-b6f8-aa5aeebfcb8d"], "data": {"tag": "div", "text": false}}, {"_id": "7f27f2d5-d872-49dd-966a-98dbe07e551e", "text": true, "v": "Save 50% FX cost"}, {"_id": "10b6b9f8-e3fa-4146-a17c-08c92667aeb6", "type": "Block", "tag": "div", "classes": ["e1cd05df-d51f-4c7e-8447-d4ec9941b18b"], "children": ["7f27f2d5-d872-49dd-966a-98dbe07e551e"], "data": {"tag": "div", "text": false}}, {"_id": "ad486281-ad9f-4665-9ae7-23aee7d516a0", "type": "Block", "tag": "div", "classes": ["9b74db19-b402-41e7-b54e-85765bf17cf3"], "children": ["bfed124a-b4a0-4944-ab05-29a184c7d78f", "10b6b9f8-e3fa-4146-a17c-08c92667aeb6"], "data": {"tag": "div", "text": false}}, {"_id": "5e51ca7b-a758-42db-9b70-cfc73d188344", "text": true, "v": "Fintech Platforms"}, {"_id": "e8d1897c-3d26-4d88-9da6-c0ee16dea164", "type": "Heading", "tag": "h3", "classes": ["17a42163-e938-4c8b-b7d0-e422d9451f13"], "children": ["5e51ca7b-a758-42db-9b70-cfc73d188344"], "data": {"tag": "h3"}}, {"_id": "713f3312-a7bc-4432-9b25-51ee43f38af5", "text": true, "v": "Power international payments with our API-driven solution"}, {"_id": "930fbf11-45cb-407c-b158-5ed79c803cc0", "type": "Paragraph", "tag": "p", "classes": ["4a96edee-9baa-417c-9bf6-5c0798cbd8cf"], "children": ["713f3312-a7bc-4432-9b25-51ee43f38af5"], "data": {"tag": "p"}}, {"_id": "9df7e527-1d29-4f51-86f6-1218b9f6f44f", "type": "Block", "tag": "div", "classes": [], "children": ["e8d1897c-3d26-4d88-9da6-c0ee16dea164", "930fbf11-45cb-407c-b158-5ed79c803cc0"], "data": {"tag": "div", "text": false}}, {"_id": "e34b6b5e-accc-4d7d-b512-828d7185c65d", "text": true, "v": "7,000+ businesses"}, {"_id": "abb248a0-eb38-4e9d-8d7e-9618aeb35d4c", "type": "Block", "tag": "div", "classes": ["e1cd05df-d51f-4c7e-8447-d4ec9941b18b"], "children": ["e34b6b5e-accc-4d7d-b512-828d7185c65d"], "data": {"tag": "div", "text": false}}, {"_id": "71352475-e69b-404e-8c90-8ab10641b8f4", "type": "Block", "tag": "div", "classes": ["9b74db19-b402-41e7-b54e-85765bf17cf3"], "children": ["9df7e527-1d29-4f51-86f6-1218b9f6f44f", "abb248a0-eb38-4e9d-8d7e-9618aeb35d4c"], "data": {"tag": "div", "text": false}}, {"_id": "50804c8c-b04e-4a81-9543-9bb7c1d891d1", "text": true, "v": "Freelancers"}, {"_id": "579e8c1d-4274-4dee-81e4-c195dbcc74a9", "type": "Heading", "tag": "h3", "classes": ["17a42163-e938-4c8b-b7d0-e422d9451f13"], "children": ["50804c8c-b04e-4a81-9543-9bb7c1d891d1"], "data": {"tag": "h3"}}, {"_id": "41d9f315-efe9-4a17-8e6f-24e166be7242", "text": true, "v": "Collect earnings from Upwork, Deel, and marketplaces"}, {"_id": "31ed046f-e3cb-4c37-9cc1-6023ebe31a93", "type": "Paragraph", "tag": "p", "classes": ["4a96edee-9baa-417c-9bf6-5c0798cbd8cf"], "children": ["41d9f315-efe9-4a17-8e6f-24e166be7242"], "data": {"tag": "p"}}, {"_id": "a721d5bf-3785-46b9-a369-94e6dcfdea43", "type": "Block", "tag": "div", "classes": [], "children": ["579e8c1d-4274-4dee-81e4-c195dbcc74a9", "31ed046f-e3cb-4c37-9cc1-6023ebe31a93"], "data": {"tag": "div", "text": false}}, {"_id": "b924ad91-b29c-4bc6-a9ff-6cf4195bba7a", "text": true, "v": "Settlement in 24 hours"}, {"_id": "b2c1897e-5022-483a-b95b-4272becbee77", "type": "Block", "tag": "div", "classes": ["e1cd05df-d51f-4c7e-8447-d4ec9941b18b"], "children": ["b924ad91-b29c-4bc6-a9ff-6cf4195bba7a"], "data": {"tag": "div", "text": false}}, {"_id": "19cf62b2-3d56-446b-8f4e-0766bba360a4", "type": "Block", "tag": "div", "classes": ["9b74db19-b402-41e7-b54e-85765bf17cf3"], "children": ["a721d5bf-3785-46b9-a369-94e6dcfdea43", "b2c1897e-5022-483a-b95b-4272becbee77"], "data": {"tag": "div", "text": false}}, {"_id": "af469f44-0333-4cfd-bfaf-bb6b153acc1f", "text": true, "v": "Powering seamless global transactions for businesses"}, {"_id": "a088ea7a-b16b-4765-985d-a80fec5c2699", "type": "Heading", "tag": "h2", "classes": ["4d77971f-467f-4e51-bf79-1102f5fe599a"], "children": ["af469f44-0333-4cfd-bfaf-bb6b153acc1f"], "data": {"tag": "h2"}}, {"_id": "be7efd60-7c32-49a9-b437-a2e76fa02e75", "type": "Block", "tag": "div", "classes": ["b6b1b29b-8177-4370-b486-e28fba727cb5"], "children": ["2d116a6b-d9c1-4d91-82fd-d3a88f972f44", "ad486281-ad9f-4665-9ae7-23aee7d516a0", "71352475-e69b-404e-8c90-8ab10641b8f4", "19cf62b2-3d56-446b-8f4e-0766bba360a4"], "data": {"tag": "div", "text": false}}, {"_id": "f40b1bca-0ee5-4f7e-bf6a-22d91782e39f", "type": "Block", "tag": "div", "classes": ["04044b3c-4bfa-44b5-b623-38850361b56e"], "children": ["a088ea7a-b16b-4765-985d-a80fec5c2699", "be7efd60-7c32-49a9-b437-a2e76fa02e75"], "data": {"tag": "div", "text": false}}, {"_id": "b316c6e5-bcdc-4a82-aea1-f38de4220ece", "type": "Section", "tag": "section", "classes": ["117f9a19-4669-45f5-b9f3-244fd28170da"], "children": ["f40b1bca-0ee5-4f7e-bf6a-22d91782e39f"], "data": {"tag": "section", "text": false}}], "styles": [{"_id": "117f9a19-4669-45f5-b9f3-244fd28170da", "fake": false, "type": "class", "name": "xflow-usecase-section", "namespace": "", "comb": "", "styleLess": "display: flex; width: 100%; padding-top: 60px; padding-bottom: 80px; padding-left: 24px; padding-right: 24px; flex-direction: column; align-items: center; background-color: #ffffff;", "variants": {}, "children": []}, {"_id": "04044b3c-4bfa-44b5-b623-38850361b56e", "fake": false, "type": "class", "name": "xflow-usecase-wrap", "namespace": "", "comb": "", "styleLess": "width: 100%; max-width: 1240px; display: flex; flex-direction: column;", "variants": {}, "children": []}, {"_id": "4d77971f-467f-4e51-bf79-1102f5fe599a", "fake": false, "type": "class", "name": "xflow-usecase-h2", "namespace": "", "comb": "", "styleLess": "font-family: -apple-system, BlinkMacSystemFont, sans-serif; font-size: 38px; font-weight: 800; color: #0a0f1d; letter-spacing: -1px; margin-bottom: 40px;", "variants": {}, "children": []}, {"_id": "b6b1b29b-8177-4370-b486-e28fba727cb5", "fake": false, "type": "class", "name": "xflow-usecase-grid", "namespace": "", "comb": "", "styleLess": "display: grid; grid-template-columns: 1fr 1fr 1fr 1fr; gap: 20px; width: 100%;", "variants": {}, "children": []}, {"_id": "9b74db19-b402-41e7-b54e-85765bf17cf3", "fake": false, "type": "class", "name": "xflow-card-box", "namespace": "", "comb": "", "styleLess": "display: flex; flex-direction: column; justify-content: space-between; min-height: 280px; padding: 28px; border-radius: 20px; background-color: #f8fafc; border: 1px solid #e2e8f0;", "variants": {}, "children": []}, {"_id": "17a42163-e938-4c8b-b7d0-e422d9451f13", "fake": false, "type": "class", "name": "xflow-card-h3", "namespace": "", "comb": "", "styleLess": "font-family: -apple-system, BlinkMacSystemFont, sans-serif; font-size: 20px; font-weight: 700; color: #0a0f1d; margin-bottom: 8px;", "variants": {}, "children": []}, {"_id": "4a96edee-9baa-417c-9bf6-5c0798cbd8cf", "fake": false, "type": "class", "name": "xflow-card-desc", "namespace": "", "comb": "", "styleLess": "font-family: -apple-system, BlinkMacSystemFont, sans-serif; font-size: 14px; color: #64748b; line-height: 1.4;", "variants": {}, "children": []}, {"_id": "e1cd05df-d51f-4c7e-8447-d4ec9941b18b", "fake": false, "type": "class", "name": "xflow-card-badge", "namespace": "", "comb": "", "styleLess": "background-color: #ffffff; border: 1px solid #e2e8f0; border-radius: 12px; padding: 14px; text-align: center; font-family: -apple-system, sans-serif; font-weight: 700; font-size: 14px; color: #0a0f1d;", "variants": {}, "children": []}], "assets": [], "ix1": [], "ix2": {"interactions": [], "actionLists": [], "events": []}}, "meta": {"unlinkedSymbolCount": 0, "droppedLinks": 0, "dynBindRemovedCount": 0, "dynListBindRemovedCount": 0, "paginationRemovedCount": 0, "universalBindingsRemovedCount": 0}};
+
+    function copyXflow(type, btn) {
+      const payload = type === 'hero' ? dataHero : dataUsecases;
+      const jsonStr = JSON.stringify(payload);
+
+      // Webflow expects application/json on the system clipboard
+      const listener = function(e) {
+        e.clipboardData.setData('application/json', jsonStr);
+        e.preventDefault();
+      };
+
+      document.addEventListener('copy', listener);
+      document.execCommand('copy');
+      document.removeEventListener('copy', listener);
+
+      // Visual feedback
+      const originalText = btn.innerHTML;
+      btn.innerHTML = '<span>✅ Copied!</span>';
+      btn.classList.add('copied');
+
+      const toast = document.getElementById('toast');
+      toast.style.display = 'block';
+      setTimeout(() => {
+        toast.style.display = 'none';
+        btn.innerHTML = originalText;
+        btn.classList.remove('copied');
+      }, 3000);
+    }
+  </script>
+</body>
+</html>

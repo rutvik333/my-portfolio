@@ -829,6 +829,63 @@
     ]
   },
   {
+    "slug": "central-c-store",
+    "name": "Central C-Store Distributors",
+    "url": "central-c-store/index.html",
+    "category": "E-Commerce & Wholesale",
+    "tech": [
+      "B2B E-Commerce",
+      "Wholesale Supply",
+      "Modern JavaScript",
+      "Responsive Layout",
+      "Catalog Search",
+      "Cart Calculations"
+    ],
+    "description": "Premier wholesale convenience store supply platform with real-time stock counters, bulk ordering, and multi-category filtering.",
+    "pages": [
+      {
+        "id": 1,
+        "title": "Storefront & Hero",
+        "page_name": "Central C-Store Distributors | Wholesale Convenience Supply",
+        "url": "central-c-store/index.html",
+        "image": "assets/projects/central-c-store/page_1.png",
+        "description": "Wholesale convenience store supply platform offering bulk ordering, live product discovery, distributor pricing, and next-day regional delivery."
+      },
+      {
+        "id": 2,
+        "title": "Shop by Category",
+        "page_name": "Shop by Category - Central C-Store",
+        "url": "central-c-store/index.html#categories",
+        "image": "assets/projects/central-c-store/page_2.png",
+        "description": "Dynamic wholesale inventory categorizer with 10+ core product categories including Fresh Produce, Dairy, Beverages, and Tobacco."
+      },
+      {
+        "id": 3,
+        "title": "Best Sellers & Pricing",
+        "page_name": "Wholesale Best Sellers & Bulk Catalog",
+        "url": "central-c-store/index.html#bestsellers",
+        "image": "assets/projects/central-c-store/page_3.png",
+        "description": "High-volume wholesale catalog highlighting tier pricing, case counts, inventory status, and quick add-to-cart."
+      },
+      {
+        "id": 4,
+        "title": "Delivery & Perks",
+        "page_name": "Logistics & Warehouse Distribution Perks",
+        "url": "central-c-store/index.html",
+        "image": "assets/projects/central-c-store/page_4.png",
+        "description": "Logistics and distribution advantages highlighting free delivery minimums, temperature-controlled fleet, and bulk discounts."
+      },
+      {
+        "id": 5,
+        "title": "Wholesale FAQ & Footer",
+        "page_name": "Wholesale Registration & Business Verification",
+        "url": "central-c-store/index.html#contact",
+        "image": "assets/projects/central-c-store/page_5.png",
+        "description": "B2B business verification onboarding, reseller tax ID requirements, customer support, and warehouse pickup locations."
+      }
+    ]
+  },
+  {
     "slug": "bardboysdemo2",
     "name": "Bard Boys Oxnard - Concept 2",
     "url": "bardboysdemo2/index.html",

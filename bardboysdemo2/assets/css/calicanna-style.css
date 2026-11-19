@@ -1,0 +1,2035 @@
+/* ==========================================================================
+   BARD BOYS OXNARD - DEMO 2 (CALI CANNA INSPIRED THEME)
+   Reference: https://calicanna.cc/
+   Design: High-Converting California Dispensary E-Commerce
+   Typography: Rubik (Bold Heavy Headings) & Plus Jakarta Sans (Clean Body)
+   ========================================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,600&family=Rubik:ital,wght@0,600;0,700;0,800;0,900;1,700;1,800;1,900&display=swap');
+
+:root {
+  --font-heading: 'Rubik', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-body: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  
+  --cc-primary: #111111;
+  --cc-primary-light: #0A0A0A;
+  --cc-accent-red: #DE4C38;
+  --cc-accent-red-hover: #C53030;
+  --cc-accent-gold: #DE4C38;
+  --cc-accent-gold-light: #FEE2E2;
+  --cc-accent-teal: #111111;
+  --cc-accent-teal-dark: #000000;
+  --cc-accent-green: #DE4C38;
+  --cc-green-pill: #DE4C38;
+  
+  --cc-bg-page: #F8FAFC;
+  --cc-bg-header: #111111;
+  --cc-bg-card: #FFFFFF;
+  --cc-bg-footer: #0A0A0A;
+  
+  --cc-border: #E2E8F0;
+  --cc-border-dark: #262626;
+  --cc-text-main: #1E293B;
+  --cc-text-muted: #64748B;
+  --cc-text-light: #94A3B8;
+  
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 18px;
+  --radius-xl: 24px;
+  --radius-full: 9999px;
+  
+  --shadow-card: none !important;
+  --shadow-hover: none !important;
+  --transition-smooth: all 0.25s ease-in-out;
+  
+  /* Brand Specific Gradients: Red & Black */
+  --sunset-bg: linear-gradient(135deg, #DE4C38 0%, #991B1B 100%);
+  --ocean-bg: linear-gradient(135deg, #111111 0%, #262626 100%);
+  --rainbow-bg: linear-gradient(135deg, #DE4C38 0%, #111111 100%);
+}
+
+/* Base resets for Demo 2 */
+body.theme-calicanna {
+  font-family: var(--font-body);
+  background-color: var(--cc-bg-page);
+  color: var(--cc-text-main);
+  font-size: 15px;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, h5, h6, .heading-spartan {
+  font-family: var(--font-heading);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: var(--cc-primary);
+  margin-top: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  transition: var(--transition-smooth);
+}
+
+a:hover {
+  color: var(--cc-accent-red);
+}
+
+/* ==========================================================================
+   1. TOP ANNOUNCEMENT BAR (Cali Canna Style)
+   ========================================================================== */
+.cc-topbar {
+  background-color: var(--cc-primary-light);
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 500;
+  padding: 8px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.cc-topbar .container {
+  max-width: 1410px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.cc-topbar-promo {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.cc-topbar-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: #ffffff;
+}
+
+.cc-topbar-item b,
+.cc-topbar-item strong {
+  color: #ffffff !important;
+  font-weight: 800;
+  letter-spacing: 0.3px;
+}
+
+.cc-stars-gold {
+  color: #ffffff;
+  letter-spacing: 1px;
+}
+
+.cc-topbar-links {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.cc-topbar-links a {
+  color: #ffffff;
+  font-size: 12.5px;
+  font-weight: 500;
+  opacity: 0.95;
+  transition: opacity 0.2s ease, text-decoration 0.2s ease;
+}
+
+.cc-topbar-links a:hover {
+  color: #ffffff !important;
+  opacity: 1;
+  text-decoration: underline;
+}
+
+/* ==========================================================================
+   2. MAIN HEADER & SUBNAV (BuyMyWeed / Cali Emerald Theme)
+   ========================================================================== */
+.cc-header-main {
+  background-color: #FFFFFF;
+  padding: 14px 0;
+  position: relative;
+  z-index: 100;
+  box-shadow: none !important;
+  border-bottom: 1px solid #E2E8F0;
+}
+
+.cc-header-main .container {
+  max-width: 1410px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+/* Brand Logo (BuyMyWeed style typography) */
+.bmw-brand-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  flex-shrink: 0;
+}
+
+.bmw-logo-img {
+  height: 38px;
+  width: auto;
+  object-fit: contain;
+}
+
+.bmw-brand-text {
+  font-family: var(--font-heading);
+  font-size: 24px;
+  font-weight: 800;
+  letter-spacing: -0.3px;
+  line-height: 1.1;
+  color: #111111;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.bmw-brand-accent {
+  color: #DE4C38; /* Red accent on OXNARD */
+}
+
+/* Center Search Pill */
+.bmw-search-wrap {
+  flex: 1;
+  max-width: 680px;
+  margin: 0 24px;
+}
+
+.bmw-search-form {
+  display: flex;
+  align-items: center;
+  background-color: #F8FAFC;
+  border-radius: 9999px;
+  padding: 3px 6px 3px 16px;
+  border: 1.5px solid #CBD5E1;
+  box-shadow: none !important;
+  transition: all 0.2s ease;
+  position: relative;
+}
+
+.bmw-search-form:focus-within {
+  border-color: #DE4C38;
+  box-shadow: none !important;
+}
+
+.bmw-search-input {
+  flex: 1;
+  border: none;
+  background: transparent;
+  outline: none;
+  font-family: var(--font-body);
+  font-size: 15px;
+  font-weight: 500;
+  color: #111111;
+  padding: 9px 12px 9px 6px;
+}
+
+.bmw-search-input::placeholder {
+  color: #94a3b8;
+  font-size: 14px;
+}
+
+.bmw-search-btn {
+  background: #DE4C38;
+  border: none;
+  cursor: pointer;
+  padding: 8px 16px;
+  border-radius: 9999px;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.15s ease, background 0.15s ease;
+}
+
+.bmw-search-btn:hover {
+  transform: scale(1.05);
+  background: #C53030;
+  color: #ffffff;
+}
+
+/* Header Right Actions (LOGIN / REGISTER | CART / $0.00 [BAG]) */
+.bmw-header-right {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex-shrink: 0;
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: 13px;
+  color: #111111;
+  letter-spacing: 0.2px;
+}
+
+.bmw-login-link {
+  color: #111111;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 13px;
+  letter-spacing: 0.2px;
+  transition: color 0.2s ease;
+}
+
+.bmw-login-link:hover {
+  color: #DE4C38;
+}
+
+.bmw-header-divider {
+  width: 1px;
+  height: 22px;
+  background-color: #E2E8F0;
+}
+
+/* Cart Button */
+.bmw-cart-btn {
+  background: transparent;
+  border: none;
+  color: #111111;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-family: var(--font-body);
+  font-weight: 700;
+  font-size: 13px;
+  padding: 0;
+  text-transform: uppercase;
+  transition: color 0.2s ease;
+}
+
+.bmw-cart-btn:hover {
+  color: #DE4C38;
+}
+
+.bmw-cart-btn:hover .bmw-bag-icon svg {
+  stroke: #DE4C38;
+}
+
+/* Shopping Bag Icon with Count inside */
+.bmw-bag-icon {
+  position: relative;
+  width: 26px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bmw-bag-icon svg {
+  width: 100%;
+  height: 100%;
+  stroke: #111111;
+  transition: stroke 0.2s ease;
+}
+
+.bmw-bag-count {
+  position: absolute;
+  top: -4px;
+  right: -8px;
+  background: #DE4C38;
+  color: #ffffff;
+  min-width: 18px;
+  height: 18px;
+  border-radius: 9999px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 10px;
+  font-weight: 900;
+  line-height: 1;
+  pointer-events: none;
+  box-shadow: none !important;
+}
+
+/* ==========================================================================
+   3. LOWER SUB-NAVIGATION BAR (Crisp White with Red Highlights)
+   ========================================================================== */
+.cc-header-bottom {
+  background-color: #FFFFFF;
+  border-top: none;
+  border-bottom: 1px solid #E2E8F0;
+  position: sticky;
+  top: 0;
+  z-index: 99;
+  box-shadow: none !important;
+}
+
+.cc-header-bottom .container {
+  max-width: 1410px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bmw-nav-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 28px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  flex-wrap: wrap;
+}
+
+.bmw-nav-item {
+  position: relative;
+}
+
+.bmw-nav-link {
+  color: #111111;
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+  padding: 12px 4px;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: color 0.2s ease;
+}
+
+.bmw-nav-link:hover, .bmw-nav-item:hover > .bmw-nav-link {
+  color: #DE4C38;
+}
+
+.bmw-caret {
+  font-size: 10px;
+  display: inline-block;
+  transition: transform 0.2s ease;
+}
+
+.bmw-nav-item:hover .bmw-caret {
+  transform: translateY(1px);
+}
+
+/* Dropdown Menus */
+.bmw-dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  min-width: 220px;
+  background: #FFFFFF;
+  border: 1px solid #E2E8F0;
+  border-top: 3px solid #DE4C38;
+  border-radius: 0 0 10px 10px;
+  box-shadow: none !important;
+  padding: 8px 0;
+  list-style: none;
+  margin: 0;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(8px);
+  transition: opacity 0.2s ease, transform 0.2s ease, visibility 0.2s;
+  z-index: 200;
+}
+
+.bmw-nav-item:hover .bmw-dropdown {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.bmw-dropdown li a {
+  display: block;
+  padding: 10px 18px;
+  font-size: 12px;
+  font-weight: 600;
+  color: #111111;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  transition: background 0.15s ease, color 0.15s ease, padding-left 0.15s ease;
+}
+
+.bmw-dropdown li a:hover {
+  background: #FEE2E2;
+  color: #DE4C38;
+  padding-left: 22px;
+}
+
+/* ==========================================================================
+   4. HERO BANNER SECTION (Functional Mushroom & Adaptogen Showcase)
+   ========================================================================== */
+.cc-hero-mushroom-section {
+  position: relative;
+  width: 100%;
+  min-height: 520px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  background-color: #F8FAFC;
+  border-bottom: 1px solid #E2E8F0;
+}
+
+.cc-hero-mushroom-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.cc-hero-mushroom-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: right center;
+  display: block;
+}
+
+/* Feathered soft light scrim to ensure text is 100% readable while maintaining the vibrant art */
+.cc-hero-mushroom-section::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 58%;
+  height: 100%;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.45) 0%, rgba(255, 255, 255, 0.2) 65%, rgba(255, 255, 255, 0) 100%);
+  z-index: 2;
+  pointer-events: none;
+}
+
+.cc-hero-mushroom-container {
+  position: relative;
+  z-index: 3;
+  width: 100%;
+  max-width: 1410px;
+  margin: 0 auto;
+  padding: 56px 20px;
+}
+
+.cc-hero-mushroom-content {
+  max-width: 580px;
+}
+
+.cc-hero-mushroom-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background-color: #FEE2E2;
+  border: 1px solid #FECACA;
+  color: #991B1B;
+  padding: 6px 14px;
+  border-radius: 9999px;
+  font-family: var(--font-heading);
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 18px;
+  box-shadow: none !important;
+}
+
+.cc-hero-mushroom-title {
+  font-family: var(--font-heading);
+  font-size: 46px;
+  font-weight: 900;
+  line-height: 1.08;
+  color: #111111;
+  letter-spacing: -0.5px;
+  margin-bottom: 16px;
+  text-transform: uppercase;
+}
+
+.cc-hero-title-accent {
+  color: #DE4C38;
+}
+
+.cc-hero-mushroom-desc {
+  font-family: var(--font-body);
+  font-size: 16px;
+  line-height: 1.55;
+  color: #1E293B;
+  font-weight: 500;
+  margin-bottom: 26px;
+  max-width: 520px;
+}
+
+.cc-hero-mushroom-actions {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  flex-wrap: wrap;
+  margin-bottom: 24px;
+}
+
+.cc-hero-mush-btn-primary {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background-color: #DE4C38;
+  color: #ffffff;
+  padding: 13px 28px;
+  border-radius: 9999px;
+  font-family: var(--font-heading);
+  font-size: 14px;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+  text-decoration: none;
+  text-transform: uppercase;
+  box-shadow: none !important;
+  transition: all 0.2s ease;
+}
+
+.cc-hero-mush-btn-primary:hover {
+  background-color: #C53030;
+  transform: translateY(-2px);
+  box-shadow: none !important;
+  color: #ffffff;
+}
+
+.cc-hero-mush-btn-secondary {
+  display: inline-flex;
+  align-items: center;
+  background-color: #FFFFFF;
+  border: 2px solid #111111;
+  color: #111111;
+  padding: 12px 24px;
+  border-radius: 9999px;
+  font-family: var(--font-heading);
+  font-size: 14px;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: all 0.2s ease;
+}
+
+.cc-hero-mush-btn-secondary:hover {
+  background-color: #111111;
+  color: #ffffff;
+  transform: translateY(-2px);
+}
+
+.cc-hero-mushroom-perks {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  flex-wrap: wrap;
+  font-size: 12px;
+  font-weight: 700;
+  color: #111111;
+}
+
+.cc-hero-perk {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.cc-hero-section {
+  background: linear-gradient(180deg, #ffffff 0%, #f4f6f8 100%);
+  border-bottom: 1px solid var(--cc-border);
+  padding: 48px 0 36px 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.cc-hero-section .container {
+  max-width: 1410px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  align-items: center;
+  gap: 40px;
+}
+
+.cc-hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background-color: rgba(222, 76, 56, 0.08);
+  border: 1px solid rgba(222, 76, 56, 0.25);
+  color: var(--cc-accent-red);
+  padding: 6px 14px;
+  border-radius: var(--radius-full);
+  font-family: var(--font-heading);
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  margin-bottom: 16px;
+}
+
+.cc-hero-title {
+  font-family: var(--font-heading);
+  font-size: 52px;
+  font-weight: 900;
+  line-height: 1.05;
+  margin-bottom: 18px;
+  color: var(--cc-primary);
+}
+
+.cc-hero-title span.accent-red {
+  color: var(--cc-accent-red);
+}
+
+.cc-hero-title span.accent-gold {
+  color: var(--cc-accent-gold);
+}
+
+.cc-hero-desc {
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--cc-text-muted);
+  max-width: 580px;
+  margin-bottom: 28px;
+}
+
+.cc-hero-ctas {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-bottom: 36px;
+}
+
+.cc-btn-primary {
+  background-color: var(--cc-primary);
+  color: #ffffff;
+  font-family: var(--font-heading);
+  font-size: 15px;
+  font-weight: 800;
+  letter-spacing: 0.8px;
+  padding: 14px 32px;
+  border-radius: var(--radius-sm);
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  border: none;
+  cursor: pointer;
+  transition: var(--transition-smooth);
+}
+
+.cc-btn-primary:hover {
+  background-color: var(--cc-accent-red);
+  color: #ffffff;
+  transform: translateY(-2px);
+  box-shadow: none !important;
+}
+
+.cc-btn-secondary {
+  background-color: transparent;
+  color: var(--cc-primary);
+  font-family: var(--font-heading);
+  font-size: 15px;
+  font-weight: 800;
+  letter-spacing: 0.8px;
+  padding: 13px 28px;
+  border-radius: var(--radius-sm);
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  border: 2px solid var(--cc-primary);
+  cursor: pointer;
+  transition: var(--transition-smooth);
+}
+
+.cc-btn-secondary:hover {
+  background-color: var(--cc-primary);
+  color: #ffffff;
+}
+
+/* Trust value props ticker */
+.cc-trust-row {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  padding-top: 24px;
+  border-top: 1px solid var(--cc-border);
+}
+
+.cc-trust-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.cc-trust-icon {
+  width: 36px;
+  height: 36px;
+  border-radius: var(--radius-full);
+  background-color: #ffffff;
+  border: 1px solid var(--cc-border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.cc-trust-item div {
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--cc-text-main);
+  line-height: 1.2;
+}
+
+.cc-trust-item span {
+  display: block;
+  font-size: 11px;
+  font-weight: 400;
+  color: var(--cc-text-muted);
+}
+
+/* Hero Right Visual (Mascot & Product Showcase) */
+.cc-hero-visual {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cc-hero-card-featured {
+  background: #ffffff;
+  border: 1px solid var(--cc-border);
+  border-radius: var(--radius-xl);
+  padding: 24px;
+  box-shadow: none !important;
+  position: relative;
+  width: 100%;
+  max-width: 460px;
+}
+
+.cc-hero-img-wrap {
+  width: 100%;
+  height: 320px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  background: #fafafa;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+}
+
+.cc-hero-img-wrap img {
+  max-height: 90%;
+  max-width: 90%;
+  object-fit: contain;
+  transition: transform 0.4s ease;
+}
+
+.cc-hero-card-featured:hover .cc-hero-img-wrap img {
+  transform: scale(1.05);
+}
+
+.cc-hero-floating-pill {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  background: var(--cc-accent-red);
+  color: #ffffff;
+  font-family: var(--font-heading);
+  font-weight: 800;
+  font-size: 12px;
+  padding: 4px 10px;
+  border-radius: var(--radius-full);
+}
+
+.cc-hero-card-meta {
+  margin-top: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.cc-hero-card-title {
+  font-family: var(--font-heading);
+  font-size: 18px;
+  font-weight: 800;
+  color: var(--cc-primary);
+  margin-bottom: 4px;
+}
+
+.cc-hero-card-subtitle {
+  font-size: 13px;
+  color: var(--cc-text-muted);
+}
+
+.cc-hero-card-price {
+  font-family: var(--font-heading);
+  font-size: 22px;
+  font-weight: 900;
+  color: var(--cc-accent-green);
+}
+
+/* ==========================================================================
+   5. CATEGORY SECTION (Cali Canna Style)
+   ========================================================================== */
+.cc-categories-section {
+  padding: 40px 0;
+  background-color: #ffffff;
+  border-bottom: 1px solid var(--cc-border);
+}
+
+.cc-categories-section .container {
+  max-width: 1410px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.cc-cali-cat-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 18px;
+}
+
+.cc-cali-cat-box {
+  background: #ffffff;
+  border: 1px solid var(--cc-border);
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: none !important;
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.cc-cali-cat-box:hover {
+  transform: translateY(-5px);
+  box-shadow: none !important;
+  border-color: #cbd5e1;
+}
+
+.cc-cali-cat-img-cover {
+  position: relative;
+  width: 100%;
+  padding-top: 100%;
+  overflow: hidden;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  background: #f1f5f9;
+}
+
+.cc-cali-cat-img-cover img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.cc-cali-cat-box:hover .cc-cali-cat-img-cover img {
+  transform: scale(1.06);
+}
+
+.cc-cali-cat-text {
+  background-color: #ffffff;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  padding: 14px 10px;
+  border-top: 1px solid #f1f5f9;
+}
+
+.cc-cali-cat-title {
+  font-family: var(--font-heading);
+  font-size: 1.25rem;
+  font-weight: 800;
+  margin: 0;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  color: var(--cc-primary);
+  transition: color 0.2s ease;
+}
+
+.cc-cali-cat-box:hover .cc-cali-cat-title {
+  color: var(--cc-accent-red);
+}
+
+@media (max-width: 1024px) {
+  .cc-cali-cat-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+  }
+}
+
+@media (max-width: 640px) {
+  .cc-cali-cat-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+  }
+  .cc-cali-cat-title {
+    font-size: 1.05rem;
+  }
+}
+
+/* ==========================================================================
+   6. TABBED PRODUCT GRID (TOP SELLERS & NEW ARRIVALS)
+   ========================================================================== */
+.cc-products-section {
+  padding: 56px 0;
+  background-color: var(--cc-bg-page);
+}
+
+.cc-products-section .container {
+  max-width: 1410px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.cc-section-header {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  margin-bottom: 28px;
+  flex-wrap: wrap;
+  gap: 16px;
+  border-bottom: none !important;
+  padding-bottom: 0;
+}
+
+.cc-section-title-wrap h2 {
+  font-family: var(--font-heading);
+  font-size: 32px;
+  font-weight: 900;
+  color: var(--cc-primary);
+  margin: 0 0 6px 0;
+  line-height: 1;
+}
+
+.cc-section-title-wrap p {
+  font-size: 14px;
+  color: var(--cc-text-muted);
+  margin: 0;
+}
+
+/* Filter Tabs Cali Canna Style */
+.cc-filter-tabs {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.cc-tab-btn {
+  background: #ffffff;
+  border: 1px solid var(--cc-border);
+  border-radius: var(--radius-full);
+  padding: 7px 18px;
+  font-family: var(--font-body);
+  font-weight: 700;
+  font-size: 13px;
+  color: var(--cc-text-main);
+  cursor: pointer;
+  transition: var(--transition-smooth);
+}
+
+.cc-tab-btn:hover {
+  border-color: var(--cc-primary);
+  color: var(--cc-primary);
+}
+
+.cc-tab-btn.active {
+  background-color: var(--cc-primary);
+  color: #ffffff;
+  border-color: var(--cc-primary);
+}
+
+/* ==========================================================================
+   6. PRODUCTS SECTION (5-Column Desktop Grid & Clean Card Design)
+   ========================================================================== */
+.cc-products-section {
+  padding: 48px 0 36px 0;
+  background-color: #ffffff;
+}
+
+/* Products Grid - Strict 5 Columns on Desktop View */
+.cc-products-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 16px;
+}
+
+/* Clean Product Card */
+.cc-product-card {
+  background-color: #ffffff;
+  border: 1px solid #edf2f7;
+  border-radius: 14px;
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  box-shadow: none !important;
+}
+
+.cc-product-card:hover {
+  transform: translateY(-4px);
+  box-shadow: none !important;
+  border-color: #cbd5e1;
+}
+
+/* Top Rounded Image Box with Light Gray Background */
+.deal-prod-img-wrap {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  height: auto;
+  background-color: #f4f5f7;
+  border-radius: 10px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  margin-bottom: 0;
+}
+
+.deal-prod-img {
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+  max-height: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  background: transparent;
+  border: none;
+  border-radius: 10px;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.cc-product-card:hover .deal-prod-img {
+  transform: scale(1.05);
+}
+
+/* Top-Left Discount Badge */
+.cc-card-discount-tag {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: #de4c38;
+  color: #ffffff;
+  font-family: var(--font-heading);
+  font-size: 11px;
+  font-weight: 800;
+  padding: 3px 8px;
+  border-radius: 6px;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  z-index: 3;
+  box-shadow: none !important;
+  letter-spacing: 0.2px;
+}
+
+/* Card Body */
+.cc-card-body {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  padding-top: 10px;
+}
+
+/* Brand Name */
+.cc-card-brand {
+  font-family: var(--font-body);
+  font-size: 12.5px;
+  font-weight: 500;
+  color: #718096;
+  margin-bottom: 3px;
+  text-transform: capitalize;
+  letter-spacing: 0.2px;
+}
+
+/* Product Title */
+.cc-card-title {
+  font-family: var(--font-heading);
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 1.25;
+  color: #2d3748;
+  margin-bottom: 8px;
+  min-height: 38px;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-transform: none;
+}
+
+/* Price Row: Weight | Sale Price Original Price */
+.cc-card-price-row {
+  display: flex;
+  align-items: baseline;
+  gap: 3px;
+  margin-top: auto;
+  margin-bottom: 12px;
+}
+
+.cc-card-weight {
+  font-family: var(--font-body);
+  font-size: 13.5px;
+  font-weight: 600;
+  color: #4a5568;
+}
+
+.cc-card-divider {
+  font-size: 12px;
+  color: #a0aec0;
+  margin: 0 4px;
+}
+
+.cc-card-price {
+  font-family: var(--font-heading);
+  font-size: 17px;
+  font-weight: 800;
+  color: #de4c38;
+}
+
+.cc-card-regular-price {
+  font-family: var(--font-heading);
+  font-size: 13.5px;
+  font-weight: 600;
+  color: #4a5568;
+  text-decoration: line-through;
+  margin-left: 6px;
+}
+
+/* Attributes Row: Strain Pill + THC */
+.cc-card-meta-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 12px;
+  margin-top: auto;
+}
+
+.cc-strain-pill {
+  background-color: #e2e8f0;
+  color: #334155;
+  font-size: 11px;
+  font-weight: 600;
+  padding: 3px 9px;
+  border-radius: 9999px;
+  line-height: 1;
+  text-transform: capitalize;
+}
+
+.cc-strain-pill.indica-label {
+  background-color: #e0f2fe !important;
+  color: #0369a1 !important;
+}
+
+.cc-strain-pill.sativa-label {
+  background-color: #fef3c7 !important;
+  color: #b45309 !important;
+}
+
+.cc-strain-pill.hybrid-label {
+  background-color: #f1f5f9 !important;
+  color: #111111 !important;
+}
+
+.cc-card-thc {
+  font-size: 12px;
+  font-weight: 500;
+  color: #718096;
+}
+
+/* Add to Cart Button */
+.cc-card-btn {
+  background-color: #DE4C38;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 14px;
+  width: 100%;
+  font-family: var(--font-heading);
+  font-weight: 800;
+  font-size: 12px;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  text-transform: uppercase;
+  box-shadow: none !important;
+  transition: all 0.2s ease;
+}
+
+.cc-card-btn:hover {
+  background-color: #C53030;
+  color: #ffffff;
+  transform: translateY(-1px);
+  box-shadow: none !important;
+}
+
+.cc-card-btn:active {
+  transform: translateY(0);
+}
+
+/* ==========================================================================
+   7. CRAFT FLOWER FULL-WIDTH BANNER (Banner-2 Showcase - Demo 2)
+   ========================================================================== */
+.cc-flower-banner-section {
+  position: relative;
+  width: 100%;
+  height: 350px;
+  max-height: 350px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background-color: #C6C8B1;
+  border-top: none !important;
+  border-bottom: none !important;
+  box-shadow: none !important;
+}
+
+.cc-flower-banner-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.cc-flower-banner-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 30% 35%;
+  display: block;
+}
+
+.cc-flower-banner-container {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.cc-flower-banner-content {
+  max-width: 620px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cc-flower-banner-title {
+  font-family: var(--font-heading);
+  font-size: clamp(24px, 3.2vw, 36px);
+  font-weight: 900;
+  line-height: 1.1;
+  color: #111111;
+  letter-spacing: -0.5px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  text-shadow: none !important;
+}
+
+.cc-flower-banner-desc {
+  font-family: var(--font-body);
+  font-size: 14px;
+  line-height: 1.5;
+  color: #1E293B;
+  font-weight: 500;
+  margin-bottom: 16px;
+  max-width: 540px;
+}
+
+.cc-flower-banner-action {
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-width: 900px) {
+  .cc-flower-banner-section {
+    height: 350px;
+    max-height: 350px;
+    padding: 0;
+  }
+  .cc-flower-banner-content {
+    background: rgba(248, 250, 252, 0.88);
+    backdrop-filter: blur(8px);
+    padding: 20px 16px;
+    border-radius: var(--radius-lg);
+    border: none;
+    max-width: 92%;
+  }
+}
+
+/* ==========================================================================
+   9. BRAND PARTNERS CAROUSEL / GRID
+   ========================================================================== */
+.cc-brands-section {
+  padding: 56px 0;
+  background-color: #ffffff;
+  border-bottom: 1px solid var(--cc-border);
+}
+
+.cc-brands-section .container {
+  max-width: 1410px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.cc-brands-grid-simple {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+  margin-top: 10px;
+}
+
+@media (max-width: 1200px) {
+  .cc-brands-grid-simple {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 18px;
+  }
+}
+
+@media (max-width: 900px) {
+  .cc-brands-grid-simple {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+  }
+}
+
+@media (max-width: 600px) {
+  .cc-brands-grid-simple {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+  }
+}
+
+.cc-brand-card-simple {
+  background: #FFFFFF;
+  border: 1.5px solid #E2E8F0;
+  border-radius: 18px;
+  padding: 18px 14px 16px 14px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  cursor: pointer;
+  box-shadow: none !important;
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  position: relative;
+  overflow: hidden;
+  user-select: none;
+}
+
+.cc-brand-card-simple:hover {
+  border-color: #DE4C38;
+  transform: translateY(-4px);
+  box-shadow: none !important;
+}
+
+.cc-brand-img-box {
+  width: 100%;
+  height: 120px;
+  background: #F8FAFC;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 14px;
+  margin-bottom: 12px;
+  border: 1px solid #EDF2F7;
+  overflow: hidden;
+  transition: all 0.25s ease;
+}
+
+.cc-brand-card-simple:hover .cc-brand-img-box {
+  background: #FEF2F2;
+  border-color: rgba(222, 76, 56, 0.25);
+}
+
+.cc-brand-logo-img {
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  border-radius: 6px;
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.cc-brand-card-simple:hover .cc-brand-logo-img {
+  transform: scale(1.06);
+}
+
+.cc-brand-simple-name {
+  font-family: var(--font-heading);
+  font-size: 15px;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: #111111;
+  letter-spacing: -0.01em;
+  margin: 0 0 6px 0;
+  line-height: 1.2;
+  transition: color 0.2s ease;
+}
+
+.cc-brand-card-simple:hover .cc-brand-simple-name {
+  color: #DE4C38;
+}
+
+.cc-brand-simple-count {
+  font-family: var(--font-body);
+  font-size: 11px;
+  font-weight: 700;
+  color: #DE4C38;
+  background: #FEE2E2;
+  padding: 3px 10px;
+  border-radius: 9999px;
+  letter-spacing: 0.02em;
+  display: inline-block;
+}
+
+/* ==========================================================================
+   10. VERIFIED 5-STAR REVIEWS (Cali Canna Style)
+   ========================================================================== */
+.cc-reviews-section {
+  padding: 60px 0;
+  background-color: var(--cc-bg-page);
+}
+
+.cc-reviews-section .container {
+  max-width: 1410px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.cc-reviews-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 22px;
+}
+
+.cc-review-card {
+  background: #ffffff;
+  border: 1px solid var(--cc-border);
+  border-radius: var(--radius-md);
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+}
+
+.cc-review-stars {
+  color: var(--cc-accent-gold);
+  font-size: 16px;
+  margin-bottom: 12px;
+}
+
+.cc-review-quote {
+  font-size: 14px;
+  line-height: 1.6;
+  color: var(--cc-text-main);
+  margin-bottom: 18px;
+  flex: 1;
+  font-style: italic;
+}
+
+.cc-review-author-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid #f1f5f9;
+  padding-top: 12px;
+}
+
+.cc-reviewer-name {
+  font-family: var(--font-heading);
+  font-size: 14px;
+  font-weight: 800;
+  color: var(--cc-primary);
+}
+
+.cc-verified-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--cc-accent-green);
+}
+
+/* ==========================================================================
+   11. ABOUT RONNEY JENKINS & BARD BOYS SECTION
+   ========================================================================== */
+.cc-story-section {
+  padding: 64px 0;
+  background-color: #ffffff;
+  border-bottom: 1px solid var(--cc-border);
+}
+
+.cc-story-section .container {
+  max-width: 1410px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 48px;
+}
+
+.cc-story-images {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.cc-story-img-box {
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  border: 1px solid var(--cc-border);
+  box-shadow: none !important;
+}
+
+.cc-story-img-box img {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+}
+
+.cc-story-img-box:first-child img {
+  object-position: top center;
+}
+
+.cc-story-content h2 {
+  font-family: var(--font-heading);
+  font-size: 38px;
+  font-weight: 900;
+  line-height: 1.1;
+  color: var(--cc-primary);
+  margin-bottom: 18px;
+}
+
+.cc-story-content p {
+  font-size: 15px;
+  line-height: 1.7;
+  color: var(--cc-text-muted);
+  margin-bottom: 16px;
+}
+
+/* ==========================================================================
+   12. COMPREHENSIVE FOOTER (Cali Canna flatsome style)
+   ========================================================================== */
+.cc-footer {
+  background-color: var(--cc-bg-footer);
+  color: #ffffff;
+  padding: 60px 0 20px 0;
+}
+
+.cc-footer .container {
+  max-width: 1410px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.cc-footer-grid {
+  display: grid;
+  grid-template-columns: 1.3fr 1fr 1fr 1.3fr;
+  gap: 40px;
+  margin-bottom: 48px;
+}
+
+.cc-footer-col h4 {
+  font-family: var(--font-heading);
+  font-size: 17px;
+  font-weight: 800;
+  color: #ffffff;
+  margin-bottom: 18px;
+  letter-spacing: 0.5px;
+}
+
+.cc-footer-col p {
+  font-size: 13px;
+  line-height: 1.6;
+  color: #94a3b8;
+  margin-bottom: 14px;
+}
+
+.cc-footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.cc-footer-links li {
+  margin-bottom: 10px;
+}
+
+.cc-footer-links a {
+  font-size: 13px;
+  color: #cbd5e1;
+  transition: var(--transition-smooth);
+}
+
+.cc-footer-links a:hover {
+  color: var(--cc-accent-red);
+  padding-left: 4px;
+}
+
+.cc-newsletter-form {
+  display: flex;
+  gap: 8px;
+  margin-top: 14px;
+}
+
+.cc-newsletter-input {
+  flex: 1;
+  background-color: #333333;
+  border: 1px solid #475569;
+  color: #ffffff;
+  font-family: var(--font-body);
+  font-size: 13px;
+  padding: 10px 14px;
+  border-radius: var(--radius-sm);
+  outline: none;
+}
+
+.cc-newsletter-input:focus {
+  border-color: var(--cc-accent-gold);
+}
+
+.cc-newsletter-btn {
+  background-color: var(--cc-accent-red);
+  color: #ffffff;
+  font-family: var(--font-heading);
+  font-weight: 800;
+  font-size: 13px;
+  padding: 10px 18px;
+  border: none;
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  transition: var(--transition-smooth);
+}
+
+.cc-newsletter-btn:hover {
+  background-color: #c53a27;
+}
+
+.cc-compliance-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  padding: 8px 12px;
+  border-radius: var(--radius-sm);
+  margin-top: 12px;
+  font-size: 12px;
+  color: #cbd5e1;
+}
+
+.cc-footer-bottom {
+  border-top: 1px solid #333333;
+  padding-top: 24px;
+  font-size: 12px;
+  color: #64748b;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.cc-prop64-warning {
+  background-color: #1a1a1a;
+  border-left: 3px solid var(--cc-accent-gold);
+  padding: 12px 16px;
+  font-size: 11px;
+  color: #94a3b8;
+  line-height: 1.5;
+  margin-bottom: 24px;
+  border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+}
+
+/* ==========================================================================
+   13. RESPONSIVE BREAKPOINTS
+   ========================================================================== */
+@media (max-width: 1080px) {
+  .cc-hero-section .container {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+  .cc-hero-visual {
+    justify-content: flex-start;
+  }
+  .cc-products-grid {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 14px;
+  }
+  .cc-trust-row {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .cc-cat-row {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .cc-sunset-features-section .container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .cc-reviews-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .cc-footer-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 992px) {
+  .cc-hero-mushroom-section {
+    min-height: 460px;
+  }
+  .cc-hero-mushroom-title {
+    font-size: 38px;
+  }
+  .cc-hero-mushroom-content {
+    max-width: 500px;
+  }
+  .cc-products-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+  }
+}
+
+@media (max-width: 768px) {
+  .cc-topbar .container {
+    justify-content: center;
+    text-align: center;
+  }
+  .cc-topbar-links {
+    display: none;
+  }
+  .cc-header-main .container {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 14px;
+  }
+  .bmw-brand-logo {
+    justify-content: center;
+  }
+  .bmw-brand-text {
+    font-size: 20px;
+  }
+  .bmw-logo-img {
+    height: 32px;
+  }
+  .cc-header-actions {
+    justify-content: space-between;
+  }
+  .cc-search-wrap {
+    max-width: 100%;
+  }
+  .cc-hero-mushroom-section {
+    min-height: 480px;
+  }
+  .cc-hero-mushroom-section::after {
+    width: 100%;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.82) 0%, rgba(255, 255, 255, 0.6) 70%, rgba(255, 255, 255, 0.35) 100%);
+  }
+  .cc-hero-mushroom-container {
+    padding: 36px 16px;
+  }
+  .cc-hero-mushroom-content {
+    max-width: 100%;
+  }
+  .cc-hero-mushroom-title {
+    font-size: 30px;
+  }
+  .cc-hero-mushroom-desc {
+    font-size: 15px;
+    margin-bottom: 20px;
+  }
+  .cc-hero-title {
+    font-size: 34px;
+  }
+  .cc-products-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+  .cc-promo-banners-section .container {
+    grid-template-columns: 1fr;
+  }
+  .cc-brands-grid,
+  .cc-cali-brands-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .cc-cat-row {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .cc-sunset-features-section .container {
+    grid-template-columns: 1fr;
+  }
+  .cc-reviews-grid {
+    grid-template-columns: 1fr;
+  }
+  .cc-story-section .container {
+    grid-template-columns: 1fr;
+  }
+  .cc-footer-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .bmw-brand-text {
+    font-size: 17px;
+  }
+  .bmw-logo-img {
+    height: 28px;
+  }
+  .cc-hero-mushroom-section {
+    min-height: 440px;
+  }
+  .cc-hero-mushroom-title {
+    font-size: 24px;
+    line-height: 1.15;
+  }
+  .cc-hero-mushroom-desc {
+    font-size: 14px;
+  }
+  .cc-hero-mushroom-actions {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 10px;
+  }
+  .cc-hero-mush-btn-primary,
+  .cc-hero-mush-btn-secondary {
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    padding: 12px 20px;
+  }
+  .cc-hero-mushroom-perks {
+    gap: 10px;
+    font-size: 11px;
+  }
+  .cc-products-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px;
+  }
+  .deal-prod-img-wrap {
+    height: auto;
+    aspect-ratio: 1 / 1;
+  }
+  .cc-product-card {
+    padding: 10px;
+  }
+  .cc-card-title {
+    font-size: 13px;
+    min-height: 32px;
+  }
+  .cc-brands-grid,
+  .cc-cali-brands-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .cc-trust-row {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ==========================================================================
+   GLOBAL: ZERO STRAIGHT LINES / DIVIDERS (Whole Page Demo 2)
+   ========================================================================== */
+.cc-topbar,
+.cc-header-main,
+.cc-header-bottom,
+.cc-nav-dropdown,
+.cc-hero-mushroom-section,
+.cc-hero-section,
+.cc-trust-row,
+.cc-categories-section,
+.cc-deals-section,
+.cc-products-section,
+.cc-section-header,
+.cc-flower-banner-section,
+.cc-brands-section,
+.cc-story-section,
+.cc-reviews-section,
+.cc-final-cta-section,
+.cc-footer,
+.cc-footer-bottom,
+.cc-cali-cat-text,
+.cc-review-author-row,
+.cart-drawer,
+.cart-header,
+.cart-footer,
+.cart-total-row,
+.age-gate-legal,
+hr {
+  border-top: none !important;
+  border-bottom: none !important;
+}
+
+.cc-section-header {
+  border-bottom: none !important;
+  padding-bottom: 0 !important;
+}
+
+.bmw-header-divider {
+  display: none !important;
+}
+
+.cc-prop64-warning {
+  border-left: none !important;
+}
+
+hr {
+  display: none !important;
+  border: none !important;
+  height: 0 !important;
+}
+
+/* ==========================================================================
+   DEMO 2: BOLD TITLE TYPOGRAPHY (Rubik 800/900 Weight)
+   ========================================================================== */
+h1, h2, h3, h4, h5, h6,
+.cc-hero-mushroom-title,
+.cc-hero-title,
+.cc-section-title-wrap h2,
+.cc-flower-banner-title,
+.bmw-brand-text,
+.cc-sunset-title,
+.cc-reviews-title,
+.cc-story-title,
+.cc-brand-simple-name,
+.cc-cat-label {
+  font-family: 'Rubik', sans-serif !important;
+  font-weight: 800 !important;
+  letter-spacing: -0.2px;
+}
+
+.cc-hero-mushroom-title,
+.cc-flower-banner-title,
+.bmw-brand-text {
+  font-weight: 900 !important;
+}
+
+

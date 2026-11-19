@@ -503,7 +503,7 @@
   {
     "slug": "thepizzamaker",
     "name": "The Pizza Maker",
-    "url": "https://thepizzamaker.brainbeandev.com/",
+    "url": "thepizzamaker/index.html",
     "category": "Food & Restaurant",
     "tech": [
       "Online Ordering",
@@ -517,7 +517,7 @@
         "id": 1,
         "title": "Homepage",
         "page_name": "The Pizza Maker \u2013 Made Fresh. Made for You.",
-        "url": "https://thepizzamaker.brainbeandev.com/",
+        "url": "thepizzamaker/index.html",
         "image": "assets/projects/thepizzamaker/page_1.png",
         "description": "Main landing presentation and brand overview for The Pizza Maker."
       },
@@ -525,7 +525,7 @@
         "id": 2,
         "title": "Menu & Deals",
         "page_name": "TPM FEAST DEALS \u2013 The Pizza Maker",
-        "url": "https://thepizzamaker.brainbeandev.com/tpm-feast-deals",
+        "url": "thepizzamaker/index.htmltpm-feast-deals",
         "image": "assets/projects/thepizzamaker/page_2.png",
         "description": "Detailed view of the Menu & Deals section and user experience."
       },
@@ -533,7 +533,7 @@
         "id": 3,
         "title": "About Us",
         "page_name": "Our Story \u2013 The Pizza Maker",
-        "url": "https://thepizzamaker.brainbeandev.com/our-story",
+        "url": "thepizzamaker/index.htmlour-story",
         "image": "assets/projects/thepizzamaker/page_3.png",
         "description": "Detailed view of the About Us section and user experience."
       },
@@ -541,7 +541,7 @@
         "id": 4,
         "title": "Contact",
         "page_name": "Contact \u2013 The Pizza Maker",
-        "url": "https://thepizzamaker.brainbeandev.com/contact",
+        "url": "thepizzamaker/index.htmlcontact",
         "image": "assets/projects/thepizzamaker/page_4.png",
         "description": "Detailed view of the Contact section and user experience."
       },
@@ -549,7 +549,7 @@
         "id": 5,
         "title": "Catering",
         "page_name": "Catering \u2013 The Pizza Maker",
-        "url": "https://thepizzamaker.brainbeandev.com/catering",
+        "url": "thepizzamaker/index.htmlcatering",
         "image": "assets/projects/thepizzamaker/page_5.png",
         "description": "Detailed view of the Catering section and user experience."
       }
@@ -558,7 +558,7 @@
   {
     "slug": "finifacts",
     "name": "FiniFacts",
-    "url": "https://finifacts.brainbeandev.com/",
+    "url": "finifacts/index.html",
     "category": "Finance & Consulting",
     "tech": [
       "Corporate Website",
@@ -572,7 +572,7 @@
         "id": 1,
         "title": "Homepage",
         "page_name": "FiniFacts",
-        "url": "https://finifacts.brainbeandev.com/",
+        "url": "finifacts/index.html",
         "image": "assets/projects/finifacts/page_1.png",
         "description": "We empower startups, growing enterprises, and established institutions with institutional-grade CPA expertise, proactive tax planning, and audit-ready financial governance."
       },
@@ -580,7 +580,7 @@
         "id": 2,
         "title": "About",
         "page_name": "About \u2013 FiniFacts",
-        "url": "https://finifacts.brainbeandev.com/about",
+        "url": "finifacts/index.htmlabout",
         "image": "assets/projects/finifacts/page_2.png",
         "description": "Institutional-grade CPA expertise, audit-ready compliance, and fiduciary steering for high-growth enterprises."
       },
@@ -588,7 +588,7 @@
         "id": 3,
         "title": "Read Full Story",
         "page_name": "Tips on spreading risk and maximizing returns with multiple asset classes \u2013 FiniFacts",
-        "url": "https://finifacts.brainbeandev.com/tips-on-spreading-risk-and-maximizing-returns-with-multiple-asset-classes",
+        "url": "finifacts/index.htmltips-on-spreading-risk-and-maximizing-returns-with-multiple-asset-classes",
         "image": "assets/projects/finifacts/page_3.png",
         "description": "Explore essential portfolio diversification techniques, tax-loss harvesting methods, and how modern CPA firms shield wealth from volatile market shifts."
       },
@@ -596,7 +596,7 @@
         "id": 4,
         "title": "Services",
         "page_name": "Services \u2013 FiniFacts",
-        "url": "https://finifacts.brainbeandev.com/services",
+        "url": "finifacts/index.htmlservices",
         "image": "assets/projects/finifacts/page_4.png",
         "description": "Institutional-grade CPA expertise, audit-ready compliance, and fiduciary steering for high-growth enterprises."
       },
@@ -604,7 +604,7 @@
         "id": 5,
         "title": "Page",
         "page_name": "International Accounting \u2013 FiniFacts",
-        "url": "https://finifacts.brainbeandev.com/services/international-accounting",
+        "url": "finifacts/index.htmlservices/international-accounting",
         "image": "assets/projects/finifacts/page_5.png",
         "description": "Institutional-grade CPA expertise, audit-ready compliance, and fiduciary steering for high-growth enterprises."
       }
@@ -613,7 +613,7 @@
   {
     "slug": "buenavida-restaurant",
     "name": "Buena Vida - Hydration",
-    "url": "https://buenavida.brainbeandev.com/buena-vida/",
+    "url": "buena-vida/index.html",
     "category": "Beverage & Lifestyle",
     "tech": [
       "Brand Experience",
@@ -627,7 +627,7 @@
         "id": 1,
         "title": "Homepage",
         "page_name": "Buena Vida \u2014 Hydration, Anytime, Anywhere",
-        "url": "https://buenavida.brainbeandev.com/buena-vida/",
+        "url": "buena-vida/index.html",
         "image": "assets/projects/buenavida-restaurant/page_1.png",
         "description": "Meet the Buena Vida Pure Spring Bottle. Crafted for style, durability, and sustainability amidst pristine nature."
       },
@@ -635,7 +635,7 @@
         "id": 2,
         "title": "Features & Highlights",
         "page_name": "Buena Vida - Hydration - Features & Highlights",
-        "url": "https://buenavida.brainbeandev.com/buena-vida/",
+        "url": "buena-vida/index.html",
         "image": "assets/projects/buenavida-restaurant/page_2.png",
         "description": "Featured section highlighting features & highlights of Buena Vida - Hydration."
       },
@@ -643,7 +643,7 @@
         "id": 3,
         "title": "Product / Service Showcase",
         "page_name": "Buena Vida - Hydration - Product / Service Showcase",
-        "url": "https://buenavida.brainbeandev.com/buena-vida/",
+        "url": "buena-vida/index.html",
         "image": "assets/projects/buenavida-restaurant/page_3.png",
         "description": "Featured section highlighting product / service showcase of Buena Vida - Hydration."
       },
@@ -651,7 +651,7 @@
         "id": 4,
         "title": "Detail & Value Proposition",
         "page_name": "Buena Vida - Hydration - Detail & Value Proposition",
-        "url": "https://buenavida.brainbeandev.com/buena-vida/",
+        "url": "buena-vida/index.html",
         "image": "assets/projects/buenavida-restaurant/page_4.png",
         "description": "Featured section highlighting detail & value proposition of Buena Vida - Hydration."
       },
@@ -659,7 +659,7 @@
         "id": 5,
         "title": "Contact & Footer Section",
         "page_name": "Buena Vida - Hydration - Contact & Footer Section",
-        "url": "https://buenavida.brainbeandev.com/buena-vida/",
+        "url": "buena-vida/index.html",
         "image": "assets/projects/buenavida-restaurant/page_5.png",
         "description": "Featured section highlighting contact & footer section of Buena Vida - Hydration."
       }
@@ -668,7 +668,7 @@
   {
     "slug": "buenavida-lifestyle",
     "name": "Buena Vida - Spring Water",
-    "url": "https://buenavida.brainbeandev.com/buena/",
+    "url": "buena/index.html",
     "category": "E-Commerce & Beverage",
     "tech": [
       "Luxury Product Presentation",
@@ -681,7 +681,7 @@
         "id": 1,
         "title": "Homepage",
         "page_name": "Buena Vida \u2014 Premium Spring Water",
-        "url": "https://buenavida.brainbeandev.com/buena/",
+        "url": "buena/index.html",
         "image": "assets/projects/buenavida-lifestyle/page_1.png",
         "description": "Buena Vida Spring Water \u2014 The Good Life in Every Drop. Experience crisp, refreshing spring water packaged in sustainable 500 mL and 1 L aluminum bottles."
       },
@@ -689,7 +689,7 @@
         "id": 2,
         "title": "Features & Highlights",
         "page_name": "Buena Vida - Spring Water - Features & Highlights",
-        "url": "https://buenavida.brainbeandev.com/buena/",
+        "url": "buena/index.html",
         "image": "assets/projects/buenavida-lifestyle/page_2.png",
         "description": "Featured section highlighting features & highlights of Buena Vida - Spring Water."
       },
@@ -697,7 +697,7 @@
         "id": 3,
         "title": "Product / Service Showcase",
         "page_name": "Buena Vida - Spring Water - Product / Service Showcase",
-        "url": "https://buenavida.brainbeandev.com/buena/",
+        "url": "buena/index.html",
         "image": "assets/projects/buenavida-lifestyle/page_3.png",
         "description": "Featured section highlighting product / service showcase of Buena Vida - Spring Water."
       },
@@ -705,7 +705,7 @@
         "id": 4,
         "title": "Detail & Value Proposition",
         "page_name": "Buena Vida - Spring Water - Detail & Value Proposition",
-        "url": "https://buenavida.brainbeandev.com/buena/",
+        "url": "buena/index.html",
         "image": "assets/projects/buenavida-lifestyle/page_4.png",
         "description": "Featured section highlighting detail & value proposition of Buena Vida - Spring Water."
       },
@@ -713,7 +713,7 @@
         "id": 5,
         "title": "Contact & Footer Section",
         "page_name": "Buena Vida - Spring Water - Contact & Footer Section",
-        "url": "https://buenavida.brainbeandev.com/buena/",
+        "url": "buena/index.html",
         "image": "assets/projects/buenavida-lifestyle/page_5.png",
         "description": "Featured section highlighting contact & footer section of Buena Vida - Spring Water."
       }
@@ -722,7 +722,7 @@
   {
     "slug": "releafspecialists",
     "name": "Releaf Specialists",
-    "url": "https://staging.brainbeandev.com/releafspecialists/",
+    "url": "releafspecialists/index.html",
     "category": "Healthcare & Telemedicine",
     "tech": [
       "GreenHash Theme",
@@ -735,7 +735,7 @@
         "id": 1,
         "title": "Homepage",
         "page_name": "Medical Marijuana Card Online | Releaf Specialists (GreenHash Theme)",
-        "url": "https://staging.brainbeandev.com/releafspecialists/",
+        "url": "releafspecialists/index.html",
         "image": "assets/projects/releafspecialists/page_1.png",
         "description": "Get your medical marijuana card online in under 10 minutes. Phone-only visits in 12 states. $150 to start, and you only pay if approved."
       },
@@ -743,7 +743,7 @@
         "id": 2,
         "title": "Features & Highlights",
         "page_name": "Releaf Specialists - Features & Highlights",
-        "url": "https://staging.brainbeandev.com/releafspecialists/",
+        "url": "releafspecialists/index.html",
         "image": "assets/projects/releafspecialists/page_2.png",
         "description": "Featured section highlighting features & highlights of Releaf Specialists."
       },
@@ -751,7 +751,7 @@
         "id": 3,
         "title": "Product / Service Showcase",
         "page_name": "Releaf Specialists - Product / Service Showcase",
-        "url": "https://staging.brainbeandev.com/releafspecialists/",
+        "url": "releafspecialists/index.html",
         "image": "assets/projects/releafspecialists/page_3.png",
         "description": "Featured section highlighting product / service showcase of Releaf Specialists."
       },
@@ -759,7 +759,7 @@
         "id": 4,
         "title": "Detail & Value Proposition",
         "page_name": "Releaf Specialists - Detail & Value Proposition",
-        "url": "https://staging.brainbeandev.com/releafspecialists/",
+        "url": "releafspecialists/index.html",
         "image": "assets/projects/releafspecialists/page_4.png",
         "description": "Featured section highlighting detail & value proposition of Releaf Specialists."
       },
@@ -767,7 +767,7 @@
         "id": 5,
         "title": "Contact & Footer Section",
         "page_name": "Releaf Specialists - Contact & Footer Section",
-        "url": "https://staging.brainbeandev.com/releafspecialists/",
+        "url": "releafspecialists/index.html",
         "image": "assets/projects/releafspecialists/page_5.png",
         "description": "Featured section highlighting contact & footer section of Releaf Specialists."
       }
@@ -776,7 +776,7 @@
   {
     "slug": "bardboysdemo1",
     "name": "Bard Boys Oxnard - Concept 1",
-    "url": "https://staging.brainbeandev.com/bardboysdemo1/",
+    "url": "bardboysdemo1/index.html",
     "category": "Dispensary & Retail",
     "tech": [
       "Interactive Menu",
@@ -790,7 +790,7 @@
         "id": 1,
         "title": "Homepage",
         "page_name": "Bard Boys Oxnard | Smoke Better. Pay Less. Oxnard's Premier Dispensary",
-        "url": "https://staging.brainbeandev.com/bardboysdemo1/",
+        "url": "bardboysdemo1/index.html",
         "image": "assets/projects/bardboysdemo1/page_1.png",
         "description": "Oxnard's top-shelf licensed cannabis dispensary. Fresh California indoor flower, fire vapes, solventless rosin, and artisan edibles at neighborhood prices. Delivery, curbside & in-store."
       },
@@ -798,7 +798,7 @@
         "id": 2,
         "title": "Features & Highlights",
         "page_name": "Bard Boys Oxnard - Concept 1 - Features & Highlights",
-        "url": "https://staging.brainbeandev.com/bardboysdemo1/",
+        "url": "bardboysdemo1/index.html",
         "image": "assets/projects/bardboysdemo1/page_2.png",
         "description": "Featured section highlighting features & highlights of Bard Boys Oxnard - Concept 1."
       },
@@ -806,7 +806,7 @@
         "id": 3,
         "title": "Product / Service Showcase",
         "page_name": "Bard Boys Oxnard - Concept 1 - Product / Service Showcase",
-        "url": "https://staging.brainbeandev.com/bardboysdemo1/",
+        "url": "bardboysdemo1/index.html",
         "image": "assets/projects/bardboysdemo1/page_3.png",
         "description": "Featured section highlighting product / service showcase of Bard Boys Oxnard - Concept 1."
       },
@@ -814,7 +814,7 @@
         "id": 4,
         "title": "Detail & Value Proposition",
         "page_name": "Bard Boys Oxnard - Concept 1 - Detail & Value Proposition",
-        "url": "https://staging.brainbeandev.com/bardboysdemo1/",
+        "url": "bardboysdemo1/index.html",
         "image": "assets/projects/bardboysdemo1/page_4.png",
         "description": "Featured section highlighting detail & value proposition of Bard Boys Oxnard - Concept 1."
       },
@@ -822,7 +822,7 @@
         "id": 5,
         "title": "Contact & Footer Section",
         "page_name": "Bard Boys Oxnard - Concept 1 - Contact & Footer Section",
-        "url": "https://staging.brainbeandev.com/bardboysdemo1/",
+        "url": "bardboysdemo1/index.html",
         "image": "assets/projects/bardboysdemo1/page_5.png",
         "description": "Featured section highlighting contact & footer section of Bard Boys Oxnard - Concept 1."
       }
@@ -831,7 +831,7 @@
   {
     "slug": "bardboysdemo2",
     "name": "Bard Boys Oxnard - Concept 2",
-    "url": "https://staging.brainbeandev.com/bardboysdemo2/",
+    "url": "bardboysdemo2/index.html",
     "category": "Dispensary & Retail",
     "tech": [
       "Dark Mode Aesthetics",
@@ -844,7 +844,7 @@
         "id": 1,
         "title": "Homepage",
         "page_name": "BARD BOYS OXNARD | California's Premier Licensed Cannabis Dispensary",
-        "url": "https://staging.brainbeandev.com/bardboysdemo2/",
+        "url": "bardboysdemo2/index.html",
         "image": "assets/projects/bardboysdemo2/page_1.png",
         "description": "Shop premium California cannabis at Bard Boys Oxnard. Browse craft flower, live resin vapes, artisan edibles, and solventless concentrates. Fast, discreet same-day delivery across Oxnard & Ventura County."
       },
@@ -852,7 +852,7 @@
         "id": 2,
         "title": "Features & Highlights",
         "page_name": "Bard Boys Oxnard - Concept 2 - Features & Highlights",
-        "url": "https://staging.brainbeandev.com/bardboysdemo2/",
+        "url": "bardboysdemo2/index.html",
         "image": "assets/projects/bardboysdemo2/page_2.png",
         "description": "Featured section highlighting features & highlights of Bard Boys Oxnard - Concept 2."
       },
@@ -860,7 +860,7 @@
         "id": 3,
         "title": "Product / Service Showcase",
         "page_name": "Bard Boys Oxnard - Concept 2 - Product / Service Showcase",
-        "url": "https://staging.brainbeandev.com/bardboysdemo2/",
+        "url": "bardboysdemo2/index.html",
         "image": "assets/projects/bardboysdemo2/page_3.png",
         "description": "Featured section highlighting product / service showcase of Bard Boys Oxnard - Concept 2."
       },
@@ -868,7 +868,7 @@
         "id": 4,
         "title": "Detail & Value Proposition",
         "page_name": "Bard Boys Oxnard - Concept 2 - Detail & Value Proposition",
-        "url": "https://staging.brainbeandev.com/bardboysdemo2/",
+        "url": "bardboysdemo2/index.html",
         "image": "assets/projects/bardboysdemo2/page_4.png",
         "description": "Featured section highlighting detail & value proposition of Bard Boys Oxnard - Concept 2."
       },
@@ -876,7 +876,7 @@
         "id": 5,
         "title": "Contact & Footer Section",
         "page_name": "Bard Boys Oxnard - Concept 2 - Contact & Footer Section",
-        "url": "https://staging.brainbeandev.com/bardboysdemo2/",
+        "url": "bardboysdemo2/index.html",
         "image": "assets/projects/bardboysdemo2/page_5.png",
         "description": "Featured section highlighting contact & footer section of Bard Boys Oxnard - Concept 2."
       }

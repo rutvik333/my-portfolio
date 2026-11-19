@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Buena Vida — Hydration, Anytime, Anywhere</title>
+  <meta name="description" content="Meet the Buena Vida Pure Spring Bottle. Crafted for style, durability, and sustainability amidst pristine nature.">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
+  
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Top Navigation Bar -->
+  <header class="navbar" id="main-nav">
+    <button class="nav-toggle" id="menu-toggle" aria-label="Open Navigation Menu">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </button>
+    
+    <div class="nav-brand">
+      <span class="brand-text">BUENA VIDA</span>
+    </div>
+
+    <div class="nav-actions">
+      <button class="ambient-audio-btn" id="audio-toggle" title="Toggle Rainforest Ambience" aria-label="Toggle Ambience Sound">
+        <svg class="sound-icon sound-off" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+          <line x1="23" y1="9" x2="17" y2="15"></line>
+          <line x1="17" y1="9" x2="23" y2="15"></line>
+        </svg>
+        <svg class="sound-icon sound-on" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+          <path d="M15.54 8.46a5 5 0 0 1 0 7.07"></path>
+          <path d="M19.07 4.93a10 10 0 0 1 0 14.14"></path>
+        </svg>
+        <span class="sound-label">Forest Sound</span>
+      </button>
+
+      <button class="pill-btn nav-order-btn" id="nav-order-btn">Order Now</button>
+    </div>
+  </header>
+
+  <!-- Continuous Panoramic Background Layer -->
+  <div class="global-bg-wrapper" id="global-bg-wrapper">
+    <div class="panoramic-bg" id="panoramic-bg"></div>
+    <div class="mist-overlay" id="mist-overlay"></div>
+    <div class="vignette-overlay"></div>
+  </div>
+
+  <!-- Dynamic Product Cutout (Moves continuously through sections down to footer) -->
+  <div class="product-stage" id="product-stage">
+    <div class="bottle-wrapper" id="bottle-wrapper">
+      <img src="images/bottle.png" alt="Buena Vida Spring Water Bottle" class="product-img" id="product-img" />
+      <div class="bottle-glow"></div>
+      <div class="water-droplet d1"></div>
+      <div class="water-droplet d2"></div>
+      <div class="water-droplet d3"></div>
+    </div>
+  </div>
+
+  <!-- Page Content Container -->
+  <div class="page-wrapper" id="page-wrapper">
+
+    <!-- Section 1: Hero Centered Content -->
+    <section class="page-section section-hero" id="hero-section">
+      <div class="container hero-container">
+        <div class="hero-content" id="hero-content">
+          <h1 class="hero-title">
+            <span class="hero-line-1">Hydration, Anytime,</span>
+            <span class="hero-line-2">Anywhere</span>
+          </h1>
+          <p class="hero-subtitle">Stay refreshed with our premium water bottles designed for durability, style, and sustainability.</p>
+          <div class="hero-cta-wrapper">
+            <button class="pill-btn hero-order-btn" id="hero-order-btn">Order Now</button>
+          </div>
+        </div>
+
+        <!-- Scroll Indicator Hint -->
+        <div class="scroll-indicator" id="scroll-indicator">
+          <span class="mouse-icon">
+            <span class="wheel"></span>
+          </span>
+          <span class="scroll-text">Scroll to explore</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Dedicated 100vh Product Solo Showcase Stage (Product Cutout Only) -->
+    <section class="page-section section-product-solo" id="product-solo-section" aria-hidden="true"></section>
+
+    <!-- Section 2: Side-by-Side Showcase Content (Elevate Hydration) -->
+    <section class="page-section section-showcase" id="showcase-section">
+      <div class="container showcase-container">
+        <div class="showcase-content" id="showcase-content">
+          <span class="badge-tag">Mountain Glacial Origin</span>
+          <h2 class="showcase-title">Elevate Your<br>Hydration Game</h2>
+          <p class="showcase-desc">
+            Meet the Green Steel Water Bottle, crafted for style, durability, and sustainability. With its sleek powder-coated finish and premium stainless steel construction.
+          </p>
+          
+          <div class="feature-highlights">
+            <div class="feature-item">
+              <div class="f-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-feat-icon">
+                  <path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"/>
+                </svg>
+              </div>
+              <div class="f-text">
+                <strong>Naturally Alkaline</strong>
+                <span>pH 8.2 with bioavailable minerals</span>
+              </div>
+            </div>
+            <div class="feature-item">
+              <div class="f-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-feat-icon">
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                  <path d="m9 12 2 2 4-4"/>
+                </svg>
+              </div>
+              <div class="f-text">
+                <strong>Infinitely Recyclable</strong>
+                <span>Zero single-use plastics</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="showcase-actions">
+            <button class="pill-btn showcase-order-btn" id="showcase-order-btn">Order Now</button>
+            <button class="text-link-btn" id="spec-scroll-btn">
+              <span>View Specifications</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-arrow">
+                <line x1="12" y1="5" x2="12" y2="19"></line>
+                <polyline points="19 12 12 19 5 12"></polyline>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 3: Purity & Source Section -->
+    <section class="page-section section-purity" id="details-section">
+      <div class="container purity-container">
+        <div class="purity-content-side">
+          <div class="section-header purity-header">
+            <span class="section-sub">Pure & Unfiltered</span>
+            <h2 class="section-title">Born High in the Alpine Mist</h2>
+            <p class="section-lead">Every drop is naturally filtered through thousands of feet of volcanic granite rock, emerging untouched and ice-cold.</p>
+          </div>
+
+          <div class="purity-cards-wrapper">
+            <div class="cards-grid horizontal-cards">
+              <div class="glass-card horizontal-card">
+                <div class="card-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" class="svg-card-icon">
+                    <path d="m8 3 4 8 5-5 5 15H2L8 3z"/>
+                    <path d="M4.14 15.08 8 11l3 3 5-5 3 3"/>
+                  </svg>
+                </div>
+                <div class="card-body">
+                  <h3>Pristine Origin</h3>
+                  <p>Sourced at 8,400ft elevation in protected alpine wilderness reserves away from agricultural runoff or pollutants.</p>
+                </div>
+                <div class="card-metric">
+                  <span class="metric-num">8,400</span>
+                  <span class="metric-unit">ft elevation</span>
+                </div>
+              </div>
+
+              <div class="glass-card horizontal-card active-card">
+                <div class="card-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" class="svg-card-icon">
+                    <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/>
+                  </svg>
+                </div>
+                <div class="card-body">
+                  <h3>Active Electrolytes</h3>
+                  <p>Rich in essential Magnesium, Calcium, and natural Silica for rapid intracellular cellular replenishment.</p>
+                </div>
+                <div class="card-metric">
+                  <span class="metric-num">pH 8.2</span>
+                  <span class="metric-unit">Natural Balance</span>
+                </div>
+              </div>
+
+              <div class="glass-card horizontal-card">
+                <div class="card-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" class="svg-card-icon">
+                    <path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"/>
+                    <path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"/>
+                  </svg>
+                </div>
+                <div class="card-body">
+                  <h3>Earth Conscious</h3>
+                  <p>Double-walled aircraft-grade stainless body that keeps your water crisp for 24 hours while keeping oceans clean.</p>
+                </div>
+                <div class="card-metric">
+                  <span class="metric-num">100%</span>
+                  <span class="metric-unit">Zero Plastic</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 4: Specifications & Size Picker Section -->
+    <section class="page-section section-specs" id="specs-section">
+      <div class="container">
+        <div class="specs-wrapper">
+          <div class="specs-info">
+            <span class="section-sub">Engineered For The Journey</span>
+            <h2 class="section-title">Built For The Wild.<br>Styled For The Everyday.</h2>
+            
+            <div class="spec-table">
+              <div class="spec-row">
+                <span class="spec-label">Capacity</span>
+                <span class="spec-val" id="spec-capacity-val">500 ml / 16.9 fl oz</span>
+              </div>
+              <div class="spec-row">
+                <span class="spec-label">Temperature Retention</span>
+                <span class="spec-val">Cold: 24h &bull; Hot: 12h</span>
+              </div>
+              <div class="spec-row">
+                <span class="spec-label">Material Composition</span>
+                <span class="spec-val">18/8 Pro-Grade Stainless Steel & Matte Powder Coat</span>
+              </div>
+              <div class="spec-row">
+                <span class="spec-label">Cap Feature</span>
+                <span class="spec-val">Ergonomic Finger Loop & Leak-Proof Gasket</span>
+              </div>
+              <div class="spec-row">
+                <span class="spec-label">Condensation Resistant</span>
+                <span class="spec-val">Sweat-Free Exterior Shield</span>
+              </div>
+            </div>
+
+            <!-- Interactive Size Selector -->
+            <div class="size-picker">
+              <span class="picker-label">Select Capacity:</span>
+              <div class="size-options">
+                <button class="size-btn active" data-size="500ml" data-price="$28">500ml</button>
+                <button class="size-btn" data-size="750ml" data-price="$34">750ml</button>
+                <button class="size-btn" data-size="1000ml" data-price="$39">1000ml</button>
+              </div>
+            </div>
+
+            <div class="price-action-box">
+              <div class="current-price" id="dynamic-price">$28.00</div>
+              <button class="pill-btn order-now-primary" id="specs-order-btn">Order Buena Vida Bottle</button>
+            </div>
+          </div>
+
+          <!-- Dynamic Visual Dock Zone for the Floating Bottle -->
+          <div class="specs-visual-dock">
+            <div class="dock-backdrop-glow"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 5: Eco Banner -->
+    <section class="page-section section-eco" id="eco-section">
+      <div class="container">
+        <div class="eco-box">
+          <div class="eco-text">
+            <div class="eco-header-badge">
+              <svg viewBox="0 0 24 24" fill="none" stroke="#4ade80" stroke-width="2" class="svg-eco-leaf">
+                <path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"/>
+                <path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"/>
+              </svg>
+              <span>100% Ocean Action Certified</span>
+            </div>
+            <h3>One Bottle. Thousands of Single-Use Bottles Saved.</h3>
+            <p>Every Buena Vida vessel removes 10x its weight in ocean-bound plastic waste through our certified coastal cleanup partnerships.</p>
+          </div>
+          <button class="pill-btn eco-btn" id="eco-order-btn">Join The Movement</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 6: Modern Continuous Dark Glass Footer -->
+    <footer class="site-footer" id="footer-section">
+      <div class="container footer-content">
+        <div class="footer-col brand-col">
+          <h4 class="footer-logo">BUENA VIDA</h4>
+          <p>Pure hydration inspired by untouched ancient waterfalls and mountain springs. Designed for sustainability, style, and lifelong adventures.</p>
+          <div class="social-links">
+            <a href="#" aria-label="Instagram">Instagram</a>
+            <a href="#" aria-label="Twitter">X / Twitter</a>
+            <a href="#" aria-label="YouTube">YouTube</a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h5>Explore</h5>
+          <ul>
+            <li><a href="#hero-section">Home Parallax</a></li>
+            <li><a href="#details-section">Source & Purity</a></li>
+            <li><a href="#specs-section">Bottle Specs</a></li>
+            <li><a href="#eco-section">Sustainability</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h5>Products</h5>
+          <ul>
+            <li><a href="#" class="order-trigger">500ml Alpine Classic</a></li>
+            <li><a href="#" class="order-trigger">750ml Forest Edition</a></li>
+            <li><a href="#" class="order-trigger">1000ml Expedition Flask</a></li>
+            <li><a href="#" class="order-trigger">Replacement Caps & Accessories</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col newsletter-col">
+          <h5>Stay Refreshed</h5>
+          <p>Receive exclusive field dispatch stories and limited-edition product drops.</p>
+          <form class="newsletter-form" id="newsletter-form" onsubmit="event.preventDefault(); alert('Thank you for joining Buena Vida!');">
+            <input type="email" placeholder="Enter your email" required aria-label="Email address" />
+            <button type="submit">Join</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="container bottom-row">
+          <span>&copy; 2026 Buena Vida Pure Hydration Inc. All rights reserved.</span>
+          <div class="legal-links">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+            <a href="#">Shipping & Returns</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+  </div>
+
+  <!-- Slide-out Navigation Drawer -->
+  <div class="nav-drawer-overlay" id="nav-drawer-overlay"></div>
+  <aside class="nav-drawer" id="nav-drawer">
+    <div class="drawer-header">
+      <span class="drawer-brand">BUENA VIDA</span>
+      <button class="drawer-close" id="drawer-close" aria-label="Close menu">&times;</button>
+    </div>
+    <nav class="drawer-nav">
+      <a href="#hero-section" class="drawer-link">01 &bull; Hydration Story</a>
+      <a href="#showcase-section" class="drawer-link">02 &bull; Elevate Hydration</a>
+      <a href="#details-section" class="drawer-link">03 &bull; Source & Purity</a>
+      <a href="#specs-section" class="drawer-link">04 &bull; Specifications</a>
+      <a href="#" class="drawer-link order-trigger">05 &bull; Order Now</a>
+    </nav>
+    <div class="drawer-footer">
+      <p>Infinitely pure &bull; Earth friendly</p>
+      <button class="pill-btn full-w-btn order-trigger">Shop Collection</button>
+    </div>
+  </aside>
+
+  <!-- Interactive Order Modal / Drawer -->
+  <div class="order-modal-backdrop" id="order-modal-backdrop"></div>
+  <div class="order-modal" id="order-modal">
+    <button class="modal-close" id="order-modal-close" aria-label="Close Modal">&times;</button>
+    <div class="modal-body">
+      <div class="modal-visual">
+        <img src="images/bottle.png" alt="Buena Vida Bottle" class="modal-bottle-img" />
+        <div class="modal-water-tag">Naturally Alkaline pH 8.2</div>
+      </div>
+      <div class="modal-form-side">
+        <span class="modal-kicker">Direct Ship Express</span>
+        <h3 class="modal-title">Buena Vida Pure Water Bottle</h3>
+        <p class="modal-desc">18/8 stainless vacuum insulated bottle, ergonomic loop handle, powder-coated alpine finish.</p>
+        
+        <div class="modal-option-group">
+          <label>Capacity Size:</label>
+          <div class="modal-size-selector">
+            <button class="m-size-btn active" data-m-size="500ml" data-price="28">500ml ($28)</button>
+            <button class="m-size-btn" data-m-size="750ml" data-price="34">750ml ($34)</button>
+            <button class="m-size-btn" data-m-size="1000ml" data-price="39">1000ml ($39)</button>
+          </div>
+        </div>
+
+        <div class="modal-option-group">
+          <label>Color Finish:</label>
+          <div class="modal-colors">
+            <span class="color-dot active" title="Alpine Forest Green" style="background:#2d4a3e;"></span>
+            <span class="color-dot" title="Silver Glacier" style="background:#c0c9cd;"></span>
+            <span class="color-dot" title="Midnight Obsidian" style="background:#1b2421;"></span>
+          </div>
+        </div>
+
+        <div class="modal-total-row">
+          <span>Subtotal:</span>
+          <span class="modal-price" id="modal-subtotal">$28.00 USD</span>
+        </div>
+
+        <button class="pill-btn modal-checkout-btn" id="checkout-btn">
+          Proceed to Checkout &bull; Free Shipping
+        </button>
+
+        <p class="modal-guarantee">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="svg-inline-shield"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg>
+          100-Day Trail &bull; Lifetime Build Warranty
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- GSAP and ScrollTrigger Libraries -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  
+  <!-- Main Application Script -->
+  <script src="js/app.js"></script>
+
+<script>
+// Portfolio Static Demo Mode Scripts
+document.addEventListener('DOMContentLoaded', function() {
+    // Intercept form submissions
+    document.querySelectorAll('form').forEach(function(form) {
+        form.addEventListener('submit', function(e) {
+            e.preventDefault();
+            var btn = form.querySelector('button[type="submit"], input[type="submit"]');
+            var originalText = btn ? (btn.innerText || btn.value) : '';
+            if (btn) {
+                if (btn.tagName === 'INPUT') btn.value = 'Submitted (Demo)!';
+                else btn.innerText = 'Submitted (Demo)!';
+            }
+            alert('Demo Mode: Thank you! Your submission has been received.');
+            setTimeout(function() {
+                if (btn) {
+                    if (btn.tagName === 'INPUT') btn.value = originalText;
+                    else btn.innerText = originalText;
+                }
+            }, 3000);
+        });
+    });
+
+    // Intercept Add to Cart / Order buttons
+    document.querySelectorAll('button, a.btn, a.button, .add-to-cart, .ajax_add_to_cart').forEach(function(el) {
+        var text = (el.innerText || el.textContent || '').toLowerCase();
+        if (text.includes('cart') || text.includes('order') || text.includes('checkout') || text.includes('buy')) {
+            el.addEventListener('click', function(e) {
+                if (el.getAttribute('href') && (el.getAttribute('href').startsWith('http') || el.getAttribute('href').includes('cart') || el.getAttribute('href').includes('checkout'))) {
+                    e.preventDefault();
+                    alert('Demo Mode: Item added to demo cart.');
+                }
+            });
+        }
+    });
+});
+</script>
+
+</body>
+</html>
